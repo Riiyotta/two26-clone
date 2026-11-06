@@ -1,0 +1,75 @@
+{
+  "id": "project.media-pair",
+  "title": "Two-up case-study images",
+  "category": "MEDIA",
+  "source": {
+    "id": "work_heygluco/ProjectContent#media-pair",
+    "file": "pages:work_heygluco/sections/ProjectContent.html",
+    "tag": "div.collection-list-wrapper-2",
+    "lines": "4",
+    "contains": "collection-list-wrapper-2",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectContent",
+    "decomposedFrom": "section.section-project-content"
+  },
+  "semantic": {
+    "id": "project.media-pair",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "images": {
+      "roles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "required": true,
+      "multiple": true,
+      "maxItems": 2
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.product-visual"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "default": "none",
+    "cite": "pages:work_heygluco/sections/ProjectContent.html:4",
+    "contains": "collection-list-wrapper-2"
+  },
+  "constraints": {
+    "repeatable": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "two portrait images side by side",
+      "heightPx": {
+        "min": 1200,
+        "max": 1200,
+        "count": 32
+      }
+    },
+    "mobile": {
+      "layout": "two-up, smaller",
+      "heightPx": 284
+    },
+    "cite": "src/styles/webflow.css:4376",
+    "contains": ".collection-list-2 {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "min": 1200,
+      "max": 1200,
+      "count": 32
+    },
+    "route": "all 8 /work/*"
+  }
+}

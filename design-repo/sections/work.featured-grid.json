@@ -1,0 +1,195 @@
+{
+  "id": "work.featured-grid",
+  "title": "Project card grid",
+  "category": "PORTFOLIO",
+  "source": {
+    "id": "home/Projects",
+    "file": "pages:home/sections/Projects.html",
+    "tag": "section.section-projects",
+    "lines": "1-150",
+    "contains": "projects-list",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Projects"
+  },
+  "semantic": {
+    "id": "work.featured-grid",
+    "category": "PORTFOLIO"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "featured",
+    "all",
+    "more"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:home/sections/Projects.html",
+            "pages:work/sections/Projects.html",
+            "pages:work_bagel-bar/sections/Projects.html",
+            "pages:work_heygluco/sections/Projects.html",
+            "pages:work_lpi/sections/Projects.html",
+            "pages:work_merci/sections/Projects.html",
+            "pages:work_munchies-and-cream/sections/Projects.html",
+            "pages:work_mvp/sections/Projects.html",
+            "pages:work_tanti-maria/sections/Projects.html",
+            "pages:work_yum-yum/sections/Projects.html"
+          ],
+          "realSamples": 10,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:home/sections/Projects.html",
+            "pages:work/sections/Projects.html",
+            "pages:work_bagel-bar/sections/Projects.html",
+            "pages:work_heygluco/sections/Projects.html",
+            "pages:work_lpi/sections/Projects.html",
+            "pages:work_merci/sections/Projects.html",
+            "pages:work_munchies-and-cream/sections/Projects.html",
+            "pages:work_mvp/sections/Projects.html",
+            "pages:work_tanti-maria/sections/Projects.html",
+            "pages:work_yum-yum/sections/Projects.html"
+          ],
+          "realSamples": 10,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "cards": {
+        "type": "items",
+        "minItems": 3,
+        "maxItems": 8,
+        "fields": {
+          "name": {
+            "type": "text",
+            "maxWords": 5,
+            "evidence": {
+              "sourceClass": "project-name-text",
+              "files": [
+                "pages:home/sections/Projects.html",
+                "pages:work/sections/Projects.html",
+                "pages:work_bagel-bar/sections/Projects.html",
+                "pages:work_heygluco/sections/Projects.html",
+                "pages:work_lpi/sections/Projects.html",
+                "pages:work_merci/sections/Projects.html",
+                "pages:work_munchies-and-cream/sections/Projects.html",
+                "pages:work_mvp/sections/Projects.html",
+                "pages:work_tanti-maria/sections/Projects.html",
+                "pages:work_yum-yum/sections/Projects.html"
+              ],
+              "realSamples": 38,
+              "realMaxWords": 3
+            },
+            "required": true
+          },
+          "category": {
+            "type": "text",
+            "maxWords": 6,
+            "evidence": {
+              "sourceClass": "project-detail-text",
+              "files": [
+                "pages:home/sections/Projects.html",
+                "pages:work/sections/Projects.html",
+                "pages:work_bagel-bar/sections/Projects.html",
+                "pages:work_heygluco/sections/Projects.html",
+                "pages:work_lpi/sections/Projects.html",
+                "pages:work_merci/sections/Projects.html",
+                "pages:work_munchies-and-cream/sections/Projects.html",
+                "pages:work_mvp/sections/Projects.html",
+                "pages:work_tanti-maria/sections/Projects.html",
+                "pages:work_yum-yum/sections/Projects.html"
+              ],
+              "realSamples": 38,
+              "realMaxWords": 4
+            },
+            "required": true
+          },
+          "href": {
+            "type": "url",
+            "required": true
+          }
+        },
+        "countEvidence": "6 cards on /, 8 on /work, 3 on project pages",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "cardImage": {
+      "roles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "required": true,
+      "multiple": true,
+      "maxItems": 8
+    },
+    "cardHoverImage": {
+      "roles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "required": false,
+      "multiple": true,
+      "maxItems": 8
+    },
+    "cardMark": {
+      "roles": [
+        "client.logo-source",
+        "generated.client-mark"
+      ],
+      "required": false,
+      "multiple": true,
+      "maxItems": 8
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.client-mark",
+    "generated.product-visual"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "clip-mask-card-reveal",
+      "brush-hover-swap",
+      "none"
+    ],
+    "default": "clip-mask-card-reveal",
+    "cite": "pages:home/scripts/14.js:85",
+    "contains": "start: \"top 85%\""
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "3-column grid, 453x688 cards",
+      "heightPx": 1618
+    },
+    "mobile": {
+      "layout": "1 column",
+      "heightPx": 3578
+    },
+    "cite": "src/styles/webflow.css:2720",
+    "contains": ".projects-list {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "/": 1618,
+      "/work": 2288,
+      "/work/heygluco": 1058
+    }
+  },
+  "notes": "Same purpose, three DOM variants: home 'Featured Projects' (6 cards, wrapper .section-projects-wrapper), /work (8 cards), project pages 'More Works' (3 cards, wrapper .section-more-works-wrapper). Normalised to one contract per R6."
+}

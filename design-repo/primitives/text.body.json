@@ -1,0 +1,12 @@
+{
+  "id": "text.body",
+  "kind": "primitive",
+  "description": "Body paragraph in the grotesk body family.",
+  "props": [
+    "text"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:3320",
+    "contains": ".faq-answer {"
+  }
+}

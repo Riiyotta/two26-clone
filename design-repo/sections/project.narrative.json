@@ -1,0 +1,126 @@
+{
+  "id": "project.narrative",
+  "title": "Case-study narrative block",
+  "category": "CONTENT",
+  "source": {
+    "id": "work_heygluco/ProjectContent#project-content",
+    "file": "pages:work_heygluco/sections/ProjectContent.html",
+    "tag": "div.project-content",
+    "lines": "1",
+    "contains": "class=\"project-content\"",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectContent",
+    "decomposedFrom": "section.section-project-content"
+  },
+  "semantic": {
+    "id": "project.narrative",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "context",
+    "solution"
+  ],
+  "content": {
+    "fields": {
+      "topic": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "prj-content-topic",
+          "files": [
+            "pages:work_bagel-bar/sections/ProjectContent.html",
+            "pages:work_heygluco/sections/ProjectContent.html",
+            "pages:work_lpi/sections/ProjectContent.html",
+            "pages:work_merci/sections/ProjectContent.html",
+            "pages:work_munchies-and-cream/sections/ProjectContent.html",
+            "pages:work_mvp/sections/ProjectContent.html",
+            "pages:work_tanti-maria/sections/ProjectContent.html",
+            "pages:work_yum-yum/sections/ProjectContent.html"
+          ],
+          "realSamples": 16,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "prj-content-heading",
+          "files": [
+            "pages:work_bagel-bar/sections/ProjectContent.html",
+            "pages:work_heygluco/sections/ProjectContent.html",
+            "pages:work_lpi/sections/ProjectContent.html",
+            "pages:work_merci/sections/ProjectContent.html",
+            "pages:work_munchies-and-cream/sections/ProjectContent.html",
+            "pages:work_mvp/sections/ProjectContent.html",
+            "pages:work_tanti-maria/sections/ProjectContent.html",
+            "pages:work_yum-yum/sections/ProjectContent.html"
+          ],
+          "realSamples": 16,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "body": {
+        "type": "text",
+        "maxWords": 189,
+        "evidence": {
+          "sourceClass": "content-para",
+          "files": [
+            "pages:work_bagel-bar/sections/ProjectContent.html",
+            "pages:work_heygluco/sections/ProjectContent.html",
+            "pages:work_lpi/sections/ProjectContent.html",
+            "pages:work_merci/sections/ProjectContent.html",
+            "pages:work_munchies-and-cream/sections/ProjectContent.html",
+            "pages:work_mvp/sections/ProjectContent.html",
+            "pages:work_tanti-maria/sections/ProjectContent.html",
+            "pages:work_yum-yum/sections/ProjectContent.html"
+          ],
+          "realSamples": 16,
+          "realMaxWords": 151
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "default": "none",
+    "cite": "pages:work_heygluco/sections/ProjectContent.html:1",
+    "contains": "prj-content-heading"
+  },
+  "constraints": {
+    "maxPerPage": 2,
+    "repeatable": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "topic label left, heading + rich text right",
+      "heightPx": {
+        "min": 284,
+        "max": 534,
+        "count": 16
+      }
+    },
+    "mobile": {
+      "layout": "stacked"
+    },
+    "cite": "src/styles/webflow.css:4297",
+    "contains": ".project-content {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "min": 284,
+      "max": 534,
+      "count": 16
+    },
+    "route": "all 8 /work/*",
+    "note": "Every case study has exactly two: 'The Context' (topic = industry) and 'The Solution' (topic = project year)."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "media.icon-animation",
+  "kind": "primitive",
+  "description": "Looping vector icon animation (Lottie-style JSON).",
+  "props": [
+    "assetRole"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:5385",
+    "contains": ".lottie-animation {"
+  }
+}

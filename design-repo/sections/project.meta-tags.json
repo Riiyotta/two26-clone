@@ -1,0 +1,85 @@
+{
+  "id": "project.meta-tags",
+  "title": "Case-study discipline tags",
+  "category": "META",
+  "source": {
+    "id": "work_heygluco/ProjectContent#discipline-tags",
+    "file": "pages:work_heygluco/sections/ProjectContent.html",
+    "tag": "div.collection-list-wrapper-3",
+    "lines": "1",
+    "contains": "collection-list-wrapper-3",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectContent",
+    "decomposedFrom": "section.section-project-content"
+  },
+  "semantic": {
+    "id": "project.meta-tags",
+    "category": "META"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "tags": {
+        "type": "text-list",
+        "minItems": 1,
+        "maxItems": 6,
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "text-block-2",
+          "files": [
+            "pages:work_bagel-bar/sections/ProjectContent.html",
+            "pages:work_heygluco/sections/ProjectContent.html",
+            "pages:work_lpi/sections/ProjectContent.html",
+            "pages:work_merci/sections/ProjectContent.html",
+            "pages:work_munchies-and-cream/sections/ProjectContent.html",
+            "pages:work_mvp/sections/ProjectContent.html",
+            "pages:work_tanti-maria/sections/ProjectContent.html",
+            "pages:work_yum-yum/sections/ProjectContent.html"
+          ],
+          "realSamples": 20,
+          "realMaxWords": 2
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "default": "none",
+    "cite": "pages:work_heygluco/sections/ProjectContent.html:1",
+    "contains": "collection-list-wrapper-3"
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "row of discipline tags",
+      "heightPx": {
+        "min": 88,
+        "max": 88,
+        "count": 5
+      }
+    },
+    "mobile": {
+      "layout": "wrapped"
+    },
+    "cite": "src/styles/webflow.css:4405",
+    "contains": ".collection-list-wrapper-3 {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "min": 88,
+      "max": 88,
+      "count": 5
+    },
+    "route": "5 of 8 /work/* (absent on lpi, mvp, tanti-maria)"
+  }
+}

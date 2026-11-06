@@ -1,0 +1,12 @@
+# dependencies and build output (reinstall with `npm ci`, rebuild with `npm run build`)
+node_modules/
+dist/
+
+# design-repo.zip is regenerated from design-repo/ — committing it alongside the folder lets the two drift apart
+design-repo.zip
+
+# tool/OS junk
+.playwright-mcp/
+.DS_Store
+__pycache__/
+*.pyc

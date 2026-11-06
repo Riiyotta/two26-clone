@@ -1,0 +1,74 @@
+{
+  "id": "project.video-embed",
+  "title": "Case-study background video",
+  "category": "MEDIA",
+  "source": {
+    "id": "work_heygluco/ProjectContent#video-embed",
+    "file": "pages:work_heygluco/sections/ProjectContent.html",
+    "tag": "div.project-video",
+    "lines": "1",
+    "contains": "class=\"project-video\"",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectContent",
+    "decomposedFrom": "section.section-project-content"
+  },
+  "semantic": {
+    "id": "project.video-embed",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "video": {
+      "roles": [
+        "client.project-video-source",
+        "generated.video-embed"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.video-embed"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "background-video-autoplay",
+      "none"
+    ],
+    "default": "background-video-autoplay",
+    "cite": "pages:work_heygluco/scripts/06.js:5",
+    "contains": "background=1&autoplay=1&loop=1&muted=1"
+  },
+  "constraints": {
+    "repeatable": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "full-width rounded embed, aspect from provider",
+      "heightPx": {
+        "min": 361,
+        "max": 789,
+        "count": 33
+      }
+    },
+    "mobile": {
+      "layout": "full-width"
+    },
+    "cite": "src/styles/webflow.css:5392",
+    "contains": ".project-video {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "min": 361,
+      "max": 789,
+      "count": 33
+    },
+    "route": "all 8 /work/*"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "theme": "light",
+  "site": {
+    "brandName": "Fernhollow Studio",
+    "baseUrl": "https://fernhollow.example"
+  },
+  "template": "project-detail",
+  "route": "/projects/harbor-loaf",
+  "meta": {
+    "title": "Harbor Loaf | Fernhollow Studio",
+    "description": "Fictional case study."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder monoline wordmark for Fernhollow Studio, drawn as a single stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "hours": "Tue–Sat 9:00 – 16:00",
+        "ctaLabel": "Start a project"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder Fernhollow wordmark."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.ink",
+        "bodyFont": "font.family.body"
+      },
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "ctaLabel": "Start a project"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "got an",
+          "idea",
+          "worth",
+          "chasing?"
+        ],
+        "subheading": "or simply wave hello",
+        "contacts": [
+          {
+            "label": "New work",
+            "email": "studio@fernhollow.example"
+          },
+          {
+            "label": "Careers",
+            "email": "jobs@fernhollow.example"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration: a paper plane mid-loop, flat brand orange."
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.project",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "title": "Harbor Loaf"
+      },
+      "assets": [
+        {
+          "slot": "cover",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated cover: bread bags stacked on a harbour wall at dawn."
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.narrative",
+      "variant": "context",
+      "retrievalEligible": true,
+      "content": {
+        "topic": "Food & Drink",
+        "heading": "The brief",
+        "body": "Harbor Loaf is a fictional neighbourhood bakery that wanted to feel like the morning ritual of its street. The owners asked for a name refresh, a mark that works when stamped on paper bags, and a menu system the staff can update themselves."
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.narrative",
+      "variant": "solution",
+      "retrievalEligible": true,
+      "content": {
+        "topic": "Year: 2025",
+        "heading": "Our answer",
+        "body": "Our answer centres on a rising-sun stamp, a warm two-colour palette and a handwritten menu kit. Everything prints on a desktop printer, so the team never waits on us for a price change."
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.meta-tags",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "tags": [
+          "Naming",
+          "Identity",
+          "Packaging"
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated wide shot of the shopfront."
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated bag close-up."
+        },
+        {
+          "slot": "images",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated menu board."
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "generated.video-embed",
+          "src": "https://video.fernhollow.example/harbor-loaf-reel",
+          "brief": "Placeholder looping reel."
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated stamp detail."
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "work.featured-grid",
+      "variant": "more",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Next up",
+        "heading": "More projects",
+        "cards": [
+          {
+            "name": "Kiln House",
+            "category": "Ceramics & Retail",
+            "href": "/projects/kiln-house"
+          },
+          {
+            "name": "Northlight Tea",
+            "category": "Food & Drink",
+            "href": "/projects/northlight-tea"
+          },
+          {
+            "name": "Velo Atelier",
+            "category": "Cycling & Apparel",
+            "href": "/projects/velo-atelier"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Kiln House."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Kiln House."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Northlight Tea."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Northlight Tea."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Velo Atelier."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Velo Atelier."
+        }
+      ],
+      "motion": {
+        "pattern": "clip-mask-card-reveal",
+        "trigger": "scroll-enter",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "That is the whole tour",
+        "ctaLabel": "Say hello",
+        "email": "studio@fernhollow.example",
+        "linkGroups": [
+          {
+            "label": "Write to us",
+            "links": [
+              {
+                "label": "studio@fernhollow.example",
+                "href": "mailto:studio@fernhollow.example"
+              }
+            ]
+          },
+          {
+            "label": "Pages",
+            "links": [
+              {
+                "label": "Projects",
+                "href": "/projects"
+              },
+              {
+                "label": "Studio",
+                "href": "/studio"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "tagline": "Made with care in Porto",
+        "address": "Porto, Portugal",
+        "legal": "© 2026 Fernhollow Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Oversized placeholder wordmark that stretches vertically."
+        },
+        {
+          "slot": "texture",
+          "assetRole": "generated.texture",
+          "brief": "Original paper-grain texture."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

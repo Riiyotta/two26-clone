@@ -1,0 +1,243 @@
+{
+  "$description": "Closed asset-role vocabulary (R3). availability is pinned in code (PINNED_AVAILABILITY in extraction/verify_all.py and schema/semantic_validate.py).",
+  "licensing": "two26.studio is a real, live studio in Bucharest. Its wordmark, illustrations, team photos, testimonial authors, client logos, client project imagery and videos are real people's likenesses, third-party trademarks or client-owned work. A generated page must never reproduce, trace or imitate them; reference mode may point at them only as evidence for a faithful reconstruction. Fonts are trial/test files with unverified licences (see tokens/00-foundation/typography.json).",
+  "availabilityEnum": [
+    "reference-only",
+    "generation-safe",
+    "blocked-for-generation"
+  ],
+  "roles": {
+    "brand.wordmark-source": {
+      "availability": "blocked-for-generation",
+      "description": "The studio's drawn wordmark (header, loader, footer stretch logo, contact logo). Real trademark.",
+      "generationPolicy": "must-not-fabricate",
+      "generationSafeSubstitutes": [
+        "generated.brand-mark"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Loader.html:19",
+        "contains": "two26-logo-svg"
+      }
+    },
+    "brand.illustration-source": {
+      "availability": "blocked-for-generation",
+      "description": "Studio character / object illustrations (about-hero, chair, cats, contact hand, cat-work, illustration_5).",
+      "generationPolicy": "must-not-fabricate",
+      "generationSafeSubstitutes": [
+        "generated.illustration"
+      ],
+      "evidence": {
+        "cite": "pages:about/sections/AboutHero.html:123",
+        "contains": "about-hero.svg"
+      }
+    },
+    "media.hero-reel-source": {
+      "availability": "reference-only",
+      "description": "Home hero showreel video (Hero_mp4 / webm + poster).",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.motion-loop"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Hero.html:64",
+        "contains": "Hero_mp4.mp4"
+      }
+    },
+    "media.showcase-shot-source": {
+      "availability": "reference-only",
+      "description": "Showcase marquee shots (Shot 1-6 images/videos) of client work.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.product-visual",
+        "generated.motion-loop"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/SliderShowcase.html:42",
+        "contains": "Shot"
+      }
+    },
+    "client.logo-source": {
+      "availability": "blocked-for-generation",
+      "description": "Client logos on project cards (HeyGluco, The Bagel Bar, ...). Third-party trademarks.",
+      "generationPolicy": "must-not-fabricate",
+      "generationSafeSubstitutes": [
+        "generated.client-mark"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Projects.html:111",
+        "contains": "project-logo-img"
+      }
+    },
+    "client.project-imagery-source": {
+      "availability": "reference-only",
+      "description": "Client project thumbnails, hover images, case-study covers and gallery images.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.product-visual"
+      ],
+      "evidence": {
+        "cite": "pages:work_heygluco/sections/ProjectHero.html:1",
+        "contains": "project-cover-img"
+      }
+    },
+    "client.project-video-source": {
+      "availability": "reference-only",
+      "description": "Case-study videos embedded from the studio's video host account.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.video-embed"
+      ],
+      "evidence": {
+        "cite": "pages:work_heygluco/scripts/06.js:5",
+        "contains": "player.vimeo.com/video/"
+      }
+    },
+    "person.team-photo-source": {
+      "availability": "blocked-for-generation",
+      "description": "Real team member portraits (about team cards, popup).",
+      "generationPolicy": "must-not-fabricate",
+      "generationSafeSubstitutes": [
+        "generated.person-portrait"
+      ],
+      "evidence": {
+        "cite": "pages:about/sections/AboutHero.html:408",
+        "contains": "Bogdan.avif"
+      }
+    },
+    "person.testimonial-avatar-source": {
+      "availability": "blocked-for-generation",
+      "description": "Real testimonial authors' photos.",
+      "generationPolicy": "must-not-fabricate",
+      "generationSafeSubstitutes": [
+        "generated.person-avatar"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Testimonials.html:1",
+        "contains": "_Rux.jpg"
+      }
+    },
+    "media.moodboard-photo-source": {
+      "availability": "reference-only",
+      "description": "Behind-the-scenes moodboard photos of the real studio.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.lifestyle-photo"
+      ],
+      "evidence": {
+        "cite": "pages:about/sections/Moodboard.html:1",
+        "contains": "moodboard-img"
+      }
+    },
+    "icon.service-animation-source": {
+      "availability": "reference-only",
+      "description": "The seven bespoke Lottie service icons.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.icon-animation"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Services.html:18",
+        "contains": "lottie-animation"
+      }
+    },
+    "decor.stroke-path-source": {
+      "availability": "reference-only",
+      "description": "Hand-drawn decorative SVG stroke paths (hero, about path, services path) drawn by motion.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.stroke-path"
+      ],
+      "evidence": {
+        "cite": "pages:home/sections/Hero.html:15",
+        "contains": "hero-path-svg-left"
+      }
+    },
+    "decor.texture-source": {
+      "availability": "reference-only",
+      "description": "Footer paper texture SVG.",
+      "generationPolicy": "reuse-only-in-reference",
+      "generationSafeSubstitutes": [
+        "generated.texture"
+      ],
+      "evidence": {
+        "cite": "src/styles/webflow.css:4973",
+        "contains": "footer-texture.svg"
+      }
+    },
+    "generated.brand-mark": {
+      "availability": "generation-safe",
+      "description": "Placeholder or user-supplied brand mark for the new site.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.illustration": {
+      "availability": "generation-safe",
+      "description": "Original illustration commissioned/generated for the new site (no imitation of the source characters).",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.motion-loop": {
+      "availability": "generation-safe",
+      "description": "Generated or licensed stock looping video.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.product-visual": {
+      "availability": "generation-safe",
+      "description": "Generated product / project visual for a fictional or user-supplied project.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.client-mark": {
+      "availability": "generation-safe",
+      "description": "Placeholder mark for a fictional client.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.video-embed": {
+      "availability": "generation-safe",
+      "description": "Placeholder video URL on a reserved .example domain, or a user-supplied video.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.person-portrait": {
+      "availability": "generation-safe",
+      "description": "Portrait of a fictional person (generated) or a user-supplied photo with consent.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.person-avatar": {
+      "availability": "generation-safe",
+      "description": "Avatar of a fictional person.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.lifestyle-photo": {
+      "availability": "generation-safe",
+      "description": "Generated or licensed lifestyle/behind-the-scenes photo.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.icon-animation": {
+      "availability": "generation-safe",
+      "description": "Original icon animation.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.stroke-path": {
+      "availability": "generation-safe",
+      "description": "Original decorative stroke path.",
+      "generationPolicy": "may-generate-new"
+    },
+    "generated.texture": {
+      "availability": "generation-safe",
+      "description": "Original or licensed texture.",
+      "generationPolicy": "may-generate-new"
+    },
+    "placeholder.url": {
+      "availability": "generation-safe",
+      "description": "Links on reserved .example / .invalid domains or relative paths only.",
+      "generationPolicy": "may-generate-new"
+    },
+    "placeholder.rating": {
+      "availability": "generation-safe",
+      "description": "Placeholder rating. The source shows no star ratings; role exists so a generator never fabricates a real one.",
+      "generationPolicy": "may-generate-new"
+    },
+    "original.copy": {
+      "availability": "generation-safe",
+      "description": "Newly written copy that shares no 5-word run with the source.",
+      "generationPolicy": "may-generate-new"
+    }
+  }
+}

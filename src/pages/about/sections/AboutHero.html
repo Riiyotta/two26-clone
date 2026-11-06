@@ -1,0 +1,411 @@
+<div class="about-hero-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — ABOUT PAGE HERO ENTRANCE COMPONENT              -->
+<!-- Paste in Webflow HTML Embed inside section-about-hero    -->
+<!-- or in Page Settings (Before </body>)                     -->
+<!--                                                           -->
+<!-- Webflow Hierarchy Required:                               -->
+<!-- section-about-hero                                        -->
+<!--   └── section-about-hero-wrapper                          -->
+<!--         ├── about-hero-text                               -->
+<!--         │     ├── H1 / Heading                            -->
+<!--         │     ├── work-hero-pill                          -->
+<!--         │     ├── H1 / Heading                            -->
+<!--         │     └── work-hero-pill                          -->
+<!--         │           └── hero-pill-text                    -->
+<!--         ├── about-hero-path (Code Embed with SVG)         -->
+<!--         └── about-hero-btm                                -->
+<!--               ├── about-hero-svg-wrapper                  -->
+<!--               │     └── about-hero-img                    -->
+<!--               └── about-para-wrapper / abput-para-wrapper -->
+<!--                     ├── P / .about-hero-para              -->
+<!--                     └── P / .about-hero-para              -->
+<!-- ======================================================= -->
+
+<style>
+  /* Prevent FOUC: Elements start invisible until GSAP initializes */
+  .section-about-hero .about-hero-text h1,
+  .section-about-hero .about-hero-text .heading,
+  .section-about-hero [data-about-hero-heading],
+  .section-about-hero h1 {
+    opacity: 0;
+  }
+
+  .section-about-hero .work-hero-pill,
+  .section-about-hero .hero-pill {
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+
+  /* Pill text mask: clips inner text for clean slide-up reveal */
+  .section-about-hero .hero-pill-text,
+  .section-about-hero [class*="pill-text"],
+  .section-about-hero [class*="pill-label"] {
+    display: block;
+    will-change: transform, opacity;
+  }
+
+  .section-about-hero .about-hero-pill-text-mask {
+    overflow: hidden;
+    display: block;
+  }
+
+  .section-about-hero .about-hero-path svg {
+    overflow: visible;
+  }
+
+  /* Line-by-line heading mask: matching projects-end look */
+  .about-hero-line-mask {
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .about-hero-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+
+  .about-hero-para-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+
+  .section-about-hero .about-hero-svg-wrapper,
+  .section-about-hero .about-hero-img {
+    will-change: transform, opacity;
+  }
+</style>
+
+<!--script:10-->
+</div><div class="about-story-team-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — ABOUT STORY & TEAM CONTINUOUS SVG PATH SCRUB   -->
+<!-- Paste in Webflow HTML Embed on About Page               -->
+<!-- or in Page Settings (Before </body>)                     -->
+<!-- ======================================================= -->
+
+<!-- Functional Animation CSS (Zero Decorative Styles) -->
+<style>
+  /* Safari Anti-Clipping Overrides (Zero layout / max-width changes) */
+  .about-story-scroll-path,
+  .about-story-svg,
+  .about-story-scroll-path svg,
+  .about-story-svg svg,
+  .about-story-scroll-path path,
+  .about-story-svg path {
+    overflow: visible !important;
+    contain: none !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+  }
+  .about-story-line-mask {
+    display: block;
+    overflow: hidden;
+  }
+  .about-story-line {
+    display: block;
+    will-change: transform, opacity;
+  }
+  .about-story-heading,
+  .about-story-para {
+    text-wrap: balance;
+  }
+  .about-story-svg-wrap,
+  .about-story-svg-wrapper {
+    will-change: transform, opacity;
+  }
+</style>
+
+<!--script:11-->
+</div><div class="section-about-hero-wrapper"><div class="about-hero-text"><h1 class="heading left-align">Small studio,</h1><div class="work-hero-pill two"><div class="hero-pill-text">design studio</div></div><h1 class="heading right-align less-max">big brand energy</h1><div class="work-hero-pill one"><div class="hero-pill-text">Independent</div></div></div><div class="about-hero-path"><div class="code-embed-2 w-embed"><svg width="492" height="789" viewBox="0 0 492 789" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M346.027 773.963C346.027 773.963 123.155 751.726 37.5236 580.463C-5.47612 494.463 12.1589 403.856 98.5229 359.463C259.022 276.963 386.528 426.963 423.028 500.963C469.82 595.828 230.528 683.463 212.028 548.463C195.241 425.963 407.22 329.963 451.028 251.963C519.452 130.133 435.528 24.9629 380.528 15.9629C337.028 8.84469 282.028 42.1764 282.028 85.9629C282.028 142.463 359.528 181.463 359.528 181.463" stroke="#FF5400" stroke-width="30"/>
+</svg>
+</div></div><div class="about-hero-btm"><div class="about-hero-svg-wrapper"><img src="/assets/media/6aaad679fdb9d914f7f52069_about-hero.svg" loading="lazy" alt="" class="about-hero-img"/></div><div class="abput-para-wrapper"><p class="about-hero-para">Founded in Bucharest by Bogdan and Diana Apalaghiei, Two26 brings together years of experience across advertising, branding and digital.</p></div></div><div class="about-story-team"><div class="about-story-team-wrapper"><div class="about-story"><div class="about-story-section"><div class="about-story-svg-wrap"><img src="/assets/media/6aaad679fdb9d914f7f5206f_illustration_5.svg" loading="lazy" alt="" class="about-story-img"/></div><div class="about-story-right"><div class="about-story-text">HOW WE STARTED</div><h2 class="about-story-heading">Two ’90s kids, one shared itch to make better brands.</h2><p class="about-story-para">After years working for others, we changed course in early 2024 and decided to put all that experience into a dream of our own. What started with some recommendations and a few familiar faces quickly grew into something of its own. A studio where we could question the brief, really look into the details and make the kind of work that makes us smile. </p></div></div><div class="about-story-section"><div class="about-story-right"><div class="about-story-text">NOW WE’RE HERE</div><h2 class="about-story-heading">Less size, more scope</h2><p class="about-story-para">We have grown, but not into a maze of departments. Instead, Two26 is a three-person core team, supported by top notch collaborators whenever a project demands it. It means we can stay involved, move quickly and build the right team around each situation. We do not chase work for the sake of filling a portfolio. We like projects with a real challenge and people who care about getting it right.</p></div><div class="about-story-svg-wrap"><img src="/assets/media/6aaad679fdb9d914f7f5206a_chair.svg" loading="lazy" alt="" class="about-story-img"/></div></div></div><div class="about-team"><div class="team-popup-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — TEAM CARD EXPANDING POPUP MODAL                  -->
+<!-- Webflow Hierarchy:                                        -->
+<!-- about-team                                                -->
+<!--   └── about-team-btm                                      -->
+<!--         ├── team-card (Clickable Card)                    -->
+<!--         │     ├── team-img-wrap (contains img)            -->
+<!--         │     ├── team-name ("BOGDAN APALAGHIEI")         -->
+<!--         │     └── team-sub ("CREATIVE PARTNER")           -->
+<!--         ├── team-card                                     -->
+<!--         └── team-card                                     -->
+<!-- ======================================================= -->
+
+<!-- Functional & Layout CSS -->
+<style>
+  /* Fixed Modal Wrapper - Invisible until open, zero dark overlay */
+  .team-popup-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    width: 100svw !important;
+    height: 100vh !important;
+    height: 100svh !important;
+    z-index: 99999 !important;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: none;
+    background: transparent !important;
+    padding: calc(24 / 16 * 1em) !important;
+    box-sizing: border-box !important;
+  }
+
+  .team-popup-overlay.is-active {
+    display: flex !important;
+    pointer-events: auto !important;
+  }
+
+  /* Floating Popup Card */
+  .team-popup-card {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 960px !important;
+    background-color: #f8eee8 !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: calc(24 / 16 * 1em) !important;
+    box-shadow:
+      0 24px 60px -15px rgba(0, 0, 0, 0.25),
+      0 0 0 1px rgba(255, 255, 255, 0.4) inset !important;
+    display: grid !important;
+    grid-template-columns: minmax(280px, 42%) 1fr !important;
+    gap: calc(32 / 16 * 1em) !important;
+    padding: calc(24 / 16 * 1em) !important;
+    box-sizing: border-box !important;
+    transform-origin: center center;
+    will-change: transform, opacity;
+    user-select: text;
+  }
+
+  /* Image Column */
+  .team-popup-img-wrap {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: calc(600 / 16 * 1em) !important;
+    border-radius: calc(16 / 16 * 1em) !important;
+    overflow: hidden !important;
+    background-color: #e5d7cc !important;
+    position: relative !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .team-popup-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+  }
+
+  /* Content Column */
+  .team-popup-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    gap: calc(24 / 16 * 1em) !important;
+    padding-right: calc(8 / 16 * 1em) !important;
+  }
+
+  .team-popup-header {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: calc(6 / 16 * 1em) !important;
+  }
+
+  .team-popup-name {
+    font-family: var(
+      --font-primary,
+      "font-primary",
+      "MDNichromeTest",
+      "MD Nichrome",
+      Impact,
+      sans-serif
+    ) !important;
+    font-size: calc(48 / 16 * 1em) !important;
+    font-weight: 800 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: uppercase !important;
+    color: #111111 !important;
+    margin: 0 !important;
+  }
+
+  .team-popup-role {
+    font-family: var(
+      --font-secondary,
+      "font-secondary",
+      "NeueMontreal",
+      "Neue Montreal",
+      sans-serif
+    ) !important;
+    font-size: 1.125em !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    color: #111111 !important;
+    margin: 0 !important;
+  }
+
+  .team-popup-body {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: calc(18 / 16 * 1em) !important;
+  }
+
+  .team-popup-body p {
+    font-family: var(
+      --font-secondary,
+      "font-secondary",
+      "NeueMontreal",
+      "Neue Montreal",
+      sans-serif
+    ) !important;
+    color: #2b2b2b !important;
+    font-size: 1.125em !important;
+    font-weight: 500 !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+  }
+
+  /* Social Pills */
+  .team-popup-socials {
+    display: flex !important;
+    align-items: center !important;
+    gap: calc(14 / 16 * 1em) !important;
+    flex-wrap: wrap !important;
+    margin-top: calc(8 / 16 * 1em) !important;
+  }
+
+  .team-popup-pill {
+    font-family: var(
+      --font-secondary,
+      "font-secondary",
+      "NeueMontreal",
+      "Neue Montreal",
+      sans-serif
+    ) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: calc(10 / 16 * 1em) !important;
+    padding: calc(8 / 16 * 1em) calc(12 / 16 * 1em) !important;
+    border: 1.5px solid #ff5400 !important;
+    border-radius: 999px !important;
+    color: #111111 !important;
+    font-size: calc(22 / 16 * 1em) !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease !important;
+    cursor: pointer !important;
+  }
+
+  .team-popup-pill:hover {
+    transform: scale(1.04) !important;
+  }
+
+  .team-popup-pill svg {
+    width: 22px !important;
+    height: 22px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+  }
+
+  /* Circular Close Button */
+  .team-popup-close-btn {
+    position: absolute !important;
+    top: -16px !important;
+    right: -16px !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background-color: #ff5400 !important;
+    border: none !important;
+    box-shadow: 2.5px 2.5px 0px #000000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    color: #ffffff !important;
+    padding: 0 !important;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease !important;
+    z-index: 10 !important;
+  }
+
+  .team-popup-close-btn:hover {
+    transform: scale(1.1) rotate(90deg) !important;
+    background-color: #e04a00 !important;
+  }
+
+  .team-popup-close-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+    stroke: #ffffff !important;
+    stroke-width: 3 !important;
+    stroke-linecap: round !important;
+  }
+
+  /* Mobile & Tablet Responsive Layout */
+  @media (max-width: 768px) {
+    .team-popup-overlay {
+      padding: calc(16 / 16 * 1em) !important;
+    }
+
+    .team-popup-card {
+      grid-template-columns: 1fr !important;
+      gap: calc(20 / 16 * 1em) !important;
+      padding: calc(20 / 16 * 1em) !important;
+      max-height: 90vh !important;
+      max-height: 90svh !important;
+      overflow-y: auto !important;
+    }
+
+    .team-popup-img-wrap {
+      width: 50% !important;
+      min-height: auto !important;
+      height: auto !important;
+      aspect-ratio: 1 / 1.1 !important;
+      margin: 0 !important;
+      border-radius: 16px !important;
+    }
+
+    .team-popup-name {
+      font-size: calc(34 / 16 * 1em) !important;
+    }
+
+    .team-popup-body p {
+      font-size: calc(12 / 16 * 1em) !important;
+      line-height: 1.5 !important;
+    }
+
+    .team-popup-pill {
+      font-size: calc(18 / 16 * 1em) !important;
+      padding: calc(6 / 16 * 1em) calc(14 / 16 * 1em) !important;
+    }
+
+    .team-popup-close-btn {
+      top: 10px !important;
+      right: 10px !important;
+    }
+  }
+
+  .team-card,
+  .about-team-btm .team-card {
+    cursor: pointer !important;
+    user-select: none !important;
+  }
+</style>
+
+<!--script:12--></div><div class="section-projects-header"><div class="section-about-text white">THE TEAM</div><div class="section-heading-wrapper"><h2 class="section-heading white">THIS IS PRETTY MUCH EVERYONE</h2></div></div><div class="about-team-btm"><div class="team-card"><div class="team-img-wrapper"><img src="/assets/media/6aab88903c3c3f8712202e83_Bogdan.avif" loading="lazy" sizes="100vw" srcset="/assets/media/6aab88903c3c3f8712202e83_Bogdan-p-500.avif 500w, /assets/media/6aab88903c3c3f8712202e83_Bogdan-p-800.avif 800w, /assets/media/6aab88903c3c3f8712202e83_Bogdan-p-1080.avif 1080w, /assets/media/6aab88903c3c3f8712202e83_Bogdan.avif 1450w" alt="" class="team-img"/></div><div class="team-name">Bogdan Apalaghiei</div><div class="team-sub">Creative Partner</div></div><div class="team-card"><div class="team-img-wrapper"><img src="/assets/media/6aab88976923953fa9087814_Diana.avif" loading="lazy" sizes="100vw" srcset="/assets/media/6aab88976923953fa9087814_Diana-p-500.avif 500w, /assets/media/6aab88976923953fa9087814_Diana-p-800.avif 800w, /assets/media/6aab88976923953fa9087814_Diana-p-1080.avif 1080w, /assets/media/6aab88976923953fa9087814_Diana.avif 1450w" alt="" class="team-img"/></div><div class="team-name">Diana Apalaghiei</div><div class="team-sub">Creative Partner</div></div><div class="team-card"><div class="team-img-wrapper"><img src="/assets/media/6ab3e67aac479e9ad46b7618_Andreea%202%20copy.avif" loading="lazy" alt="" class="team-img"/></div><div class="team-name">Andreea Liche</div><div class="team-sub">Jr. Designer</div></div></div><div class="texture-bg"></div></div></div><div class="about-story-scroll-path"><div class="about-story-svg w-embed"><svg width="100%" height="auto" viewBox="0 0 1440 3457" fill="none" overflow="visible" style="overflow: visible;" xmlns="http://www.w3.org/2000/svg">
+  <path d="M723.846 50.0081C650.835 174.483 836.793 262.47 825.385 406.936C799.653 732.805 98.5142 598.392 111.169 948.003C123.495 1288.51 1122.55 1135.95 1155.5 1698.51C1177.93 2081.41 570.052 2505.13 400.796 2311.05C308.932 2205.72 378.305 2027.34 533.817 2045.1C673.838 2061.1 699.146 2203.11 688.426 2277.8C657.968 2490.01 565.5 2804.01 688.426 3098.51" stroke="#FF5400" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></div></div>

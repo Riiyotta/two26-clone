@@ -1,0 +1,13 @@
+{
+  "id": "media.image",
+  "kind": "primitive",
+  "description": "Image with a closed assetRole.",
+  "props": [
+    "assetRole",
+    "alt"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2756",
+    "contains": ".project-img {"
+  }
+}

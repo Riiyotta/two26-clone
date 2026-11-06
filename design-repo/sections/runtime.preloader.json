@@ -1,0 +1,66 @@
+{
+  "id": "runtime.preloader",
+  "title": "Logo-draw preloader",
+  "category": "RUNTIME",
+  "source": {
+    "id": "home/Loader",
+    "file": "pages:home/sections/Loader.html",
+    "tag": "div.loader",
+    "lines": "1-128",
+    "contains": "svg-bg-stroke",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Loader"
+  },
+  "semantic": {
+    "id": "runtime.preloader",
+    "category": "RUNTIME"
+  },
+  "retrievalEligible": false,
+  "retrievalReason": "Preloader overlay: plays a logo-draw animation for about 5 s on first load and is then hidden; it carries no page content and is skipped on reduced motion and on internal navigation.",
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "brandMark": {
+      "roles": [
+        "brand.wordmark-source",
+        "generated.brand-mark"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.brand-mark"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "loader-logo-draw",
+      "none"
+    ],
+    "default": "loader-logo-draw",
+    "cite": "pages:home/scripts/01.js:274",
+    "contains": "gsap.timeline({ delay: 0.25 }).timeScale(1.25)"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "position": "overlay"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "full-screen fixed overlay"
+    },
+    "mobile": {
+      "layout": "same"
+    },
+    "cite": "src/styles/webflow.css:3823",
+    "contains": ".loader {"
+  },
+  "measured": {
+    "inFlow": false,
+    "durationMs": "loaderComplete about 5598 ms after navigation at 1440 (CLONE_SPEC.md section 5)"
+  }
+}

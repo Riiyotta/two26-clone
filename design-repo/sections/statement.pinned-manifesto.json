@@ -1,0 +1,103 @@
+{
+  "id": "statement.pinned-manifesto",
+  "title": "Pinned manifesto statement",
+  "category": "STATEMENT",
+  "source": {
+    "id": "home/About",
+    "file": "pages:home/sections/About.html",
+    "tag": "section.section-about",
+    "lines": "1-7",
+    "contains": "about-para",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "About"
+  },
+  "semantic": {
+    "id": "statement.pinned-manifesto",
+    "category": "STATEMENT"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "about-text",
+          "files": [
+            "pages:home/sections/About.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "statement": {
+        "type": "text",
+        "maxWords": 42,
+        "evidence": {
+          "sourceClass": "about-para",
+          "files": [
+            "pages:home/sections/About.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 33
+        },
+        "required": true
+      },
+      "pills": {
+        "type": "text-list",
+        "minItems": 3,
+        "maxItems": 3,
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "hero-pill-text",
+          "files": [
+            "pages:home/sections/About.html"
+          ],
+          "realSamples": 3,
+          "realMaxWords": 4
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "pinned-char-wave",
+      "none"
+    ],
+    "default": "pinned-char-wave",
+    "cite": "pages:home/scripts/12.js:89",
+    "contains": "pin: section"
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "scrollStage": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "full-viewport statement, pinned for +2200px",
+      "heightPx": 3100,
+      "visibleHeightPx": 900,
+      "pinDistancePx": 2200
+    },
+    "mobile": {
+      "layout": "pinned for +1150px",
+      "heightPx": 1962,
+      "pinDistancePx": 1150
+    },
+    "cite": "pages:home/scripts/12.js:23",
+    "contains": "return 2200;"
+  },
+  "measured": {
+    "heightPx1440": 3100,
+    "visibleHeightPx1440": 900,
+    "route": "/",
+    "note": "Height includes the 2200px pin spacer: a scroll stage, not 3100px of content."
+  }
+}

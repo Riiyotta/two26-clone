@@ -1,0 +1,21 @@
+{
+  "theme": "light",
+  "$description": "The only theme the source ships (no dark mode in webflow.css). Every semantic colour resolved to a foundation value.",
+  "resolved": {
+    "color.surface.page": "#f8eee8",
+    "color.surface.card": "#fdf8f5",
+    "color.surface.brand": "#ff5400",
+    "color.surface.ink": "#000000",
+    "color.surface.hero-blush": "#fae3e2",
+    "color.surface.question": "#f2e3da",
+    "color.surface.menu-overlay": "#f9e2e1f2",
+    "color.text.ink": "#000000",
+    "color.text.brand": "#ff5400",
+    "color.text.on-brand": "#fdf8f5",
+    "color.text.on-ink": "#f9e2e1",
+    "color.text.on-ink-light": "#fdf8f5",
+    "color.text.body": "#333333",
+    "color.border.brand": "#ff5400",
+    "color.border.hairline": "#00000033"
+  }
+}

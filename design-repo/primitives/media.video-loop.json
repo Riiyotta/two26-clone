@@ -1,0 +1,12 @@
+{
+  "id": "media.video-loop",
+  "kind": "primitive",
+  "description": "Muted autoplay looping video with a closed assetRole.",
+  "props": [
+    "assetRole"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2332",
+    "contains": ".hero-video-loop {"
+  }
+}

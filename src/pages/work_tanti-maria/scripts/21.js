@@ -1,0 +1,1 @@
+gsap.registerPlugin(SplitText,ScrollTrigger,DrawSVGPlugin,MotionPathPlugin,CustomEase,CustomBounce);

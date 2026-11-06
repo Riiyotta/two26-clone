@@ -1,0 +1,138 @@
+{
+  "id": "features.services-path",
+  "title": "Services along a drawn path",
+  "category": "FEATURES",
+  "source": {
+    "id": "home/Services",
+    "file": "pages:home/sections/Services.html",
+    "tag": "section.section-services",
+    "lines": "1-90",
+    "contains": "services-layers",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Services"
+  },
+  "semantic": {
+    "id": "features.services-path",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:home/sections/Services.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:home/sections/Services.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "services": {
+        "type": "items",
+        "minItems": 3,
+        "maxItems": 7,
+        "fields": {
+          "name": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "source": {
+                "cite": "pages:home/sections/Services.html:18",
+                "contains": "class=\"service-text\""
+              },
+              "realMaxWords": 1
+            },
+            "required": true
+          },
+          "description": {
+            "type": "text",
+            "maxWords": 25,
+            "evidence": {
+              "sourceClass": "service-block-para",
+              "files": [
+                "pages:home/sections/Services.html"
+              ],
+              "realSamples": 7,
+              "realMaxWords": 20
+            },
+            "required": true
+          }
+        },
+        "countEvidence": "7 services",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "serviceIcon": {
+      "roles": [
+        "icon.service-animation-source",
+        "generated.icon-animation"
+      ],
+      "required": false,
+      "multiple": true,
+      "maxItems": 7
+    },
+    "path": {
+      "roles": [
+        "decor.stroke-path-source",
+        "generated.stroke-path"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.icon-animation",
+    "generated.stroke-path"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "scrubbed-path-draw",
+      "none"
+    ],
+    "default": "scrubbed-path-draw",
+    "cite": "pages:home/scripts/17.js:110",
+    "contains": "scrub: 1.2"
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "scrollStage": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "zig-zag service rows on a long path",
+      "heightPx": 2378
+    },
+    "mobile": {
+      "layout": "stacked rows, mobile path, icons hidden",
+      "heightPx": 1625
+    },
+    "cite": "src/styles/webflow.css:2944",
+    "contains": ".service-block {"
+  },
+  "measured": {
+    "heightPx1440": 2378,
+    "route": "/"
+  }
+}

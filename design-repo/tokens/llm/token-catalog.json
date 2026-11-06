@@ -1,0 +1,576 @@
+{
+  "$description": "Flattened catalog of every approved token (foundation + semantic). Rebuilt from tokens/00-foundation and tokens/10-semantic; verify_all.py recomputes it and fails on drift.",
+  "count": 95,
+  "tokens": {
+    "color.brand.primary": {
+      "value": "#ff5400",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2115"
+    },
+    "color.brand.secondary": {
+      "value": "#f8eee8",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2111"
+    },
+    "color.brand.white": {
+      "value": "#fdf8f5",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2113"
+    },
+    "color.brand.accent": {
+      "value": "#f9e2e1",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2117"
+    },
+    "color.brand.black": {
+      "value": "#000000",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2112"
+    },
+    "color.neutral.body-text": {
+      "value": "#333333",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:223"
+    },
+    "color.surface.hero-blush-raw": {
+      "value": "#fae3e2",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2225"
+    },
+    "color.surface.question-raw": {
+      "value": "#f2e3da",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3358"
+    },
+    "color.overlay.menu-raw": {
+      "value": "#f9e2e1f2",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:6472"
+    },
+    "color.border.hairline-raw": {
+      "value": "#00000033",
+      "category": "color",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3373"
+    },
+    "font.family.display": {
+      "value": "Mdnichrometest, Arial, sans-serif",
+      "category": "fontFamily",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2116"
+    },
+    "font.family.display-dark": {
+      "value": "\"Mdnichrometest Dark\", Arial, sans-serif",
+      "category": "fontFamily",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2118"
+    },
+    "font.family.body": {
+      "value": "Neuemontreal, Arial, sans-serif",
+      "category": "fontFamily",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2114"
+    },
+    "font.size.xs": {
+      "value": ".75em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2288"
+    },
+    "font.size.sm": {
+      "value": ".875em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2208"
+    },
+    "font.size.base": {
+      "value": "1em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:97"
+    },
+    "font.size.md": {
+      "value": "1.125em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2525"
+    },
+    "font.size.lg": {
+      "value": "1.5em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3116"
+    },
+    "font.size.xl": {
+      "value": "3.375em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3089"
+    },
+    "font.size.3xl": {
+      "value": "5em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2515"
+    },
+    "font.size.4xl": {
+      "value": "6.25em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2675"
+    },
+    "font.size.5xl": {
+      "value": "8em",
+      "category": "fontSize",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2364"
+    },
+    "font.weight.regular": {
+      "value": 400,
+      "category": "fontWeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2089"
+    },
+    "font.weight.medium": {
+      "value": 500,
+      "category": "fontWeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2097"
+    },
+    "font.weight.bold": {
+      "value": 700,
+      "category": "fontWeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2081"
+    },
+    "font.line-height.tight": {
+      "value": "80%",
+      "category": "lineHeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2366"
+    },
+    "font.line-height.snug": {
+      "value": "85%",
+      "category": "lineHeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2677"
+    },
+    "font.line-height.solid": {
+      "value": "100%",
+      "category": "lineHeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2527"
+    },
+    "font.line-height.normal": {
+      "value": "120%",
+      "category": "lineHeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2248"
+    },
+    "font.line-height.relaxed": {
+      "value": "140%",
+      "category": "lineHeight",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3524"
+    },
+    "font.letter-spacing.display": {
+      "value": "-1px",
+      "category": "letterSpacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2513"
+    },
+    "radius.pill": {
+      "value": "100px",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2192"
+    },
+    "radius.card": {
+      "value": "1em",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3076"
+    },
+    "radius.sm": {
+      "value": ".5em",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:6042"
+    },
+    "radius.md": {
+      "value": ".75em",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2606"
+    },
+    "radius.lg": {
+      "value": "1.5em",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:4031"
+    },
+    "radius.round": {
+      "value": "100%",
+      "category": "radius",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:1256"
+    },
+    "space.gap.3xs": {
+      "value": ".25em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2621"
+    },
+    "space.gap.2xs": {
+      "value": ".5em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2157"
+    },
+    "space.gap.xs": {
+      "value": ".75em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3580"
+    },
+    "space.gap.sm": {
+      "value": "1em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3157"
+    },
+    "space.gap.md": {
+      "value": "1.25em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:4201"
+    },
+    "space.gap.lg": {
+      "value": "2em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2537"
+    },
+    "space.gap.xl": {
+      "value": "2.5em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2629"
+    },
+    "space.gap.2xl": {
+      "value": "3em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2817"
+    },
+    "space.gap.3xl": {
+      "value": "4em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2166"
+    },
+    "space.gap.4xl": {
+      "value": "6em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2902"
+    },
+    "space.section.sm": {
+      "value": "5em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:4664"
+    },
+    "space.section.md": {
+      "value": "6em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2233"
+    },
+    "space.section.lg": {
+      "value": "10em",
+      "category": "spacing",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2591"
+    },
+    "breakpoint.tablet": {
+      "value": "991px",
+      "category": "breakpoint",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:817"
+    },
+    "breakpoint.mobile-landscape": {
+      "value": "767px",
+      "category": "breakpoint",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:885"
+    },
+    "breakpoint.mobile-portrait": {
+      "value": "479px",
+      "category": "breakpoint",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:954"
+    },
+    "scale.ideal.desktop": {
+      "value": "1440",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/sections/Preamble.html:7"
+    },
+    "scale.ideal.tablet": {
+      "value": "834",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/sections/Preamble.html:17"
+    },
+    "scale.ideal.mobile-landscape": {
+      "value": "550",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/sections/Preamble.html:26"
+    },
+    "scale.ideal.mobile-portrait": {
+      "value": "390",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/sections/Preamble.html:35"
+    },
+    "scale.unit": {
+      "value": "16",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/sections/Preamble.html:6"
+    },
+    "z.header": {
+      "value": "999",
+      "category": "zIndex",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:2135"
+    },
+    "z.loader": {
+      "value": "99999",
+      "category": "zIndex",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:5216"
+    },
+    "z.contact-modal": {
+      "value": "99999999",
+      "category": "zIndex",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:4982"
+    },
+    "z.overlay": {
+      "value": "9999",
+      "category": "zIndex",
+      "layer": "foundation",
+      "cite": "src/styles/webflow.css:3824"
+    },
+    "motion.ease.reveal": {
+      "value": "back.out(1.4)",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:143"
+    },
+    "motion.ease.pill": {
+      "value": "back.out(2.5)",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:184"
+    },
+    "motion.ease.pill-text": {
+      "value": "back.out(1.6)",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:197"
+    },
+    "motion.ease.draw": {
+      "value": "power2.out",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:130"
+    },
+    "motion.ease.card-reveal": {
+      "value": "power3.out",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/14.js:98"
+    },
+    "motion.ease.hover-brush": {
+      "value": "power1.inOut",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/15.js:182"
+    },
+    "motion.ease.spring-settle": {
+      "value": "elastic.out(1.1, 0.4)",
+      "category": "easing",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/04.js:99"
+    },
+    "motion.duration.line-reveal": {
+      "value": "0.85s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:141"
+    },
+    "motion.duration.pill": {
+      "value": "0.55s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:183"
+    },
+    "motion.duration.draw": {
+      "value": "0.9s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:215"
+    },
+    "motion.duration.card-reveal": {
+      "value": "1.25s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/14.js:97"
+    },
+    "motion.duration.hover": {
+      "value": "0.5s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/02.js:45"
+    },
+    "motion.stagger.lines": {
+      "value": "0.12s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:142"
+    },
+    "motion.timescale.entrance": {
+      "value": "0.75",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/10.js:132"
+    },
+    "motion.scrub.pin": {
+      "value": "0.8",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/12.js:91"
+    },
+    "motion.scrub.services": {
+      "value": "1.2",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/17.js:110"
+    },
+    "motion.smooth-scroll.duration": {
+      "value": "1.7s",
+      "category": "duration",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/35.js:137"
+    },
+    "motion.smooth-scroll.wheel-multiplier": {
+      "value": "0.9",
+      "category": "scale",
+      "layer": "foundation",
+      "cite": "pages:home/scripts/35.js:138"
+    },
+    "color.surface.page": {
+      "value": "#f8eee8",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.secondary"
+    },
+    "color.surface.card": {
+      "value": "#fdf8f5",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.white"
+    },
+    "color.surface.brand": {
+      "value": "#ff5400",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.primary"
+    },
+    "color.surface.ink": {
+      "value": "#000000",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.black"
+    },
+    "color.surface.hero-blush": {
+      "value": "#fae3e2",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.surface.hero-blush-raw"
+    },
+    "color.surface.question": {
+      "value": "#f2e3da",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.surface.question-raw"
+    },
+    "color.surface.menu-overlay": {
+      "value": "#f9e2e1f2",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.overlay.menu-raw"
+    },
+    "color.text.ink": {
+      "value": "#000000",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.black"
+    },
+    "color.text.brand": {
+      "value": "#ff5400",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.primary"
+    },
+    "color.text.on-brand": {
+      "value": "#fdf8f5",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.white"
+    },
+    "color.text.on-ink": {
+      "value": "#f9e2e1",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.accent"
+    },
+    "color.text.on-ink-light": {
+      "value": "#fdf8f5",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.white"
+    },
+    "color.text.body": {
+      "value": "#333333",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.neutral.body-text"
+    },
+    "color.border.brand": {
+      "value": "#ff5400",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.brand.primary"
+    },
+    "color.border.hairline": {
+      "value": "#00000033",
+      "category": "color",
+      "layer": "semantic",
+      "ref": "color.border.hairline-raw"
+    }
+  }
+}

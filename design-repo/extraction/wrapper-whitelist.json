@@ -1,0 +1,4 @@
+{
+  "$description": "Reviewed exceptions for the wrapper gate (R9). Each entry needs reviewedBy, justification >= 30 chars, maxHeightPx above the measured height. Empty: after decomposition no section trips the gate at 1440.",
+  "entries": []
+}

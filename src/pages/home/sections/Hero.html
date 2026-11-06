@@ -1,0 +1,193 @@
+<div class="hero-section-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 PRIMARY HERO SECTION ENTRANCE COMPONENT             -->
+<!-- Paste in Webflow HTML Embed inside section-hero             -->
+<!-- or in Page Settings (Before </body>)                      -->
+<!--                                                           -->
+<!-- Webflow Structure Required:                               -->
+<!-- section-hero                                              -->
+<!--   └── section-hero-wrapper                                -->
+<!--         ├── hero-text                                     -->
+<!--         │     ├── H1 / .heading (Main Hero Heading)       -->
+<!--         │     ├── .hero-pill                              -->
+<!--         │     ├── .hero-pill                              -->
+<!--         │     └── .hero-pill                              -->
+<!--         ├── .hero-video-loop                              -->
+<!--         ├── .hero-path-svg-left  (Code Embed with SVG)    -->
+<!--         └── .hero-path-svg-right (Code Embed with SVG)    -->
+<!-- ======================================================= -->
+
+<style>
+  /* Prevent FOUC: Elements start invisible until GSAP initializes */
+  .section-hero .hero-text h1,
+  .section-hero .hero-text .heading,
+  .section-hero [data-hero-heading],
+  .section-hero h1 {
+    opacity: 0;
+  }
+
+  .section-hero .hero-pill {
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+
+  /* Pill text mask: clips inner text for slide-up reveal */
+  .section-hero .hero-pill .hero-pill-text,
+  .section-hero .hero-pill [class*="pill-text"],
+  .section-hero .hero-pill [class*="pill-label"] {
+    display: block;
+    will-change: transform, opacity;
+  }
+
+  .section-hero .hero-pill-text-mask {
+    overflow: hidden;
+    display: block;
+  }
+
+  .section-hero .hero-path-svg-left svg,
+  .section-hero .hero-path-svg-right svg {
+    overflow: visible;
+  }
+
+  /* Line-by-line heading mask: matching projects-end look */
+  .hero-line-mask {
+    display: block !important;
+    overflow: hidden !important;
+  }
+
+  .hero-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+</style>
+
+<!--script:10-->
+</div><div class="section-hero-wrapper"><div class="hero-text"><div class="hero-pill two"><div class="hero-pill-text">Independent studio</div></div><h1 class="heading">LOOKING SUSPICIOUSLY GOOD</h1><div class="hero-pill one"><div class="hero-pill-text">Branding &amp; design</div></div><div class="hero-pill three"><div class="hero-pill-text">No funny business</div></div></div><div class="hero-video-loop"><div data-poster-url="/assets/media/6a7db9b17a581584f4171aad_Hero_poster.0000000.jpg" data-video-urls="/assets/media/6aaad679fdb9d914f7f52055_Hero_mp4.mp4,/assets/media/6aaad679fdb9d914f7f52055_Hero_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="hero-video-bg w-background-video w-background-video-atom"><video id="7f45afaa-86d9-d987-a52e-38c360855190-video" autoplay="" loop="" style="background-image:url(&quot;/assets/media/6a7db9b17a581584f4171aad_Hero_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="/assets/media/6aaad679fdb9d914f7f52055_Hero_mp4.mp4" data-wf-ignore="true"/><source src="/assets/media/6aaad679fdb9d914f7f52055_Hero_webm.webm" data-wf-ignore="true"/></video></div></div><div class="hero-path-svg-left"><div class="code-embed-3 w-embed"><svg width="100%" height="100%" viewBox="0 0 229 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.502 584.112C104.502 557.112 147.911 474.964 143.002 393.612C139.502 335.612 106.002 281.612 59.0025 252.612C7.82072 221.032 -4.20053 385.572 52.5031 405.612C140.218 436.612 225.002 369.112 212.002 252.612C208.376 220.111 192.539 178.612 152.002 121.612C117.866 73.6124 42.0029 11.6124 42.0029 11.6124" stroke="#FF5400" stroke-width="30"/>
+</svg>
+</div></div><div class="hero-path-svg-right"><div class="code-embed-2 w-embed"><svg width="100%" height="100%" viewBox="0 0 354 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M250.687 12.2982C192.69 52.7982 114.69 199.814 245.687 315.798C376.684 431.783 364.19 140.889 235.187 83.2982C153.19 46.6926 54.8365 106.798 30.1893 172.298C-59.5565 410.798 277.687 471.798 277.687 471.798" stroke="#FF5400" stroke-width="30"/>
+</svg>
+</div></div><div class="hero-marquee"><div class="code-embed-8 w-embed w-script"><!-- ======================================================= -->
+<!-- HERO MARQUEE (SVG + RIGHT-TO-LEFT DRAW + NO POP-IN LOOP) -->
+<!-- Paste directly inside a Webflow Code Embed in .hero-marquee -->
+<!-- ======================================================= -->
+
+<style>
+  .hero-marquee svg {
+    overflow: visible !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  /* Safari Baseline & Vertical Centering Alignment Fix */
+  .hero-marquee-text,
+  .hero-marquee-tp,
+  .marquee-unit,
+  .hero-marquee-text tspan {
+    dominant-baseline: central !important;
+    alignment-baseline: central !important;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<!-- 1. The Curved Ribbon & Masked TextPath SVG -->
+<svg
+  viewBox="0 0 1440 370"
+  preserveAspectRatio="xMidYMid meet"
+  style="width: 100%; height: auto; display: block; overflow: visible"
+>
+  <defs>
+    <!-- Extended Text Curve (Extends to x:5000 so incoming text is pre-rendered with ZERO pop-in) -->
+    <path
+      id="hero-marquee-curve"
+      d="M-43.0867 292.81C179.631 174.299 464.078 116.458 712.699 90.6403C934.59 67.5984 1166.5 74.6231 1436.89 105.117 L 5000 507"
+      fill="none"
+    />
+
+    <!-- SVG Mask for Right-to-Left Text Reveal -->
+    <mask id="hero-marquee-text-mask" maskUnits="userSpaceOnUse">
+      <path
+        class="hero-marquee-mask-path"
+        d="M-43.0867 292.81C179.631 174.299 464.078 116.458 712.699 90.6403C934.59 67.5984 1166.5 74.6231 1436.89 105.117"
+        stroke="#FFFFFF"
+        stroke-width="220"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </mask>
+  </defs>
+
+  <!-- 1. Background Orange Ribbon Stroke -->
+  <path
+    class="hero-marquee-bg"
+    d="M-43.0867 292.81C179.631 174.299 464.078 116.458 712.699 90.6403C934.59 67.5984 1166.5 74.6231 1436.89 105.117"
+    stroke="#FF5400"
+    stroke-width="154"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- 2. Text Group revealed via Stroke Mask -->
+  <g class="hero-marquee-text-group" mask="url(#hero-marquee-text-mask)">
+    <text
+      class="hero-marquee-text"
+      fill="#FFFFFF"
+      dominant-baseline="central"
+      alignment-baseline="central"
+      font-size="80"
+      font-weight="800"
+      font-family="inherit"
+      style="
+        letter-spacing: 0.04em;
+        user-select: none;
+        dominant-baseline: central;
+        alignment-baseline: central;
+      "
+    >
+      <textPath
+        href="#hero-marquee-curve"
+        xlink:href="#hero-marquee-curve"
+        class="hero-marquee-tp"
+        startOffset="0"
+        dominant-baseline="central"
+        alignment-baseline="central"
+      >
+        <tspan
+          class="marquee-unit"
+          dominant-baseline="central"
+          alignment-baseline="central"
+        >
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+        <tspan dominant-baseline="central" alignment-baseline="central">
+          LET’S MAKE IT MAKE SENSE &nbsp;•&nbsp; GOOD LOOKS INCLUDED &nbsp;•&nbsp;
+        </tspan>
+      </textPath>
+    </text>
+  </g>
+</svg>
+
+<!-- 2. GSAP Animation Script -->
+<!--script:11-->
+</div></div></div>

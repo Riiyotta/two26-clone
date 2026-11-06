@@ -1,0 +1,13 @@
+{
+  "id": "link.nav-pill",
+  "kind": "primitive",
+  "description": "Light nav pill link with a stroke-fill hover.",
+  "props": [
+    "label",
+    "href"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2190",
+    "contains": ".navbar-link-btn {"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "gallery.moodboard-marquee",
+  "title": "Moodboard double marquee",
+  "category": "MEDIA",
+  "source": {
+    "id": "about/Moodboard",
+    "file": "pages:about/sections/Moodboard.html",
+    "tag": "section.section-moodboard",
+    "lines": "1-41",
+    "contains": "moodboard-slider",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "Moodboard"
+  },
+  "semantic": {
+    "id": "gallery.moodboard-marquee",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:about/sections/Moodboard.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:about/sections/Moodboard.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 3
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "photos": {
+      "roles": [
+        "media.moodboard-photo-source",
+        "generated.lifestyle-photo"
+      ],
+      "required": true,
+      "multiple": true,
+      "maxItems": 12
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.lifestyle-photo"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "drag-marquee",
+      "none"
+    ],
+    "default": "drag-marquee",
+    "cite": "pages:about/scripts/13.js:70",
+    "contains": "end: \"max\""
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "2 counter-scrolling rows",
+      "heightPx": 1178
+    },
+    "mobile": {
+      "layout": "same, smaller",
+      "heightPx": 648
+    },
+    "cite": "src/styles/webflow.css:4772",
+    "contains": ".moodboard-slider {"
+  },
+  "measured": {
+    "heightPx1440": 1178,
+    "route": "/about",
+    "photoCount": 10
+  }
+}

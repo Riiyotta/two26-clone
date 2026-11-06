@@ -1,0 +1,40 @@
+{
+  "policyId": "n0-design-constraints-common",
+  "policyVersion": "0.1.0",
+  "commonIrVersion": "0.5",
+  "enforcementMode": "hard-and-soft",
+  "classification": {
+    "category": "portfolio",
+    "domain": "creative-studio-portfolio",
+    "evidence": [
+      "4 page families: home, about, work index, 8 case studies (templates/routes.json)",
+      "content is a studio's own portfolio: project cards, case studies, services, testimonials, team (sections/*.json)",
+      "no pricing tiers, sign-up, accounts, dashboards or app downloads anywhere in the clone source",
+      "conversion is a contact modal with two email addresses (runtime.contact-modal)"
+    ]
+  },
+  "localExtension": {
+    "id": "two26-local",
+    "rules": [
+      "generated mode forbids the source studio's identity, people, clients, testimonials, copy and media (assets/source-identity.json)",
+      "asset availability pinned in code (PINNED_AVAILABILITY)",
+      "runtime UI retrieval-ineligible (RETRIEVAL_INELIGIBLE)",
+      "token slots + approved surface/text pairs (tokens/llm/token-policy.json)",
+      "wrapper-height gate at 1440 (extraction/wrapper_gate.py)"
+    ]
+  },
+  "hardRules": "schema/pagespec.schema.json + error-severity rules in schema/semantic_validate.py and compatibility/graph.json",
+  "softRules": "warn-severity rules in compatibility/graph.json and wrapper-gate warnings",
+  "enforcedBy": [
+    "tokens/llm/token-policy.json",
+    "compatibility/graph.json",
+    "schema/pagespec.schema.json",
+    "schema/semantic_validate.py"
+  ],
+  "approval": {
+    "status": "defined-pending-architecture-review",
+    "architectureDecisionRecorded": false,
+    "decidedBy": null,
+    "note": "Classification proposed by the build agent from the evidence above; not ratified. Only the human owner can record a decision."
+  }
+}

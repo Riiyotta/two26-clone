@@ -1,0 +1,159 @@
+<div class="projects-work-stack-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — WORK PAGE PROJECTS STACKING & CURSOR INFO        -->
+<!-- Paste in Webflow HTML Embed inside section-projects-work  -->
+<!-- or in Page Settings (Before </body>)                       -->
+<!--                                                           -->
+<!-- Webflow Hierarchy Required:                               -->
+<!-- section-projects-work                                     -->
+<!--   └── section-projects-work-wrapper                       -->
+<!--         └── prjs-work-wrapper                             -->
+<!--               └── prjs-work-list (CMS Collection List)    -->
+<!--                     └── prjs-work-item (CMS Item, 100vh)  -->
+<!--                           └── project-work-wrapper        -->
+<!--                                 ├── prj-transiton-cover   -->
+<!--                                 │     └── prj-stroke (SVG)-->
+<!--                                 └── porject-img-wrapper   -->
+<!--                                       ├── prj-img         -->
+<!--                                       └── project-info    -->
+<!--                                             ├── project-pill-small -->
+<!--                                             ├── pill-wrap -->
+<!--                                             └── project-pill-small -->
+<!-- ======================================================= -->
+
+<!-- Functional Animation CSS (Zero Decorative Styles) -->
+<style>
+  /* Ensure parent sections allow sticky stacking */
+  .section-projects-work,
+  .section-projects-work-wrapper,
+  .prjs-work-wrapper,
+  .prjs-work-list {
+    overflow: visible !important;
+  }
+
+  /* Sticky Stacking Card Setup */
+  .prjs-work-item {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    will-change: transform;
+  }
+
+  /* Desktop & Tablet Height (480px and above): 100vh / 100svh */
+  @media (min-width: 480px) {
+    .prjs-work-item {
+      height: 100vh !important;
+      height: 100svh !important;
+    }
+  }
+
+  /* Mobile Portrait Height (479px and below): 50svh (Eliminates extra bottom spacing) */
+  @media (max-width: 479px) {
+    .prjs-work-item {
+      height: 50svh !important;
+      height: 50svh !important;
+      min-height: auto !important;
+    }
+
+    .project-work-wrapper,
+    .porject-img-wrapper,
+    .project-img-wrapper {
+      position: relative !important;
+      height: 100% !important;
+    }
+  }
+
+  /* Transition Cover: Stretches full cover with visible SVG stroke */
+  .prj-transiton-cover,
+  .prj-transition-cover {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+    overflow: visible !important;
+  }
+
+  .prj-stroke svg {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* Cursor Follower Floating Project Info (Desktop 992px+ with Fine Pointer Only) */
+  @media (min-width: 992px) and (hover: hover) and (pointer: fine) {
+    .prjs-work-item .project-info {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      margin: 0 !important;
+      pointer-events: none !important;
+      will-change: transform;
+      transform: translate(-50%, -50%) scale(0);
+      transform-origin: center center;
+    }
+
+    .prjs-work-item .project-info > * {
+      will-change: transform;
+      transform-origin: center center;
+    }
+  }
+
+  /* Tablets & Below / Touch Devices (Anchored bottom: 0, right: 0) */
+  @media (max-width: 991px), (hover: none), (pointer: coarse) {
+    .porject-img-wrapper,
+    .project-img-wrapper,
+    .project-work-wrapper {
+      position: relative !important;
+    }
+
+    .prjs-work-item .project-info {
+      position: absolute !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      top: auto !important;
+      left: auto !important;
+      margin: 0 !important;
+      transform: none !important;
+      pointer-events: auto !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      z-index: 20 !important;
+    }
+
+    .prjs-work-item .project-info > * {
+      transform: none !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  }
+</style>
+
+<!--script:11-->
+</div><div class="section-projects-work-wrapper"><div class="prjs-work-wrapper w-dyn-list"><div role="list" class="prjs-work-list w-dyn-items"><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/heygluco" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29.png" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29-p-500.png 500w, /assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29-p-800.png 800w, /assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29-p-1080.png 1080w, /assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29-p-1600.png 1600w, /assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29.png 1920w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Health &amp; Wellness</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">HeyGluco</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Identity</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab393770c697e34bcc4e4fb_Vertical6.jpg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-500.jpg 500w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-800.jpg 800w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-1080.jpg 1080w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-1600.jpg 1600w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-2000.jpg 2000w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6-p-2600.jpg 2600w, /assets/media/6ab393770c697e34bcc4e4fb_Vertical6.jpg 2718w" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">HeyGluco</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Health &amp; Wellness</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/yum-yum" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab3adb0bed18187a406462a_1s.jpg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3adb0bed18187a406462a_1s-p-500.jpg 500w, /assets/media/6ab3adb0bed18187a406462a_1s-p-800.jpg 800w, /assets/media/6ab3adb0bed18187a406462a_1s-p-1080.jpg 1080w, /assets/media/6ab3adb0bed18187a406462a_1s-p-1600.jpg 1600w, /assets/media/6ab3adb0bed18187a406462a_1s-p-2000.jpg 2000w, /assets/media/6ab3adb0bed18187a406462a_1s-p-2600.jpg 2600w, /assets/media/6ab3adb0bed18187a406462a_1s.jpg 2700w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Food &amp; Beverage</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">YUM YUM</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab2723d53bb370f04afa372_6ab2723985afb9378f444d8b_YumYum_2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">YUM YUM</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Food &amp; Beverage</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/tanti-maria" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3.jpg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-500.jpg 500w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-800.jpg 800w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-1080.jpg 1080w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-1600.jpg 1600w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-2000.jpg 2000w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3-p-2600.jpg 2600w, /assets/media/6ab3963a575f3dfb3e0e2c8a_landscape3.jpg 2718w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Food &amp; Retail</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">TANTI MARIA</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab2723d53bb370f04afa391_6ab2722d77656a8e8b50e941_Tanti_2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">TANTI MARIA</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Food &amp; Retail</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/munchies-and-cream" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6aaad679fdb9d914f7f520db_6aa82aaaa15647f991aded71_MUNCHIES_AND_CREAM_landscape2_28.avif" loading="lazy" alt="" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Food &amp; Beverage</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">MUNCHIES AND CREAM</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab2723d53bb370f04afa375_6ab27223e0afaf640fd855d7_Munchies_2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">MUNCHIES AND CREAM</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Food &amp; Beverage</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/mvp" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg.jpeg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg-p-500.jpeg 500w, /assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg-p-800.jpeg 800w, /assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg-p-1080.jpeg 1080w, /assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg-p-1600.jpeg 1600w, /assets/media/6ab3a4a8a640924a6b8537f2_HeaderCover_MVP.jpg.jpeg 1920w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Sports &amp; Talent Management</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">MVP</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab270be80849a0a23faa29e_6ab27093a089e1fd370a7310_MVP_Thumbnail2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">MVP</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Sports &amp; Talent Management</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/merci" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg.jpeg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg-p-500.jpeg 500w, /assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg-p-800.jpeg 800w, /assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg-p-1080.jpeg 1080w, /assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg-p-1600.jpeg 1600w, /assets/media/6ab3bf3752f80352a9f32c66_Header_Merci.jpg.jpeg 1920w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Food &amp; Beverage</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">MERCI</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab3b662e0548f23f891a920_vertical2.jpg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3b662e0548f23f891a920_vertical2-p-500.jpg 500w, /assets/media/6ab3b662e0548f23f891a920_vertical2-p-800.jpg 800w, /assets/media/6ab3b662e0548f23f891a920_vertical2-p-1080.jpg 1080w, /assets/media/6ab3b662e0548f23f891a920_vertical2-p-1600.jpg 1600w, /assets/media/6ab3b662e0548f23f891a920_vertical2-p-2000.jpg 2000w, /assets/media/6ab3b662e0548f23f891a920_vertical2-p-2600.jpg 2600w, /assets/media/6ab3b662e0548f23f891a920_vertical2.jpg 2718w" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">MERCI</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Food &amp; Beverage</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/lpi" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg.jpeg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg-p-500.jpeg 500w, /assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg-p-800.jpeg 800w, /assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg-p-1080.jpeg 1080w, /assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg-p-1600.jpeg 1600w, /assets/media/6ab3c2fafc7e090ef49c1b1f_LP1_header.jpg.jpeg 1920w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Automotive &amp; Motorsport</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">LP ONE</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab270be80849a0a23faa247_6ab27084a6716c1b6c77a89d_lp1_Thumbnail2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">LP ONE</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Automotive &amp; Motorsport</div></div></div></div></a></div><div role="listitem" class="prjs-work-item w-dyn-item"><a href="/work/bagel-bar" class="project-work-wrapper w-inline-block"><div class="prj-transiton-cover"><div class="prj-stroke w-embed"><svg width="100%" height="auto" viewBox="0 0 1437 1046" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-34 285.19C-34 285.19 880.011 -56.3096 880.011 188.169C880.011 432.648 -143.852 463.829 177 802.19C543.5 1188.69 1210.95 -1.17073 1314.37 285.19C1387.01 486.329 1261.5 1023.19 1261.5 1023.19" stroke="currentColor" stroke-width="100"/>
+</svg>
+</div></div><div class="porject-img-wrapper"><img src="/assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel.jpg" loading="lazy" alt="" sizes="100vw" srcset="/assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-500.jpg 500w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-800.jpg 800w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-1080.jpg 1080w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-1600.jpg 1600w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-2000.jpg 2000w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel-p-2600.jpg 2600w, /assets/media/6ab391a7175b4ccd0e8c2c99_cover%20bagel.jpg 2700w" class="prj-img"/></div><div class="project-info"><div class="project-pill-small translate"><div class="project-pill-text-small">Food &amp; Beverage</div></div><div class="pill-wrap"><div class="project-pill-large"><h2 class="heading-3">THE BAGEL BAR</h2></div><div class="project-pill-small"><div class="project-pill-text-small">2026</div></div></div><div class="project-pill-small"><div class="project-pill-text-small">Brand Design</div></div></div><div class="project-info-mobile"><div class="project-logo"><img src="/assets/media/6ab270be80849a0a23faa24a_6ab2707cc2a53666310f52d2_Bagel_2_hover.jpeg" loading="lazy" alt="" class="project-logo-img"/></div><div class="info-wrapper"><div class="project-name-mobile"><h2 class="heading-3">THE BAGEL BAR</h2></div><div class="project-industry-mobile"><div class="project-pill-text-small">Food &amp; Beverage</div></div></div></div></a></div></div></div></div>

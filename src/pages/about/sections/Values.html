@@ -1,0 +1,77 @@
+<div class="section-values-wrapper"><div class="value-card"><div class="value-text">The Office Rules 01</div><div class="value-content"><h2 class="value-heading">THE BRIEF IS NOT SET IN STONE</h2><p class="value-para">A brief is a starting point, not a set of commandments. We’ll challenge it if we think there’s a better way to get where we need to go.</p></div><div class="value-progress"></div></div><div class="value-card"><div class="value-text">The Office Rules 02</div><div class="value-content"><h2 class="value-heading">GOOD IDEAS NEED SPACE</h2><p class="value-para">We don’t believe in rushing to the first solution that kind of works. Give an idea enough room to breathe, and it might just be the one.</p></div><div class="value-progress"></div></div><div class="value-card"><div class="value-text">The Office Rules 03</div><div class="value-content"><h2 class="value-heading">PRETTY IS NOT A STRATEGY</h2><p class="value-para">We love beautiful things. But looking good is only part of the job. First, we search for meaning. Everything we put out there needs to have a reason to be.</p></div><div class="value-progress"></div></div><div class="value-card"><div class="value-text">The Office Rules 04</div><div class="value-content"><h2 class="value-heading">IF IT CAN BE SIMPLe, SIMPLIFY</h2><p class="value-para">Complexity for complexity’s sake is not cool, actually. And people’s attention span is at an ATL. If your brand can say more with less, we’ll make it happen.</p></div><div class="value-progress"></div></div></div><div class="value-stack-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — SECTION VALUES STACKING PINNED CARDS           -->
+<!-- Paste in Webflow HTML Embed inside section-values       -->
+<!-- or in Page Settings (Before </body>)                     -->
+<!--                                                           -->
+<!-- Webflow Hierarchy Required:                               -->
+<!-- section-values                                            -->
+<!--   └── section-values-wrapper                              -->
+<!--         ├── value-card (Card 1)                           -->
+<!--         │     ├── value-text                              -->
+<!--         │     └── value-content                           -->
+<!--         │           ├── H2 / .value-heading               -->
+<!--         │           ├── P / .value-para                   -->
+<!--         │           └── value-progress                    -->
+<!--         ├── value-card (Card 2)                           -->
+<!--         │     ├── value-text                              -->
+<!--         │     └── value-content                           -->
+<!--         │           ├── H2 / .value-heading               -->
+<!--         │           ├── P / .value-para                   -->
+<!--         │           └── value-progress                    -->
+<!--         ├── value-card (Card 3)                           -->
+<!--         │     ├── value-text                              -->
+<!--         │     └── value-content                           -->
+<!--         │           ├── H2 / .value-heading               -->
+<!--         │           ├── P / .value-para                   -->
+<!--         │           └── value-progress                    -->
+<!--         └── value-card (Card 4)                           -->
+<!--               ├── value-text                              -->
+<!--               └── value-content                           -->
+<!--                     ├── H2 / .value-heading               -->
+<!--                     ├── P / .value-para                   -->
+<!--                     └── value-progress                    -->
+<!-- ======================================================= -->
+
+<!-- Functional Animation CSS (Zero Decorative Styles) -->
+<style>
+  /* Sticky requires NO overflow:hidden on any ancestor up to the scroll container */
+  .section-values,
+  .section-values-wrapper {
+    overflow: visible !important;
+  }
+
+  .value-card {
+    position: sticky !important;
+    will-change: transform;
+  }
+
+  .value-progress {
+    transform-origin: left center;
+    will-change: transform;
+  }
+
+  /* SplitText Line & Character Masks */
+  .value-char-mask {
+    overflow: hidden !important;
+    display: inline-block !important;
+    vertical-align: top !important;
+  }
+
+  .value-line-mask {
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .value-heading-char {
+    display: inline-block !important;
+    will-change: transform, opacity;
+  }
+
+  .value-para-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+</style>
+
+<!--script:14-->
+</div>

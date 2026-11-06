@@ -1,0 +1,113 @@
+{
+  "$description": "Motion timing/easing tokens read from the original inline GSAP scripts (the authoritative motion evidence). The smooth-scroll values are page-level (Lenis-style inertial scroll on the .page wrapper).",
+  "tokens": {
+    "motion.ease.reveal": {
+      "value": "back.out(1.4)",
+      "type": "easing",
+      "cite": "pages:home/scripts/10.js:143",
+      "contains": "ease: \"back.out(1.4)\""
+    },
+    "motion.ease.pill": {
+      "value": "back.out(2.5)",
+      "type": "easing",
+      "cite": "pages:home/scripts/10.js:184",
+      "contains": "ease: \"back.out(2.5)\""
+    },
+    "motion.ease.pill-text": {
+      "value": "back.out(1.6)",
+      "type": "easing",
+      "cite": "pages:home/scripts/10.js:197",
+      "contains": "ease: \"back.out(1.6)\""
+    },
+    "motion.ease.draw": {
+      "value": "power2.out",
+      "type": "easing",
+      "cite": "pages:home/scripts/10.js:130",
+      "contains": "ease: \"power2.out\""
+    },
+    "motion.ease.card-reveal": {
+      "value": "power3.out",
+      "type": "easing",
+      "cite": "pages:home/scripts/14.js:98",
+      "contains": "ease: \"power3.out\""
+    },
+    "motion.ease.hover-brush": {
+      "value": "power1.inOut",
+      "type": "easing",
+      "cite": "pages:home/scripts/15.js:182",
+      "contains": "defaults: { ease: \"power1.inOut\" }"
+    },
+    "motion.ease.spring-settle": {
+      "value": "elastic.out(1.1, 0.4)",
+      "type": "easing",
+      "cite": "pages:home/scripts/04.js:99",
+      "contains": "ease: \"elastic.out(1.1, 0.4)\""
+    },
+    "motion.duration.line-reveal": {
+      "value": "0.85s",
+      "type": "duration",
+      "cite": "pages:home/scripts/10.js:141",
+      "contains": "duration: 0.85"
+    },
+    "motion.duration.pill": {
+      "value": "0.55s",
+      "type": "duration",
+      "cite": "pages:home/scripts/10.js:183",
+      "contains": "duration: 0.55"
+    },
+    "motion.duration.draw": {
+      "value": "0.9s",
+      "type": "duration",
+      "cite": "pages:home/scripts/10.js:215",
+      "contains": "duration: 0.9"
+    },
+    "motion.duration.card-reveal": {
+      "value": "1.25s",
+      "type": "duration",
+      "cite": "pages:home/scripts/14.js:97",
+      "contains": "duration: 1.25"
+    },
+    "motion.duration.hover": {
+      "value": "0.5s",
+      "type": "duration",
+      "cite": "pages:home/scripts/02.js:45",
+      "contains": "duration: 0.5"
+    },
+    "motion.stagger.lines": {
+      "value": "0.12s",
+      "type": "duration",
+      "cite": "pages:home/scripts/10.js:142",
+      "contains": "stagger: 0.12"
+    },
+    "motion.timescale.entrance": {
+      "value": "0.75",
+      "type": "scale",
+      "cite": "pages:home/scripts/10.js:132",
+      "contains": ".timeScale(0.75)"
+    },
+    "motion.scrub.pin": {
+      "value": "0.8",
+      "type": "scale",
+      "cite": "pages:home/scripts/12.js:91",
+      "contains": "scrub: window.innerWidth < 992 ? 0.6 : 0.8"
+    },
+    "motion.scrub.services": {
+      "value": "1.2",
+      "type": "scale",
+      "cite": "pages:home/scripts/17.js:110",
+      "contains": "scrub: 1.2"
+    },
+    "motion.smooth-scroll.duration": {
+      "value": "1.7s",
+      "type": "duration",
+      "cite": "pages:home/scripts/35.js:137",
+      "contains": "duration: isTouch ? 1.1 : 1.7"
+    },
+    "motion.smooth-scroll.wheel-multiplier": {
+      "value": "0.9",
+      "type": "scale",
+      "cite": "pages:home/scripts/35.js:138",
+      "contains": "wheelMultiplier: 0.9"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "runtime.cursor-follower",
+  "title": "Testimonials cursor arrow",
+  "category": "RUNTIME",
+  "source": {
+    "id": "home/Testimonials#nav-arrow",
+    "file": "pages:home/sections/Testimonials.html",
+    "tag": "div.nav-arrow",
+    "lines": "1",
+    "contains": "class=\"nav-arrow",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Testimonials",
+    "decomposedFrom": "section.section-testimonials"
+  },
+  "semantic": {
+    "id": "runtime.cursor-follower",
+    "category": "RUNTIME"
+  },
+  "retrievalEligible": false,
+  "retrievalReason": "Pointer-following arrow badge inside the testimonials area; purely an interaction affordance with no content of its own.",
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "cursor-follow",
+      "none"
+    ],
+    "default": "cursor-follow",
+    "cite": "pages:home/scripts/18.js:182",
+    "contains": "ease: \"back.out(2)\""
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "position": "overlay",
+    "attachTo": "social-proof.testimonial-stack"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "follows pointer inside the testimonials area"
+    },
+    "mobile": {
+      "layout": "disabled (coarse pointer or < 992px)"
+    },
+    "cite": "src/styles/webflow.css:3752",
+    "contains": ".nav-arrow {"
+  },
+  "measured": {
+    "inFlow": false
+  }
+}

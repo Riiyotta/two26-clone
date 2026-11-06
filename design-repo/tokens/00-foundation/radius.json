@@ -1,0 +1,40 @@
+{
+  "tokens": {
+    "radius.pill": {
+      "value": "100px",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:2192",
+      "contains": "border-radius: 100px;"
+    },
+    "radius.card": {
+      "value": "1em",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:3076",
+      "contains": "border-radius: 1em;"
+    },
+    "radius.sm": {
+      "value": ".5em",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:6042",
+      "contains": "border-radius: .5em;"
+    },
+    "radius.md": {
+      "value": ".75em",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:2606",
+      "contains": "border-radius: .75em;"
+    },
+    "radius.lg": {
+      "value": "1.5em",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:4031",
+      "contains": "border-radius: 1.5em;"
+    },
+    "radius.round": {
+      "value": "100%",
+      "type": "radius",
+      "cite": "src/styles/webflow.css:1256",
+      "contains": "border-radius: 100%;"
+    }
+  }
+}

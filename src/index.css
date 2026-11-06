@@ -1,0 +1,5 @@
+@tailwind components;
+@tailwind utilities;
+
+/* React mounts into #root; keep it layout-neutral so .page behaves as a direct body child. */
+#root { display: contents; }

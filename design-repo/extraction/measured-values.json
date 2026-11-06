@@ -1,0 +1,1519 @@
+{
+  "$description": "Ledger of measured values and external citations. Citation paths are relative to the source project root (the folder that contains design-repo/). verify_all.py resolves them when that sibling tree exists and degrades to a warning when it does not.",
+  "citationsRoot": "..",
+  "sourceStack": "Original: Webflow site (Webflow CSS + IX2/Lottie, GSAP 3.15 with ScrollTrigger/SplitText/DrawSVG/MotionPath/CustomEase/CustomBounce, Lenis smooth scroll). Clone: Vite + React 18 rendering the original per-section markup verbatim and replaying the original inline scripts in document order. Documentation only; never used in contracts.",
+  "sectionHeights": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "measuredAt": "2026-11-06T05:57:14.806Z",
+    "server": "local clone dev server (vite, port 5226)",
+    "tool": "extraction/measure_sections.mjs",
+    "method": "Headless Chromium (Playwright) at 1440x900. Wait for the loader-complete flag, force lazy images to eager, walk the .page scroll container to the bottom and back so lazy media and provider-sized video embeds settle, ScrollTrigger.refresh(), then read getBoundingClientRect() + scrollTop for each semantic unit. Fixed elements (header) take no page height. Decomposed units are measured on their real DOM boundaries (about-story-section, about-team, CMS list items).",
+    "routes": {
+      "/": {
+        "template": "home",
+        "pageHeight": 13103,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.home",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 1343,
+            "inFlow": true
+          },
+          {
+            "section": "statement.pinned-manifesto",
+            "category": "STATEMENT",
+            "top": 1343,
+            "heightPx": 3100,
+            "inFlow": true
+          },
+          {
+            "section": "media.showcase-marquee",
+            "category": "MEDIA",
+            "top": 4443,
+            "heightPx": 820,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 5263,
+            "heightPx": 1618,
+            "inFlow": true
+          },
+          {
+            "section": "cta.projects-end",
+            "category": "CTA",
+            "top": 6881,
+            "heightPx": 448,
+            "inFlow": true
+          },
+          {
+            "section": "features.services-path",
+            "category": "FEATURES",
+            "top": 7329,
+            "heightPx": 2378,
+            "inFlow": true
+          },
+          {
+            "section": "social-proof.testimonial-stack",
+            "category": "SOCIAL_PROOF",
+            "top": 9706,
+            "heightPx": 1270,
+            "inFlow": true
+          },
+          {
+            "section": "faq.accordion",
+            "category": "FAQ",
+            "top": 10976,
+            "heightPx": 1227,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 12203,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ]
+      },
+      "/about": {
+        "template": "about",
+        "pageHeight": 8622,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.about",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 814,
+            "inFlow": true
+          },
+          {
+            "section": "story.split-illustrated",
+            "category": "STORY",
+            "top": 1374,
+            "heightPx": 592,
+            "inFlow": true
+          },
+          {
+            "section": "story.split-illustrated",
+            "category": "STORY",
+            "top": 2286,
+            "heightPx": 552,
+            "inFlow": true
+          },
+          {
+            "section": "team.member-cards",
+            "category": "TEAM",
+            "top": 2838,
+            "heightPx": 1280,
+            "inFlow": true
+          },
+          {
+            "section": "gallery.moodboard-marquee",
+            "category": "MEDIA",
+            "top": 4118,
+            "heightPx": 1178,
+            "inFlow": true
+          },
+          {
+            "section": "values.stacked-cards",
+            "category": "VALUES",
+            "top": 5296,
+            "heightPx": 1740,
+            "inFlow": true
+          },
+          {
+            "section": "capabilities.pill-cloud",
+            "category": "FEATURES",
+            "top": 7036,
+            "heightPx": 686,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 7722,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-about-hero": {
+            "top": 0,
+            "height": 4118,
+            "decomposed": true
+          }
+        }
+      },
+      "/work": {
+        "template": "work-index",
+        "pageHeight": 3957,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.work-index",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 769,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 769,
+            "heightPx": 2288,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 3057,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "hiddenInSource": [
+          {
+            "selector": "section.section-projects-work.none",
+            "heightPx": 0,
+            "evidence": {
+              "cite": "src/styles/webflow.css:4003",
+              "contains": ".section-projects-work.none {"
+            }
+          }
+        ]
+      },
+      "/work/bagel-bar": {
+        "template": "project-detail",
+        "pageHeight": 15498,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 344,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1424,
+            "heightPx": 444,
+            "inFlow": true
+          },
+          {
+            "section": "project.meta-tags",
+            "category": "META",
+            "top": 1888,
+            "heightPx": 88,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1996,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2798,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 3600,
+            "heightPx": 361,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 3981,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 5201,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 6003,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 6746,
+            "heightPx": 934,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 7699,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 8919,
+            "heightPx": 894,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 9833,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 10576,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 11378,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 12598,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 13540,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 14598,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 12640,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/heygluco": {
+        "template": "project-detail",
+        "pageHeight": 20549,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 434,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1514,
+            "heightPx": 534,
+            "inFlow": true
+          },
+          {
+            "section": "project.meta-tags",
+            "category": "META",
+            "top": 2068,
+            "heightPx": 88,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2176,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 2978,
+            "heightPx": 468,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 3466,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 4686,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 5906,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 7126,
+            "heightPx": 467,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 7613,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 8415,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 9635,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 10378,
+            "heightPx": 788,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 11186,
+            "heightPx": 788,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 11993,
+            "heightPx": 789,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 12802,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 14022,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 14824,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 16044,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 16846,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 17649,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 18591,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 19649,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 17691,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/lpi": {
+        "template": "project-detail",
+        "pageHeight": 14373,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 344,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1424,
+            "heightPx": 374,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1818,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2621,
+            "heightPx": 788,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 3428,
+            "heightPx": 412,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 3860,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5080,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5883,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 6685,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 7428,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 8231,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 9033,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 10253,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 11473,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 12415,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 13473,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 11515,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/merci": {
+        "template": "project-detail",
+        "pageHeight": 16120,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 314,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1394,
+            "heightPx": 344,
+            "inFlow": true
+          },
+          {
+            "section": "project.meta-tags",
+            "category": "META",
+            "top": 1758,
+            "heightPx": 88,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1866,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2668,
+            "heightPx": 515,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 3204,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 4005,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5225,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 6028,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 6831,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 8051,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 8853,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 10073,
+            "heightPx": 361,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 10454,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 11197,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 12417,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 13219,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 14162,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 15220,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 13262,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/munchies-and-cream": {
+        "template": "project-detail",
+        "pageHeight": 14546,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 314,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1394,
+            "heightPx": 374,
+            "inFlow": true
+          },
+          {
+            "section": "project.meta-tags",
+            "category": "META",
+            "top": 1788,
+            "heightPx": 88,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1896,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2698,
+            "heightPx": 468,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 3186,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 4406,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5209,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 6012,
+            "heightPx": 468,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 6499,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 7242,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 8462,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 9682,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 10902,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 11645,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 12588,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 13646,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 11688,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/mvp": {
+        "template": "project-detail",
+        "pageHeight": 15463,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 344,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1424,
+            "heightPx": 374,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1818,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2620,
+            "heightPx": 468,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 3108,
+            "heightPx": 468,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 3596,
+            "heightPx": 535,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 4151,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5371,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 6174,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 6976,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 8196,
+            "heightPx": 752,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 8968,
+            "heightPx": 749,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 9738,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 10540,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 11342,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 12562,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 13505,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 14563,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 12605,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/tanti-maria": {
+        "template": "project-detail",
+        "pageHeight": 13360,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 314,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1394,
+            "heightPx": 374,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1788,
+            "heightPx": 702,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 2510,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 3313,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 4533,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5276,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 6078,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 7298,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 8518,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 9738,
+            "heightPx": 702,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 10460,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 11402,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 12460,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 10502,
+            "decomposed": true
+          }
+        }
+      },
+      "/work/yum-yum": {
+        "template": "project-detail",
+        "pageHeight": 14819,
+        "sections": [
+          {
+            "section": "shell.header",
+            "category": "SHELL",
+            "top": 0,
+            "heightPx": 74,
+            "inFlow": false
+          },
+          {
+            "section": "hero.project",
+            "category": "HERO",
+            "top": 0,
+            "heightPx": 900,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1060,
+            "heightPx": 284,
+            "inFlow": true
+          },
+          {
+            "section": "project.narrative",
+            "category": "CONTENT",
+            "top": 1364,
+            "heightPx": 374,
+            "inFlow": true
+          },
+          {
+            "section": "project.meta-tags",
+            "category": "META",
+            "top": 1758,
+            "heightPx": 88,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 1866,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.video-embed",
+            "category": "MEDIA",
+            "top": 2669,
+            "heightPx": 723,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 3412,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 4214,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 5434,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 6237,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 7457,
+            "heightPx": 782,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 8259,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 9479,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-pair",
+            "category": "MEDIA",
+            "top": 10699,
+            "heightPx": 1200,
+            "inFlow": true
+          },
+          {
+            "section": "project.media-single",
+            "category": "MEDIA",
+            "top": 11919,
+            "heightPx": 783,
+            "inFlow": true
+          },
+          {
+            "section": "work.featured-grid",
+            "category": "PORTFOLIO",
+            "top": 12861,
+            "heightPx": 1058,
+            "inFlow": true
+          },
+          {
+            "section": "shell.footer",
+            "category": "SHELL",
+            "top": 13919,
+            "heightPx": 900,
+            "inFlow": true
+          }
+        ],
+        "sourceWrappers": {
+          "section-project-content": {
+            "top": 900,
+            "height": 11961,
+            "decomposed": true
+          }
+        }
+      }
+    }
+  },
+  "responsive375": {
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "measuredAt": "2026-11-06T06:06:13.532Z",
+    "routes": {
+      "/": {
+        "pageHeight": 11681
+      },
+      "/about": {
+        "pageHeight": 6847
+      },
+      "/work": {
+        "pageHeight": 6044
+      },
+      "/work/heygluco": {
+        "pageHeight": 8483
+      }
+    }
+  },
+  "originalComparison1440": {
+    "measuredAt": "2026-11-06T06:11:18.517Z",
+    "baseUrl": "https://two26.studio",
+    "tool": "extraction/measure_sections.mjs (same method)",
+    "routes": {
+      "/": {
+        "originalPageHeight": 13342,
+        "clonePageHeight": 13103
+      },
+      "/about": {
+        "originalPageHeight": 8622,
+        "clonePageHeight": 8622
+      },
+      "/work/heygluco": {
+        "originalPageHeight": 20549,
+        "clonePageHeight": 20549
+      },
+      "/work/lpi": {
+        "originalPageHeight": 14373,
+        "clonePageHeight": 14373
+      }
+    },
+    "differences": [
+      "/about, /work/heygluco and /work/lpi: identical page heights and identical per-item heights (every case-study list item matched to the pixel).",
+      "/ : original measured 13342 vs clone 13103 in this run (hero 1445 vs 1343, projects-end 584 vs 448). An earlier session measured both at 13103 and CLONE_SPEC.md (recon of the original) also records hero 1343 / total 13103, so this looks like a load-time race on the live site (hero video / SplitText timing), but it was NOT resolved in this build. Recorded, not hidden."
+    ]
+  },
+  "reconciliation": [
+    "Project-page scroll heights depend on lazy media. Without forcing lazy images to load, heights are much shorter (e.g. an unscrolled /work/heygluco measured 18202 in a first pass of this build, and an earlier session reported 11834). With all media loaded, original and clone agree (heygluco 20549, lpi 14373). sectionHeights uses the fully-loaded state, which is what a reader who scrolls the page sees.",
+    "/about: the about-hero wrapper (section.section-about-hero) measures 4118 at 1440 in this run; an earlier session saw the original flip between 4118 and 3873 on reload. It is decomposed (hero 814, two story blocks, team 1280) so the wrapper height no longer matters to the gate.",
+    "/work: section.section-projects-work carries the class 'none' (display:none) at every breakpoint; it never renders on the original or the clone and has no contract.",
+    "CLONE_SPEC.md's 375px total of 11910 for / is stale: this build measured 11681 at 375 (responsive375).",
+    "Vitabun / bioeel (named in the build brief) do not occur anywhere in the clone source; they are not in the source-identity registry."
+  ],
+  "parityEvidence": {
+    "status": "reported-from-earlier-session-not-re-run",
+    "harnessShipped": false,
+    "statement": "No pixel-parity harness ships in this design-repo and none was re-run in this build. The figures below were measured earlier in the same working session by the orchestrating agent (live original vs clone, same viewport and scroll offsets). They are cited as such, not as this build's measurements.",
+    "home1440": {
+      "positions": 10,
+      "within0_07pctDiff": 8,
+      "outliers": [
+        {
+          "position": "hero",
+          "pixelDiffPct": 7.77,
+          "cause": "video frame / marquee phase"
+        },
+        {
+          "position": "showcase",
+          "pixelDiffPct": 10.03,
+          "cause": "video frame / marquee phase"
+        }
+      ],
+      "perSectionGate80pct": "pass at every measured position (worst = 89.97% similar)"
+    },
+    "home375": {
+      "positions": 9,
+      "within0_21pctDiff": 7,
+      "outliers": [
+        {
+          "position": "hero",
+          "pixelDiffPct": 5.13
+        },
+        {
+          "position": "showcase",
+          "pixelDiffPct": 5.96,
+          "cause": "marquee strip rows 77-322 / hero video only"
+        }
+      ],
+      "perSectionGate80pct": "pass at every measured position (worst = 94.04% similar)"
+    },
+    "allRoutes1440": "Identical scroll height, ScrollTrigger start/end set and GSAP tween count on all 11 routes at 1440; /work, /work/heygluco and /about also at 375.",
+    "notMeasured": "Pixel parity for /about, /work and the 8 case studies was not measured (only structural parity: scroll height, trigger set, tween count)."
+  },
+  "citations": {
+    "tokens": "tokens/00-foundation/*.json (cite + contains on every token)",
+    "motion": "tokens/00-foundation/motion-patterns.json and motion.json -> pages:<page>/scripts/NN.js",
+    "sections": "sections/*.json source.file / source.lines / source.contains, plus content budgets' evidence",
+    "spec": [
+      "CLONE_SPEC.md:1-380"
+    ]
+  }
+}

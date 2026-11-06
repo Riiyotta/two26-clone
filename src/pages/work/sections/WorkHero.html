@@ -1,0 +1,79 @@
+<div class="section-work-hero-wrapper"><div class="work-hero-text"><h1 class="heading left-align">A few projects</h1><div class="work-hero-pill two"><div class="hero-pill-text">Just a few</div></div><h1 class="heading right-align">to brag about</h1><div class="work-hero-pill one"><div class="hero-pill-text">Kind of proud</div></div></div><div class="work-hero-path"><div class="code-embed-2 w-embed"><svg width="230" height="575" viewBox="0 0 230 575" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M171.769 562.464C171.769 562.464 -1.40879 424.611 16.2688 279.464C25.7685 201.464 68.7349 148.19 136.269 152.464C206.346 156.9 248.62 311.964 179.269 311.964C138.269 311.964 85.2685 223.964 101.269 138.964C114.373 69.3474 171.769 10.4645 171.769 10.4645" stroke="#FF5400" stroke-width="30"/>
+</svg>
+</div></div><div class="work-hero-btm"><div class="cat-work-wrapper"><img src="/assets/media/6aaad679fdb9d914f7f52068_cat-work.svg" loading="lazy" alt="" class="cat-work-img"/></div><p class="work-hero-para">A selection of brands, identities, websites and other things we’ve helped bring to life. Different challenges, various approaches, same focus on getting everything right.</p></div></div><div class="work-hero-html w-embed w-script"><!-- ======================================================= -->
+<!-- TWO 26 — WORK PAGE HERO ENTRANCE COMPONENT                -->
+<!-- Paste in Webflow HTML Embed inside section-work-hero      -->
+<!-- or in Page Settings (Before </body>)                       -->
+<!--                                                           -->
+<!-- Webflow Hierarchy Required:                               -->
+<!-- section-work-hero                                         -->
+<!--   └── section-work-hero-wrapper                           -->
+<!--         ├── work-hero-text                                -->
+<!--         │     ├── H1 / Heading                            -->
+<!--         │     ├── work-hero-pill                          -->
+<!--         │     ├── H1 / Heading                            -->
+<!--         │     └── work-hero-pill                          -->
+<!--         │           └── work-hero-pill-text / span        -->
+<!--         ├── work-hero-path (Code Embed with SVG)          -->
+<!--         └── work-hero-btm                                 -->
+<!--               ├── cat-work-wrapper                        -->
+<!--               │     └── cat-work-img                      -->
+<!--               └── P / work-hero-para                      -->
+<!-- ======================================================= -->
+
+<style>
+  /* Prevent FOUC: Elements start invisible until GSAP initializes */
+  .section-work-hero .work-hero-text h1,
+  .section-work-hero .work-hero-text .heading,
+  .section-work-hero [data-work-hero-heading],
+  .section-work-hero h1 {
+    opacity: 0;
+  }
+
+  .section-work-hero .work-hero-pill {
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+
+  /* Pill text mask: clips inner text for clean slide-up reveal */
+  .section-work-hero .work-hero-pill .work-hero-pill-text,
+  .section-work-hero .work-hero-pill [class*="pill-text"],
+  .section-work-hero .work-hero-pill [class*="pill-label"] {
+    display: block;
+    will-change: transform, opacity;
+  }
+
+  .section-work-hero .work-hero-pill-text-mask {
+    overflow: hidden;
+    display: block;
+  }
+
+  .section-work-hero .work-hero-path svg {
+    overflow: visible;
+  }
+
+  /* Line-by-line heading mask: matching projects-end look */
+  .work-hero-line-mask {
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .work-hero-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+
+  .work-hero-para-line {
+    display: block !important;
+    will-change: transform, opacity;
+  }
+
+  .section-work-hero .cat-work-wrapper,
+  .section-work-hero .cat-work-img {
+    will-change: transform, opacity;
+  }
+</style>
+
+<!--script:10-->
+</div>

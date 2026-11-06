@@ -1,0 +1,106 @@
+{
+  "id": "cta.projects-end",
+  "title": "See-all-projects CTA band",
+  "category": "CTA",
+  "source": {
+    "id": "home/Projects#projects-end",
+    "file": "pages:home/sections/Projects.html",
+    "tag": "div.projects-end",
+    "lines": "139",
+    "contains": "class=\"projects-end\"",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Projects",
+    "decomposedFrom": "section.section-projects"
+  },
+  "semantic": {
+    "id": "cta.projects-end",
+    "category": "CTA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "statement": {
+        "type": "text",
+        "maxWords": 14,
+        "evidence": {
+          "sourceClass": "projects-end-para",
+          "files": [
+            "pages:home/sections/Projects.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 11
+        },
+        "required": true
+      },
+      "pills": {
+        "type": "text-list",
+        "minItems": 0,
+        "maxItems": 3,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "hero-pill-text",
+          "files": [
+            "pages:home/sections/Projects.html"
+          ],
+          "realSamples": 3,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "ctaLabel": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "cta-text",
+          "files": [
+            "pages:home/sections/Projects.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "ctaHref": {
+        "type": "url",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "line-reveal-mask",
+      "pill-spring-in",
+      "magnetic-cta",
+      "none"
+    ],
+    "default": "line-reveal-mask",
+    "cite": "pages:home/scripts/14.js:209",
+    "contains": "start: \"top 80%\""
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "mustFollow": "work.featured-grid"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "centred statement with tilted pills and a CTA",
+      "heightPx": 448
+    },
+    "mobile": {
+      "layout": "narrow column",
+      "heightPx": 464
+    },
+    "cite": "src/styles/webflow.css:2790",
+    "contains": ".projects-end {"
+  },
+  "measured": {
+    "heightPx1440": 448,
+    "route": "/"
+  },
+  "notes": "Decomposed from section.section-projects: it is a conversion block linking to /work, so it is CTA-classed (R6 category honesty)."
+}

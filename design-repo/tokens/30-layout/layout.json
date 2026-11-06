@@ -1,0 +1,25 @@
+{
+  "$description": "Layout tokens.",
+  "tokens": {
+    "layout.container.max": {
+      "value": "var(--size-container)",
+      "cite": "src/styles/webflow.css:2338",
+      "contains": "max-width: var(--size-container);"
+    },
+    "layout.section.padding-y": {
+      "ref": "space.section.lg"
+    },
+    "layout.grid.projects.columns-desktop": {
+      "value": "3",
+      "evidence": "CLONE_SPEC.md:83 (3 cols 453.33px, gap 32px at 1440)"
+    },
+    "layout.grid.projects.columns-mobile": {
+      "value": "1",
+      "evidence": "CLONE_SPEC.md:83 (1 col at 375)"
+    },
+    "layout.header.height": {
+      "value": "74px",
+      "evidence": "measured 74px at 1440 (extraction/measured-values.json sectionHeights)"
+    }
+  }
+}

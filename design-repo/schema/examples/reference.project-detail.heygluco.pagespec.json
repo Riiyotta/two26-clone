@@ -1,0 +1,679 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "reference",
+  "template": "project-detail",
+  "route": "/work/heygluco",
+  "theme": "light",
+  "site": {
+    "brandName": "Two26 Studio",
+    "baseUrl": "https://two26.studio"
+  },
+  "meta": {
+    "title": "Work — Two26 Creative Studio",
+    "description": "HeyGluco case study (reference reconstruction)."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .two26-logo-svg (Loader.html)"
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Work",
+            "href": "/work"
+          },
+          {
+            "label": "About us",
+            "href": "/about"
+          }
+        ],
+        "hours": "Monday–Friday 10:00 – 17:00",
+        "ctaLabel": "Let's Talk"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .navbar-logo"
+        }
+      ],
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Work",
+            "href": "/work"
+          },
+          {
+            "label": "About us",
+            "href": "/about"
+          }
+        ],
+        "ctaLabel": "Let's Talk"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "want to",
+          "start",
+          "a new",
+          "project?"
+        ],
+        "subheading": "or just say hello!",
+        "contacts": [
+          {
+            "label": "Inquiries & Commissions",
+            "email": "bogdan@two26.studio"
+          },
+          {
+            "label": "Job Applications",
+            "email": "diana@two26.studio"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Linkedin",
+            "href": "https://www.linkedin.com/company/two26-studio/"
+          },
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/two26_studio/"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "brand.illustration-source",
+          "src": "/assets/media/6aaad679fdb9d914f7f5206b_contact.svg"
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.project",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "title": "HeyGluco"
+      },
+      "assets": [
+        {
+          "slot": "cover",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab38e4c47df4db39f2476ae_Gluco%20case_header%20%20%281%29.png"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.narrative",
+      "variant": "context",
+      "retrievalEligible": true,
+      "content": {
+        "topic": "Health & Wellness",
+        "heading": "The Context",
+        "body": "HeyGluco was born from a family’s own experience with type 1 diabetes. After their daughter Ecaterina was diagnosed at seven, they found themselves navigating a new reality filled with medical information, calculations, uncertainty and a lot of fear. What they needed most in those first months wasn’t more information, but a clearer, more human way to make sense of it.They decided to create the resource they wished they had from day one: a place where families could learn, find practical tools and feel supported by people who had already been through the same experience. Our challenge was to turn that deeply personal idea into a brand that could talk about a serious subject with clarity and empathy, without feeling clinical or intimidating."
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.narrative",
+      "variant": "solution",
+      "retrievalEligible": true,
+      "content": {
+        "topic": "Project year - 2026",
+        "heading": "The Solution",
+        "body": "We built HeyGluco around the idea of making diabetes easier to understand and less frightening, especially for children. At the centre of the identity is Gluco, a small dragon designed as a familiar companion through a world of sensors, insulin, glucose levels and new routines.Every detail has a purpose. His three coloured spikes reference glucose levels, while the scarf is inspired by the international symbol of diabetes. Around him, we created a cast of characters based on everyday diabetes tools, turning unfamiliar medical objects into something children can recognise and relate to. A second, more narrative illustration style helps tell the family’s real story with more emotion and nuance.A warm, colourful palette moves away from the cold visual codes of healthcare, while typography and a clear editorial system make complex information easier to navigate. Together, they give HeyGluco a visual language that can educate without overwhelming and support without talking down."
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.meta-tags",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "tags": [
+          "Illustration",
+          "Brand Strategy",
+          "Animation",
+          "Visual Identity"
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1229445748"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab384f284b10fab359deea5_landscape2.jpg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c256671447b037ec4d_6aad90b40048a43de8044dda_HeyGluco_1.png"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c256671447b037ec57_6aad90f44758bdaf0c111ab9_HeyGluco_Vertical2.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c156671447b037ec3a_6aad90d2f4bf5e08d556fef4_HeyGluco_Vertical1.jpeg"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c256671447b037ec4a_6aad90bbb46b87ab8d523d6e_HeyGluco_12.png"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c256671447b037ec53_6aad90fd9cd8ea4635d43c71_HeyGluco_Vertical3.jpeg"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c156671447b037ec42_6aad9107cafd21639790dc9c_HeyGluco_Vertical4.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1228104778"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1229473485"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c256671447b037ec50_6aad910c65851afb8d722e53_HeyGluco_Vertical5.jpeg"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257c156671447b037ec3e_6aad9114e6ea55470ad2f72f_HeyGluco_Vertical6.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1229231982"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1228104804"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1228104805"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1228104809"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e2664f_6aad9122ba78bac1e2f43123_HeyGluco_Vertical9.jpeg"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e26653_6aad90d8ff8350d6a37c88ac_HeyGluco_Vertical10.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.video-embed",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "video",
+          "assetRole": "client.project-video-source",
+          "src": "https://player.vimeo.com/video/1229821722"
+        }
+      ],
+      "motion": {
+        "pattern": "background-video-autoplay",
+        "trigger": "load",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "project.media-pair",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e2664a_6aad90eb90acb3fa50c215ae_HeyGluco_Vertical14.jpeg"
+        },
+        {
+          "slot": "images",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e2666b_6aad90dc90acb3fa50c20e79_HeyGluco_Vertical12.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab385dc5aa44813a16cd2f5_landscape10.jpg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e2665c_6ab25680e26c929677d1e2bc_HeyGluco_landscape11.jpeg"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "project.media-single",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "image",
+          "assetRole": "client.project-imagery-source",
+          "src": "/assets/media/6ab257da06fb59cbb9e26659_6aad90109db8118d9678f8bc_HeyGluco_3.png"
+        }
+      ],
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "work.featured-grid",
+      "variant": "more",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Featured Project",
+        "heading": "More Works",
+        "cards": [
+          {
+            "name": "THE BAGEL BAR",
+            "category": "Food & Beverage",
+            "href": "/work/bagel-bar"
+          },
+          {
+            "name": "TANTI MARIA",
+            "category": "Food & Retail",
+            "href": "/work/tanti-maria"
+          },
+          {
+            "name": "MUNCHIES AND CREAM",
+            "category": "Food & Beverage",
+            "href": "/work/munchies-and-cream"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "bagel-bar"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "tanti-maria"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "munchies-and-cream"
+        }
+      ],
+      "motion": {
+        "pattern": "clip-mask-card-reveal",
+        "trigger": "scroll-enter",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "Okay, that's enough website",
+        "ctaLabel": "Let's Talk",
+        "email": "bogdan@two26.studio",
+        "linkGroups": [
+          {
+            "label": "Email us",
+            "links": [
+              {
+                "label": "bogdan@two26.studio",
+                "href": "mailto:bogdan@two26.studio?subject=Hey%20Two26!"
+              }
+            ]
+          },
+          {
+            "label": "Main Menu",
+            "links": [
+              {
+                "label": "Work",
+                "href": "/work"
+              },
+              {
+                "label": "About us",
+                "href": "/about"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/two26_studio/"
+          },
+          {
+            "label": "Behance",
+            "href": "#"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/two26-studio/"
+          }
+        ],
+        "tagline": "Handmade by humans. Well, digitally",
+        "address": "Bucharest, Romania",
+        "legal": "© Copyright 2026 - Two26 Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .footer-svg-logo"
+        },
+        {
+          "slot": "texture",
+          "assetRole": "decor.texture-source",
+          "src": "/assets/media/6aaad679fdb9d914f7f52067_footer-texture.svg"
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

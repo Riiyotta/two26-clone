@@ -1,0 +1,13 @@
+{
+  "id": "slide.showcase",
+  "kind": "component",
+  "description": "Square rounded slide (image or video) in the velocity marquee.",
+  "composes": [
+    "media.image",
+    "media.video-loop"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2605",
+    "contains": ".showcase-slide {"
+  }
+}

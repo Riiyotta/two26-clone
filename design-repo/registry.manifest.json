@@ -1,0 +1,99 @@
+{
+  "repositoryId": "two26-studio-design-repo",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion (must equal tokens/llm/component-allowlist.json version) and pageSpecVersion (must equal the schema const in extraction/build_schema.py) are machine-checked by extraction/verify_all.py. repositoryVersion is documentation-only and hand-maintained.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light"
+  ],
+  "modes": [
+    "reference",
+    "generated"
+  ],
+  "sourceStack": "Original: Webflow site (Webflow CSS + IX2/Lottie, GSAP 3.15 with ScrollTrigger/SplitText/DrawSVG/MotionPath/CustomEase/CustomBounce, Lenis smooth scroll). Clone: Vite + React 18 rendering the original per-section markup verbatim and replaying the original inline scripts in document order. Documentation only; never used in contracts.",
+  "sourceProject": {
+    "relation": "This folder sits inside the clone project; citations are relative to that project root. 'pages:' in a citation means 'pages:'.",
+    "liveSite": "https://two26.studio",
+    "realCompany": "two26.studio is a real, live design studio. Generated mode forbids its identity, people, clients, testimonials, copy and media (assets/source-identity.json, assets/asset-roles.json). Keep this repository private."
+  },
+  "irGenerated": false,
+  "category": "portfolio",
+  "designPolicy": {
+    "policyId": "n0-design-constraints-common",
+    "policyVersion": "0.1.0",
+    "commonIrVersion": "0.5",
+    "enforcementMode": "hard-and-soft",
+    "domain": "creative-studio-portfolio",
+    "policyFile": "policy/design-policy.json",
+    "contentHash": "sha256:44d8845c01459d58ae50b9d745401e6062d2d347ab1775d060d4b881bfebb888",
+    "contentHashNote": "sha256 over extraction/policy_hash.py ENFORCED_BY files; recomputed by verify_all.py"
+  },
+  "dependencies": {
+    "python": ">=3.8",
+    "pythonPackages": [
+      "jsonschema (Draft-07 validation; required by verify_all, semantic_validate, adversarial_test)"
+    ],
+    "optional": [
+      "node + playwright for extraction/measure_sections.mjs"
+    ]
+  },
+  "entryPoints": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "pagespecSchema": "schema/pagespec.schema.json",
+    "sectionContractSchema": "schema/section-contract.schema.json",
+    "semanticValidator": "schema/semantic_validate.py",
+    "adversarialSuite": "schema/tests/adversarial_test.py",
+    "examples": "schema/examples",
+    "templates": "templates/templates.json",
+    "routes": "templates/routes.json",
+    "sections": "sections",
+    "primitives": "primitives",
+    "components": "components",
+    "compatibilityGraph": "compatibility/graph.json",
+    "assetRoles": "assets/asset-roles.json",
+    "sourceIdentity": "assets/source-identity.json",
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "componentAllowlist": "tokens/llm/component-allowlist.json",
+    "motionPatterns": "tokens/00-foundation/motion-patterns.json",
+    "foundationTokens": "tokens/00-foundation",
+    "semanticTokens": "tokens/10-semantic",
+    "componentTokens": "tokens/20-component",
+    "layoutTokens": "tokens/30-layout",
+    "themes": "tokens/themes",
+    "measuredValues": "extraction/measured-values.json",
+    "wrapperGate": "extraction/wrapper_gate.py",
+    "wrapperWhitelist": "extraction/wrapper-whitelist.json",
+    "verifyAll": "extraction/verify_all.py",
+    "proveDrift": "extraction/prove_drift.py",
+    "buildSchema": "extraction/build_schema.py",
+    "counts": "extraction/counts.py",
+    "measureSections": "extraction/measure_sections.mjs",
+    "designPolicy": "policy/design-policy.json",
+    "policyHash": "extraction/policy_hash.py"
+  },
+  "counts": {
+    "tokens": 95,
+    "foundationTokens": 80,
+    "semanticTokens": 15,
+    "primitives": 13,
+    "components": 10,
+    "sections": 28,
+    "retrievalIneligibleSections": 5,
+    "templates": 4,
+    "routes": 11,
+    "examples": 6,
+    "generatedExamples": 4,
+    "referenceExamples": 2,
+    "assetRoles": 28,
+    "motionPatterns": 27,
+    "graphRules": 9,
+    "adversarialCases": 91,
+    "adversarialControls": 8
+  }
+}

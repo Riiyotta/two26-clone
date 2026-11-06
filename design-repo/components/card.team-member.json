@@ -1,0 +1,12 @@
+{
+  "id": "card.team-member",
+  "kind": "component",
+  "description": "Team portrait card with name and role; opens the team popup.",
+  "composes": [
+    "media.image"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:4726",
+    "contains": ".team-card {"
+  }
+}

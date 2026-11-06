@@ -1,0 +1,124 @@
+{
+  "id": "hero.about",
+  "title": "About hero",
+  "category": "HERO",
+  "source": {
+    "id": "about/AboutHero#section-about-hero-wrapper",
+    "file": "pages:about/sections/AboutHero.html",
+    "tag": "section.section-about-hero",
+    "lines": "120",
+    "contains": "class=\"section-about-hero-wrapper\"",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "AboutHero",
+    "decomposedFrom": "section.section-about-hero"
+  },
+  "semantic": {
+    "id": "hero.about",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "headlineLines": {
+        "type": "text-list",
+        "minItems": 2,
+        "maxItems": 2,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "heading",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "pills": {
+        "type": "text-list",
+        "minItems": 2,
+        "maxItems": 2,
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "hero-pill-text",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "paragraph": {
+        "type": "text",
+        "maxWords": 24,
+        "evidence": {
+          "sourceClass": "about-hero-para",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 19
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "illustration": {
+      "roles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "required": true,
+      "multiple": false
+    },
+    "strokePath": {
+      "roles": [
+        "decor.stroke-path-source",
+        "generated.stroke-path"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.illustration",
+    "generated.stroke-path"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "line-reveal-mask",
+      "pill-spring-in",
+      "stroke-path-draw",
+      "none"
+    ],
+    "default": "line-reveal-mask",
+    "cite": "pages:about/scripts/10.js:219",
+    "contains": "stagger: 0.12"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "split headline with pills, drawn path, illustration + paragraph",
+      "heightPx": 814
+    },
+    "mobile": {
+      "layout": "stacked",
+      "heightPx": 466
+    },
+    "cite": "src/styles/webflow.css:4450",
+    "contains": ".section-about-hero-wrapper {"
+  },
+  "measured": {
+    "heightPx1440": 814,
+    "route": "/about",
+    "decomposedFromWrapperPx": 4118
+  }
+}

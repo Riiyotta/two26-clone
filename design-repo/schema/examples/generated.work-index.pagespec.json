@@ -1,0 +1,313 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "theme": "light",
+  "site": {
+    "brandName": "Fernhollow Studio",
+    "baseUrl": "https://fernhollow.example"
+  },
+  "template": "work-index",
+  "route": "/projects",
+  "meta": {
+    "title": "Projects | Fernhollow Studio",
+    "description": "Fictional portfolio index."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder monoline wordmark for Fernhollow Studio, drawn as a single stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "hours": "Tue–Sat 9:00 – 16:00",
+        "ctaLabel": "Start a project"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder Fernhollow wordmark."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.ink",
+        "bodyFont": "font.family.body"
+      },
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "ctaLabel": "Start a project"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "got an",
+          "idea",
+          "worth",
+          "chasing?"
+        ],
+        "subheading": "or simply wave hello",
+        "contacts": [
+          {
+            "label": "New work",
+            "email": "studio@fernhollow.example"
+          },
+          {
+            "label": "Careers",
+            "email": "jobs@fernhollow.example"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration: a paper plane mid-loop, flat brand orange."
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.work-index",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "headlineLines": [
+          "Selected work",
+          "a short list"
+        ],
+        "pills": [
+          "Fresh batch",
+          "Hand picked"
+        ],
+        "paragraph": "Brands, packaging and websites for independent businesses. Each one started with a question and ended with a system."
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration of a fox carrying a portfolio case."
+        },
+        {
+          "slot": "strokePath",
+          "assetRole": "generated.stroke-path",
+          "brief": "One looping stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "work.featured-grid",
+      "variant": "all",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "All work",
+        "heading": "Every project",
+        "cards": [
+          {
+            "name": "Harbor Loaf",
+            "category": "Food & Drink",
+            "href": "/projects/harbor-loaf"
+          },
+          {
+            "name": "Kiln House",
+            "category": "Ceramics & Retail",
+            "href": "/projects/kiln-house"
+          },
+          {
+            "name": "Northlight Tea",
+            "category": "Food & Drink",
+            "href": "/projects/northlight-tea"
+          },
+          {
+            "name": "Velo Atelier",
+            "category": "Cycling & Apparel",
+            "href": "/projects/velo-atelier"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Harbor Loaf."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Harbor Loaf."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Kiln House."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Kiln House."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Northlight Tea."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Northlight Tea."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Velo Atelier."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Velo Atelier."
+        }
+      ],
+      "motion": {
+        "pattern": "clip-mask-card-reveal",
+        "trigger": "scroll-enter",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "That is the whole tour",
+        "ctaLabel": "Say hello",
+        "email": "studio@fernhollow.example",
+        "linkGroups": [
+          {
+            "label": "Write to us",
+            "links": [
+              {
+                "label": "studio@fernhollow.example",
+                "href": "mailto:studio@fernhollow.example"
+              }
+            ]
+          },
+          {
+            "label": "Pages",
+            "links": [
+              {
+                "label": "Projects",
+                "href": "/projects"
+              },
+              {
+                "label": "Studio",
+                "href": "/studio"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "tagline": "Made with care in Porto",
+        "address": "Porto, Portugal",
+        "legal": "© 2026 Fernhollow Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Oversized placeholder wordmark that stretches vertically."
+        },
+        {
+          "slot": "texture",
+          "assetRole": "generated.texture",
+          "brief": "Original paper-grain texture."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

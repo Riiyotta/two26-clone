@@ -1,0 +1,267 @@
+{
+  "$comment": "Transcribed from the clone's verbatim per-section markup (src/pages/<page>/sections/*.html) and src/pages/routes.json, which mirror https://two26.studio as fetched 2026-11-06. Header/footer/loader were compared across pages with script-position markers stripped: identical except the active-link state, apart from the project-detail header (back button instead of nav links). Sections split below a single DOM wrapper are noted in implementedBy.",
+  "meta": {
+    "source": "https://two26.studio (Webflow site) via the local clone at /",
+    "status": "measured-from-mirror",
+    "totalRoutes": 11,
+    "totalTemplates": 4
+  },
+  "categories": {
+    "SHELL": "Chrome and runtime UI present on every route: preloader, navigation, contact modal, mobile menu, footer.",
+    "HERO": "The page-opening composition of a route.",
+    "STORY": "Studio narrative: who they are, how they work, values, team.",
+    "WORK": "Portfolio content: project showcases, grids, case-study body.",
+    "SERVICES": "What the studio offers.",
+    "PROOF": "Client testimonials.",
+    "SUPPORT": "Answers to common questions."
+  },
+  "sections": {
+    "shell.loader": {
+      "category": "SHELL",
+      "description": "Full-screen preloader: an orange stroke draws the TWO 26 logo, then pink and orange strokes sweep off-screen to reveal the page (~5s). Skipped on internal navigation via a sessionStorage flag.",
+      "scope": "All 11 routes; markup identical everywhere.",
+      "implementedBy": "src/pages/*/components/Loader.jsx"
+    },
+    "shell.navbar": {
+      "category": "SHELL",
+      "description": "Fixed top bar: Work and About us pill links (stroke-draw hover), centred TWO 26 wordmark, studio hours text, and a magnetic black Let's Talk button that opens the contact modal; collapses to a hamburger below 992px.",
+      "scope": "The 3 non-project routes (home, about, work); identical apart from which link carries the current-page state.",
+      "implementedBy": "src/pages/{home,about,work}/components/Header.jsx"
+    },
+    "shell.navbar-back": {
+      "category": "SHELL",
+      "description": "Project-page variant of the top bar: a back button with arrow replaces the Work/About us links; wordmark and Let's Talk button as in shell.navbar.",
+      "scope": "All 8 project-detail routes.",
+      "implementedBy": "src/pages/work_*/components/Header.jsx"
+    },
+    "shell.contact-modal": {
+      "category": "SHELL",
+      "description": "Full-viewport 'want to start a new project?' overlay opened by Let's Talk: inquiry and job-application email links, LinkedIn and Instagram pills, close button; animated in with stroke draw and split-text reveal (~2.1s).",
+      "scope": "All 11 routes; lives inside the header markup.",
+      "implementedBy": "src/pages/*/components/Header.jsx (the .contact-page block inside the header)"
+    },
+    "shell.mobile-menu": {
+      "category": "SHELL",
+      "description": "Hamburger overlay below 992px: large Work, About us and Let's Talk items over a full-screen panel.",
+      "scope": "All 11 routes, below 992px only; lives inside the header markup.",
+      "implementedBy": "src/pages/*/components/Header.jsx (the .ham-navbar block inside the header)"
+    },
+    "shell.footer": {
+      "category": "SHELL",
+      "description": "Closing footer: 'Okay, that's enough website' heading with Let's Talk, contact email, main-menu and social links (Instagram, Behance, LinkedIn), 'Handmade by humans' line, location and copyright, over a textured background with a scroll-triggered reveal from underneath the page.",
+      "scope": "All 11 routes; identical apart from the active-link state.",
+      "implementedBy": "src/pages/*/components/Footer.jsx"
+    },
+    "hero.home": {
+      "category": "HERO",
+      "description": "'LOOKING SUSPICIOUSLY GOOD' headline in orange with three tilted black pills, a looping illustration video (two characters carrying TWO and 26 signs, cats), orange curved paths left and right, and a curved scrolling text marquee below.",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/Hero.jsx"
+    },
+    "hero.about": {
+      "category": "HERO",
+      "description": "'Small studio, big brand energy' two-line headline with pills, founders' illustrated portrait, a short founding statement, and a large orange looping path drawn on scroll.",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/AboutHero.jsx (the hero text, path and bottom block before .about-story-team)"
+    },
+    "hero.work": {
+      "category": "HERO",
+      "description": "'A few projects to brag about' headline with tilted pills introducing the portfolio index.",
+      "scope": "Work index only.",
+      "implementedBy": "src/pages/work/components/WorkHero.jsx"
+    },
+    "hero.project": {
+      "category": "HERO",
+      "description": "Case-study opener: full-bleed project cover image with the project name as a large heading.",
+      "scope": "All 8 project-detail routes, one per project.",
+      "implementedBy": "src/pages/work_*/components/ProjectHero.jsx"
+    },
+    "story.pinned-intro": {
+      "category": "STORY",
+      "description": "'A bit about us' pinned scroll stage: the viewport pins for an extra ~2200px while a large statement about keeping the team tight reveals word by word, with three trait labels (Professional overthinkers, Nerding out on design, Allergic to generic).",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/About.jsx"
+    },
+    "story.founders": {
+      "category": "STORY",
+      "description": "Founding story: 'Two '90s kids, one shared itch to make better brands' and 'Less size, more scope' text blocks with illustrations.",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/AboutHero.jsx (first part of .about-story-team)"
+    },
+    "story.team": {
+      "category": "STORY",
+      "description": "'The team / This is pretty much everyone' block: team cards with portrait photo, name and role (creative partners and designers).",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/AboutHero.jsx (last part of .about-story-team)"
+    },
+    "story.moodboard": {
+      "category": "STORY",
+      "description": "'Off the clock / Behind the work' studio moodboard: a collage of 10 studio-life images.",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/Moodboard.jsx"
+    },
+    "story.values": {
+      "category": "STORY",
+      "description": "Four value cards (The brief is not set in stone; Good ideas need space; Pretty is not a strategy; If it can be simple, simplify), each a heading plus a short explanation.",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/Values.jsx"
+    },
+    "work.showcase-marquee": {
+      "category": "WORK",
+      "description": "Edge-to-edge horizontal strip of project images and videos scrolling continuously, speeding up with scroll velocity.",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/SliderShowcase.jsx"
+    },
+    "work.project-grid": {
+      "category": "WORK",
+      "description": "Grid of selected project cards that reveal with a clip-path on scroll; hovering a card paints in a second image through a brush-stroke SVG mask. Carries a 'Selected Works' heading, hidden on the work index.",
+      "scope": "Home and the work index (2 routes); the work index hides the heading and adds wrapper padding.",
+      "implementedBy": "src/pages/{home,work}/components/Projects.jsx"
+    },
+    "work.project-stack": {
+      "category": "WORK",
+      "description": "Full-width project panels (HeyGluco, Yum Yum, Tanti Maria, ...) that scroll up over one another: the previous panel scales to 0.75 with a slight random tilt and is covered by an SVG paint-wipe (scrub 0.6); a cursor follower shows project info on desktop.",
+      "scope": "Work index only.",
+      "implementedBy": "src/pages/work/components/ProjectsWork.jsx"
+    },
+    "work.project-brief": {
+      "category": "WORK",
+      "description": "Case-study text: 'The Context' and 'The Solution' headings with the project's written brief and approach.",
+      "scope": "All 8 project-detail routes.",
+      "implementedBy": "src/pages/work_*/components/ProjectContent.jsx (text block before the first media row)"
+    },
+    "work.project-gallery": {
+      "category": "WORK",
+      "description": "Case-study media: full-width landscape images, paired portrait images and Vimeo background videos in rows; the longest block on each project page.",
+      "scope": "All 8 project-detail routes; row mix and count differ per project.",
+      "implementedBy": "src/pages/work_*/components/ProjectContent.jsx (media rows after the brief)"
+    },
+    "work.more-works": {
+      "category": "WORK",
+      "description": "'More Works' cross-links to other case studies, using the same brush-mask hover reveal as the project grid.",
+      "scope": "All 8 project-detail routes; the cards listed vary per project.",
+      "implementedBy": "src/pages/work_*/components/Projects.jsx"
+    },
+    "services.path": {
+      "category": "SERVICES",
+      "description": "'This is our thing' services list laid along an orange path that draws on scroll (scrub), with a looping Lottie icon and a one-line description per service (Brand strategy, Brand identity, Packaging, Motion design, Web design, Illustration, Art direction).",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/Services.jsx"
+    },
+    "services.range": {
+      "category": "SERVICES",
+      "description": "'Capabilities / We've got range' cloud of ~25 capability tags (brand collateral, signage, pitch decks, packaging design, 2D animation, logo design, ...) ending in a Let's Talk button.",
+      "scope": "About only.",
+      "implementedBy": "src/pages/about/components/WhatWeDo.jsx"
+    },
+    "proof.testimonials": {
+      "category": "PROOF",
+      "description": "'Apparently, they like us' stacked client testimonial cards with a cursor-following arrow that flips direction to page through them.",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/Testimonials.jsx"
+    },
+    "support.faq": {
+      "category": "SUPPORT",
+      "description": "'Frequently asked questions / Things you might ask' accordion (e.g. what kind of projects do you take on, how much does a branding project cost); first item open on load, one item open at a time.",
+      "scope": "Home only.",
+      "implementedBy": "src/pages/home/components/Faq.jsx"
+    }
+  },
+  "templates": [
+    {
+      "id": "template.home",
+      "name": "Home",
+      "routeCount": 1,
+      "routes": [
+        "/"
+      ],
+      "routePattern": null,
+      "chrome": "full-nav",
+      "sections": [
+        "shell.loader",
+        "shell.navbar",
+        "shell.contact-modal",
+        "shell.mobile-menu",
+        "hero.home",
+        "story.pinned-intro",
+        "work.showcase-marquee",
+        "work.project-grid",
+        "services.path",
+        "proof.testimonials",
+        "support.faq",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.about",
+      "name": "About",
+      "routeCount": 1,
+      "routes": [
+        "/about"
+      ],
+      "routePattern": null,
+      "chrome": "full-nav",
+      "sections": [
+        "shell.loader",
+        "shell.navbar",
+        "shell.contact-modal",
+        "shell.mobile-menu",
+        "hero.about",
+        "story.founders",
+        "story.team",
+        "story.moodboard",
+        "story.values",
+        "services.range",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.work-index",
+      "name": "Work index",
+      "routeCount": 1,
+      "routes": [
+        "/work"
+      ],
+      "routePattern": null,
+      "chrome": "full-nav",
+      "sections": [
+        "shell.loader",
+        "shell.navbar",
+        "shell.contact-modal",
+        "shell.mobile-menu",
+        "hero.work",
+        "work.project-stack",
+        "work.project-grid",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.project-detail",
+      "name": "Project case study",
+      "routeCount": 8,
+      "routes": [
+        "/work/bagel-bar",
+        "/work/heygluco",
+        "/work/lpi",
+        "/work/merci",
+        "/work/munchies-and-cream",
+        "/work/mvp",
+        "/work/tanti-maria",
+        "/work/yum-yum"
+      ],
+      "routePattern": "/work/{slug}",
+      "chrome": "back-nav",
+      "sections": [
+        "shell.loader",
+        "shell.navbar-back",
+        "shell.contact-modal",
+        "shell.mobile-menu",
+        "hero.project",
+        "work.project-brief",
+        "work.project-gallery",
+        "work.more-works",
+        "shell.footer"
+      ]
+    }
+  ]
+}

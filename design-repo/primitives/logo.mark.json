@@ -1,0 +1,12 @@
+{
+  "id": "logo.mark",
+  "kind": "primitive",
+  "description": "Brand / client mark slot.",
+  "props": [
+    "assetRole"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2176",
+    "contains": ".navbar-logo {"
+  }
+}

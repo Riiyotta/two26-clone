@@ -1,0 +1,14 @@
+{
+  "id": "card.project",
+  "kind": "component",
+  "description": "Project card: image with brush-hover swap image, client mark, name, category, arrow.",
+  "composes": [
+    "media.image",
+    "logo.mark",
+    "icon.arrow-circle"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2743",
+    "contains": ".project-card {"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$description": "Breakpoints plus the fluid scaling system: body font-size = clamp(min,100vw,max)/(ideal/16), so every em value scales with viewport.",
+  "tokens": {
+    "breakpoint.tablet": {
+      "value": "991px",
+      "type": "breakpoint",
+      "cite": "src/styles/webflow.css:817",
+      "contains": "@media screen and (max-width: 991px)"
+    },
+    "breakpoint.mobile-landscape": {
+      "value": "767px",
+      "type": "breakpoint",
+      "cite": "src/styles/webflow.css:885",
+      "contains": "@media screen and (max-width: 767px)"
+    },
+    "breakpoint.mobile-portrait": {
+      "value": "479px",
+      "type": "breakpoint",
+      "cite": "src/styles/webflow.css:954",
+      "contains": "@media screen and (max-width: 479px)"
+    },
+    "scale.ideal.desktop": {
+      "value": "1440",
+      "type": "scale",
+      "cite": "pages:home/sections/Preamble.html:7",
+      "contains": "--size-container-ideal: 1440"
+    },
+    "scale.ideal.tablet": {
+      "value": "834",
+      "type": "scale",
+      "cite": "pages:home/sections/Preamble.html:17",
+      "contains": "--size-container-ideal: 834"
+    },
+    "scale.ideal.mobile-landscape": {
+      "value": "550",
+      "type": "scale",
+      "cite": "pages:home/sections/Preamble.html:26",
+      "contains": "--size-container-ideal: 550"
+    },
+    "scale.ideal.mobile-portrait": {
+      "value": "390",
+      "type": "scale",
+      "cite": "pages:home/sections/Preamble.html:35",
+      "contains": "--size-container-ideal: 390"
+    },
+    "scale.unit": {
+      "value": "16",
+      "type": "scale",
+      "cite": "pages:home/sections/Preamble.html:6",
+      "contains": "--size-unit: 16"
+    }
+  }
+}

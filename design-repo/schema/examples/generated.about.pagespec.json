@@ -1,0 +1,431 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "theme": "light",
+  "site": {
+    "brandName": "Fernhollow Studio",
+    "baseUrl": "https://fernhollow.example"
+  },
+  "template": "about",
+  "route": "/studio",
+  "meta": {
+    "title": "Studio | Fernhollow Studio",
+    "description": "Who is behind the fictional Fernhollow Studio."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder monoline wordmark for Fernhollow Studio, drawn as a single stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "hours": "Tue–Sat 9:00 – 16:00",
+        "ctaLabel": "Start a project"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder Fernhollow wordmark."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.ink",
+        "bodyFont": "font.family.body"
+      },
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "ctaLabel": "Start a project"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "got an",
+          "idea",
+          "worth",
+          "chasing?"
+        ],
+        "subheading": "or simply wave hello",
+        "contacts": [
+          {
+            "label": "New work",
+            "email": "studio@fernhollow.example"
+          },
+          {
+            "label": "Careers",
+            "email": "jobs@fernhollow.example"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration: a paper plane mid-loop, flat brand orange."
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.about",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "headlineLines": [
+          "Tiny team,",
+          "loud ideas"
+        ],
+        "pills": [
+          "Since 2021",
+          "Independent"
+        ],
+        "paragraph": "Fernhollow was set up by two designers who wanted fewer meetings and more making."
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration of a desk lamp leaning over a sketchbook."
+        },
+        {
+          "slot": "strokePath",
+          "assetRole": "generated.stroke-path",
+          "brief": "One looping stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "story.split-illustrated",
+      "variant": "image-left",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "WHERE IT BEGAN",
+        "heading": "A spare room and a borrowed printer",
+        "body": "We started with a handful of local clients and a rule: only take work we would be proud to show our friends."
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration of a small printer."
+        }
+      ],
+      "motion": {
+        "pattern": "story-path-scrub",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "story.split-illustrated",
+      "variant": "image-right",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "WHERE WE ARE",
+        "heading": "Still small on purpose",
+        "body": "Two partners plus trusted freelancers when a project needs extra hands. That keeps us close to every decision."
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration of a bicycle with a basket of paper rolls."
+        }
+      ],
+      "motion": {
+        "pattern": "story-path-scrub",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "team.member-cards",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "The people",
+        "heading": "MEET THE PAIR",
+        "members": [
+          {
+            "name": "Lena Moroz",
+            "role": "Design Partner",
+            "bio": [
+              "Type nerd who likes systems that survive contact with real life."
+            ]
+          },
+          {
+            "name": "Arjun Patel",
+            "role": "Design Partner",
+            "bio": [
+              "Illustrator and motion designer with a soft spot for packaging."
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "portrait",
+          "assetRole": "generated.person-portrait",
+          "brief": "Fictional portrait, person one."
+        },
+        {
+          "slot": "portrait",
+          "assetRole": "generated.person-portrait",
+          "brief": "Fictional portrait, person two."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.ink",
+        "text": "color.text.on-ink"
+      },
+      "motion": {
+        "pattern": "story-path-scrub",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "runtime.team-popup",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "portrait",
+          "assetRole": "generated.person-portrait",
+          "brief": "Same fictional portrait, larger crop."
+        }
+      ],
+      "motion": {
+        "pattern": "popup-spring",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "gallery.moodboard-marquee",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "AFTER HOURS",
+        "heading": "Studio life"
+      },
+      "assets": [
+        {
+          "slot": "photos",
+          "assetRole": "generated.lifestyle-photo",
+          "brief": "Generated studio moment #1."
+        },
+        {
+          "slot": "photos",
+          "assetRole": "generated.lifestyle-photo",
+          "brief": "Generated studio moment #2."
+        },
+        {
+          "slot": "photos",
+          "assetRole": "generated.lifestyle-photo",
+          "brief": "Generated studio moment #3."
+        },
+        {
+          "slot": "photos",
+          "assetRole": "generated.lifestyle-photo",
+          "brief": "Generated studio moment #4."
+        }
+      ],
+      "motion": {
+        "pattern": "drag-marquee",
+        "trigger": "continuous",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "values.stacked-cards",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "cards": [
+          {
+            "label": "House rule 01",
+            "heading": "ASK BEFORE YOU DRAW",
+            "body": "Every project opens with questions, because the right problem beats the fastest answer."
+          },
+          {
+            "label": "House rule 02",
+            "heading": "SHOW THE WORKING",
+            "body": "Clients see our thinking, not only the polished result, so choices never feel random."
+          },
+          {
+            "label": "House rule 03",
+            "heading": "LESS BUT BETTER",
+            "body": "If one strong idea can carry the brand, we stop adding and start refining."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "stacked-card-scrub",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "capabilities.pill-cloud",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "SERVICES",
+        "heading": "THE FULL MENU",
+        "capabilities": [
+          "Naming",
+          "Logo systems",
+          "Packaging",
+          "Signage",
+          "Editorial",
+          "Motion"
+        ],
+        "ctaLabel": "Start a project"
+      },
+      "motion": {
+        "pattern": "pill-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "That is the whole tour",
+        "ctaLabel": "Say hello",
+        "email": "studio@fernhollow.example",
+        "linkGroups": [
+          {
+            "label": "Write to us",
+            "links": [
+              {
+                "label": "studio@fernhollow.example",
+                "href": "mailto:studio@fernhollow.example"
+              }
+            ]
+          },
+          {
+            "label": "Pages",
+            "links": [
+              {
+                "label": "Projects",
+                "href": "/projects"
+              },
+              {
+                "label": "Studio",
+                "href": "/studio"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "tagline": "Made with care in Porto",
+        "address": "Porto, Portugal",
+        "legal": "© 2026 Fernhollow Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Oversized placeholder wordmark that stretches vertically."
+        },
+        {
+          "slot": "texture",
+          "assetRole": "generated.texture",
+          "brief": "Original paper-grain texture."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

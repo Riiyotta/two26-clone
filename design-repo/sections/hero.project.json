@@ -1,0 +1,87 @@
+{
+  "id": "hero.project",
+  "title": "Case-study cover hero",
+  "category": "HERO",
+  "source": {
+    "id": "work_heygluco/ProjectHero",
+    "file": "pages:work_heygluco/sections/ProjectHero.html",
+    "tag": "section.section-project-hero",
+    "lines": "1-1",
+    "contains": "project-cover-img",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectHero"
+  },
+  "semantic": {
+    "id": "hero.project",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "title": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "project-page-heading",
+          "files": [
+            "pages:work_bagel-bar/sections/ProjectHero.html",
+            "pages:work_heygluco/sections/ProjectHero.html",
+            "pages:work_lpi/sections/ProjectHero.html",
+            "pages:work_merci/sections/ProjectHero.html",
+            "pages:work_munchies-and-cream/sections/ProjectHero.html",
+            "pages:work_mvp/sections/ProjectHero.html",
+            "pages:work_tanti-maria/sections/ProjectHero.html",
+            "pages:work_yum-yum/sections/ProjectHero.html"
+          ],
+          "realSamples": 8,
+          "realMaxWords": 3
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "cover": {
+      "roles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.product-visual"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "default": "none",
+    "cite": "pages:work_heygluco/sections/ProjectHero.html:1",
+    "contains": "project-page-heading"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "full-viewport cover image with title",
+      "heightPx": 900
+    },
+    "mobile": {
+      "layout": "cover shorter",
+      "heightPx": 487
+    },
+    "cite": "src/styles/webflow.css:4230",
+    "contains": ".section-project-hero-wrapper {"
+  },
+  "measured": {
+    "heightPx1440": 900,
+    "route": "all 8 /work/* (900 each)"
+  }
+}

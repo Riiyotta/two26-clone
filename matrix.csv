@@ -1,0 +1,27 @@
+section,category,templates,routes,Home,About,Work index,Project case study
+shell.loader,SHELL,4,11,x,x,x,x
+shell.contact-modal,SHELL,4,11,x,x,x,x
+shell.mobile-menu,SHELL,4,11,x,x,x,x
+shell.footer,SHELL,4,11,x,x,x,x
+shell.navbar-back,SHELL,1,8,,,,x
+hero.project,HERO,1,8,,,,x
+work.project-brief,WORK,1,8,,,,x
+work.project-gallery,WORK,1,8,,,,x
+work.more-works,WORK,1,8,,,,x
+shell.navbar,SHELL,3,3,x,x,x,
+work.project-grid,WORK,2,2,x,,x,
+hero.home,HERO,1,1,x,,,
+hero.about,HERO,1,1,,x,,
+hero.work,HERO,1,1,,,x,
+story.pinned-intro,STORY,1,1,x,,,
+story.founders,STORY,1,1,,x,,
+story.team,STORY,1,1,,x,,
+story.moodboard,STORY,1,1,,x,,
+story.values,STORY,1,1,,x,,
+work.showcase-marquee,WORK,1,1,x,,,
+work.project-stack,WORK,1,1,,,x,
+services.path,SERVICES,1,1,x,,,
+services.range,SERVICES,1,1,,x,,
+proof.testimonials,PROOF,1,1,x,,,
+support.faq,SUPPORT,1,1,x,,,
+ROUTE COUNT,,,11,1,1,1,8

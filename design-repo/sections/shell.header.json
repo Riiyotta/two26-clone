@@ -1,0 +1,122 @@
+{
+  "id": "shell.header",
+  "title": "Fixed header bar",
+  "category": "SHELL",
+  "source": {
+    "id": "home/Header",
+    "file": "pages:home/sections/Header.html",
+    "tag": "header.header",
+    "lines": "1-377",
+    "contains": "navbar-wrap",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Header"
+  },
+  "semantic": {
+    "id": "shell.header",
+    "category": "SHELL"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "navLinks": {
+        "type": "items",
+        "minItems": 2,
+        "maxItems": 3,
+        "fields": {
+          "label": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "sourceClass": "navlink-text",
+              "files": [
+                "pages:home/sections/Header.html"
+              ],
+              "realSamples": 4,
+              "realMaxWords": 2
+            },
+            "required": true
+          },
+          "href": {
+            "type": "url",
+            "required": true
+          }
+        },
+        "countEvidence": "2 nav pills (Work, About us)",
+        "required": true
+      },
+      "hours": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "navbar-timing",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": false
+      },
+      "ctaLabel": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "cta-text",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 2
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "brandMark": {
+      "roles": [
+        "brand.wordmark-source",
+        "generated.brand-mark"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.brand-mark"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "stroke-fill-hover",
+      "magnetic-cta",
+      "none"
+    ],
+    "default": "stroke-fill-hover",
+    "cite": "pages:home/scripts/02.js:49",
+    "contains": "tl.timeScale(1.4).reverse()"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true,
+    "position": "fixed"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "logo centred, nav pills left, hours + CTA right",
+      "heightPx": 74
+    },
+    "mobile": {
+      "layout": "logo left, hamburger toggle right; nav/CTA move into runtime.mobile-menu",
+      "heightPx": 75
+    },
+    "cite": "src/styles/webflow.css:2146",
+    "contains": ".navbar-wrap {"
+  },
+  "measured": {
+    "heightPx1440": 74,
+    "inFlow": false
+  }
+}

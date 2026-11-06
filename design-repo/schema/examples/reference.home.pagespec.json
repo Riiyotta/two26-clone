@@ -1,0 +1,671 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "reference",
+  "template": "home",
+  "route": "/",
+  "theme": "light",
+  "site": {
+    "brandName": "Two26 Studio",
+    "baseUrl": "https://two26.studio"
+  },
+  "meta": {
+    "title": "Two26 Studio | Boutique Design Studio",
+    "description": "Two26 is a boutique design studio in Bucharest creating brands with strategy, personality and a healthy obsession for the details."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .two26-logo-svg (Loader.html)"
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Work",
+            "href": "/work"
+          },
+          {
+            "label": "About us",
+            "href": "/about"
+          }
+        ],
+        "hours": "Monday–Friday 10:00 – 17:00",
+        "ctaLabel": "Let's Talk"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .navbar-logo"
+        }
+      ],
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Work",
+            "href": "/work"
+          },
+          {
+            "label": "About us",
+            "href": "/about"
+          }
+        ],
+        "ctaLabel": "Let's Talk"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "want to",
+          "start",
+          "a new",
+          "project?"
+        ],
+        "subheading": "or just say hello!",
+        "contacts": [
+          {
+            "label": "Inquiries & Commissions",
+            "email": "bogdan@two26.studio"
+          },
+          {
+            "label": "Job Applications",
+            "email": "diana@two26.studio"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Linkedin",
+            "href": "https://www.linkedin.com/company/two26-studio/"
+          },
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/two26_studio/"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "brand.illustration-source",
+          "src": "/assets/media/6aaad679fdb9d914f7f5206b_contact.svg"
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.home",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "headline": "LOOKING SUSPICIOUSLY GOOD",
+        "pills": [
+          "Independent studio",
+          "Branding & design",
+          "No funny business"
+        ],
+        "marqueeText": "LET’S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED"
+      },
+      "assets": [
+        {
+          "slot": "heroVideo",
+          "assetRole": "media.hero-reel-source",
+          "src": "/assets/media/6aaad679fdb9d914f7f52055_Hero_mp4.mp4"
+        },
+        {
+          "slot": "strokePaths",
+          "assetRole": "decor.stroke-path-source",
+          "brief": ".hero-path-svg-left"
+        },
+        {
+          "slot": "strokePaths",
+          "assetRole": "decor.stroke-path-source",
+          "brief": ".hero-path-svg-right"
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.hero-blush",
+        "text": "color.text.brand",
+        "displayFont": "font.family.display"
+      },
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "statement.pinned-manifesto",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "A BIT ABOUT US",
+        "statement": "We believe creative work needs focus. That’s why we keep our team tight and our involvement high, so every project gets our full attention. We build brands from scratch or make them better.",
+        "pills": [
+          "Professional overthinkers",
+          "Nerding out on design",
+          "Allergic to generic"
+        ]
+      },
+      "tokens": {
+        "surface": "color.surface.page",
+        "text": "color.text.ink",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "pinned-char-wave",
+        "trigger": "pin-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "media.showcase-marquee",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "slides",
+          "assetRole": "media.showcase-shot-source",
+          "src": "/assets/media/6ab263498b14a38a7a109afc_Shot 2.jpg"
+        },
+        {
+          "slot": "slides",
+          "assetRole": "media.showcase-shot-source",
+          "src": "/assets/media/6ab2633da8fa39ec5216880b_Shot 4.jpg"
+        },
+        {
+          "slot": "slides",
+          "assetRole": "media.showcase-shot-source",
+          "src": "/assets/media/6ab2633d3e5b6a35a15d74d7_Shot 5.jpg"
+        },
+        {
+          "slot": "slides",
+          "assetRole": "media.showcase-shot-source",
+          "src": "/assets/media/6ab2634dc8995221637e120c_Shot 6.png"
+        }
+      ],
+      "motion": {
+        "pattern": "velocity-marquee",
+        "trigger": "continuous",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "work.featured-grid",
+      "variant": "featured",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Featured Projects",
+        "heading": "Selected Works",
+        "cards": [
+          {
+            "name": "HeyGluco",
+            "category": "Health & Wellness",
+            "href": "/work/heygluco"
+          },
+          {
+            "name": "THE BAGEL BAR",
+            "category": "Food & Beverage",
+            "href": "/work/bagel-bar"
+          },
+          {
+            "name": "TANTI MARIA",
+            "category": "Food & Retail",
+            "href": "/work/tanti-maria"
+          },
+          {
+            "name": "MUNCHIES AND CREAM",
+            "category": "Food & Beverage",
+            "href": "/work/munchies-and-cream"
+          },
+          {
+            "name": "MVP",
+            "category": "Sports & Talent Management",
+            "href": "/work/mvp"
+          },
+          {
+            "name": "YUM YUM",
+            "category": "Food & Beverage",
+            "href": "/work/yum-yum"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "heygluco thumbnail"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "bagel-bar thumbnail"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "tanti-maria thumbnail"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "munchies-and-cream thumbnail"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "mvp thumbnail"
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "client.project-imagery-source",
+          "brief": "yum-yum thumbnail"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "heygluco logo"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "bagel-bar logo"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "tanti-maria logo"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "munchies-and-cream logo"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "mvp logo"
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "client.logo-source",
+          "brief": "yum-yum logo"
+        }
+      ],
+      "motion": {
+        "pattern": "clip-mask-card-reveal",
+        "trigger": "scroll-enter",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "cta.projects-end",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "statement": "WE COULD KEEP GOING, BUT THERE’S A WHOLE PAGE FOR THAT.",
+        "pills": [
+          "The plot thickens",
+          "Very convenient",
+          "There’s more"
+        ],
+        "ctaLabel": "See all projects",
+        "ctaHref": "/work"
+      },
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "features.services-path",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Our Services",
+        "heading": "THIS IS OUR THING",
+        "services": [
+          {
+            "name": "Brand Strategy",
+            "description": "We find the idea, the angle and the reasons people should care."
+          },
+          {
+            "name": "Brand identity",
+            "description": "We give your brand a distinctive look, feel and personality that feel unmistakably yours."
+          },
+          {
+            "name": "Web design",
+            "description": "We turn your brand into a digital experience that looks great, feels right and is easy to navigate."
+          },
+          {
+            "name": "Illustration",
+            "description": "We create distinctive illustrations that add character to your brand."
+          },
+          {
+            "name": "Motion Design",
+            "description": "We make your brand move, cause standing still just isn’t enough."
+          },
+          {
+            "name": "Packaging Design",
+            "description": "We create packaging that catches the eye and works better for your brand."
+          },
+          {
+            "name": "Art direction",
+            "description": "We keep all the moving parts moving in the same direction, from the big idea down to the smallest detail."
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f52071_Brand strategy.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f52076_Brand Identity.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f52077_Packaging.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f52078_Motion Design.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f52079_Web design.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f5207a_Illustration.json"
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "icon.service-animation-source",
+          "src": "/assets/lottie/6aaad679fdb9d914f7f5207b_Art Direction.json"
+        }
+      ],
+      "motion": {
+        "pattern": "scrubbed-path-draw",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "social-proof.testimonial-stack",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "TESTIMONIALS",
+        "heading": "APPARENTLY, THEY LIKE US",
+        "testimonials": [
+          {
+            "headline": "Working with Bogdan and Diana has been one of the smoothest collaborations I've had",
+            "quote": "They're sharp, always responsive, and have a real talent for turning briefs into compelling visuals. No matter the challenge: tight deadlines, shifting requirements, tricky creative constraints, they always show up with solutions. Highly recommend working with them!",
+            "name": "Ruxandra Florescu",
+            "role": "COO, Dare Digital"
+          },
+          {
+            "headline": "Bogdan and Diana truly brought HeyGluco to life",
+            "quote": "Both of them are truly amazing humans, with an incredible amount of creativity and talent. They took our vision, understood it completely, and brought it to life in ways that went beyond anything we could have imagined. We absolutely loved working with them and feel incredibly lucky that, along the way, we got to call them friends. We cannot brag about them or recommend them highly enough. They are the kind of people you feel lucky to have found, and luckier to have worked with! ❤️",
+            "name": "Luiza Zamfirescu",
+            "role": "Co-Founder, HeyGluco"
+          },
+          {
+            "headline": "Working with Two26 is a bit like brainstorming ideas with your best friends",
+            "quote": "Always fun, always insightful, always constructive. It hardly feels like working, cause the whole process is always so smooth. That's what you get for getting the job done with cool creatives, I guess.",
+            "name": "Vlad Belcin",
+            "role": "Sr. Copywriter, Dare Digital"
+          },
+          {
+            "headline": "Four projects and counting",
+            "quote": "We’ve worked together on two websites and two visual identities so far, and it’s been a pleasure every time. Great ideas, really well executed, and just lovely people to work with. Pretty sure we’re not done yet.",
+            "name": "Ionut Belet",
+            "role": "Founder, MVP Agency"
+          },
+          {
+            "headline": "Better than we imagined",
+            "quote": "Working with Two26 on our brand identity was a great experience from start to finish. They’re incredibly creative and thoughtful, but also easy to work with and genuinely invested in getting things right. They brought ideas we wouldn’t have thought of ourselves and gave the brand a personality that really feels like us. You can tell they care about the work, but also about the people behind it.",
+            "name": "Monica Tantu",
+            "role": "Co-Founder, Merci"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "avatar",
+          "assetRole": "person.testimonial-avatar-source",
+          "brief": "Ruxandra Florescu"
+        },
+        {
+          "slot": "avatar",
+          "assetRole": "person.testimonial-avatar-source",
+          "brief": "Luiza Zamfirescu"
+        },
+        {
+          "slot": "avatar",
+          "assetRole": "person.testimonial-avatar-source",
+          "brief": "Vlad Belcin"
+        },
+        {
+          "slot": "avatar",
+          "assetRole": "person.testimonial-avatar-source",
+          "brief": "Ionut Belet"
+        },
+        {
+          "slot": "avatar",
+          "assetRole": "person.testimonial-avatar-source",
+          "brief": "Monica Tantu"
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.brand"
+      },
+      "motion": {
+        "pattern": "card-stack-shuffle",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.cursor-follower",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "motion": {
+        "pattern": "cursor-follow",
+        "trigger": "pointer",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "faq.accordion",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Frequently Asked Questions",
+        "heading": "THINGS YOU MIGHT ASK",
+        "items": [
+          {
+            "question": "What kind of projects do you take on?",
+            "answer": "Branding is our main thing, from strategy and identity to packaging, illustration, motion and web design. We like projects where there’s room to think, question things and build something with a bit of character."
+          },
+          {
+            "question": "How much does a branding project cost?",
+            "answer": "It depends on what we’re making. Every project is a little diﬀerent, so we price based on scope rather than pulling a mysterious number out of a hat. Tell us what you have in mind and we’ll take it from there."
+          },
+          {
+            "question": "Can you work with a brand that already exists?",
+            "answer": "Of course. Not everything needs to be burned to the ground and rebuilt. Sometimes a brand just needs a fresh pair of eyes and a few very intentional changes."
+          },
+          {
+            "question": "Do you work with clients outside Romania?",
+            "answer": "Absolutely. We’re based in Bucharest, but our Wi-Fi travels remarkably well. We’re happy to work with people pretty much anywhere."
+          },
+          {
+            "question": "What if we don’t like the first concepts?",
+            "answer": "We talk about why. Feedback is part of the process, and nothing is presented just because “we thought it looked cool.” Although we do like when things look cool."
+          },
+          {
+            "question": "How involved do we need to be?",
+            "answer": "Involved enough. We’ll need your knowledge, feedback and decisions along the way. Don’t worry, we won’t make you sit next to us while we move things two pixels to the left."
+          },
+          {
+            "question": "Can you start yesterday?",
+            "answer": "We checked. Unfortunately, yesterday is fully booked. But send us a message and we’ll tell you when we can realistically get started."
+          },
+          {
+            "question": "Do you work with small businesses?",
+            "answer": "Yep. Company size matters less to us than the project, the people behind it and what we can actually do together."
+          },
+          {
+            "question": "Do you also develop websites?",
+            "answer": "We design them. For development, we work with people we trust and can bring them into the project when needed. So yes, your website can actually become a website."
+          },
+          {
+            "question": "What’s with all the cats?",
+            "answer": "Those are Oreo and Oliver. They’re not technically employed by Two26, but they’ve somehow made it into the brand anyway. They mostly sleep through meetings and contribute very little creatively. We keep them around."
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "mascot",
+          "assetRole": "brand.illustration-source",
+          "brief": "inline SVG .cat-svg"
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.page",
+        "text": "color.text.body"
+      },
+      "motion": {
+        "pattern": "accordion-spring",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "Okay, that's enough website",
+        "ctaLabel": "Let's Talk",
+        "email": "bogdan@two26.studio",
+        "linkGroups": [
+          {
+            "label": "Email us",
+            "links": [
+              {
+                "label": "bogdan@two26.studio",
+                "href": "mailto:bogdan@two26.studio?subject=Hey%20Two26!"
+              }
+            ]
+          },
+          {
+            "label": "Main Menu",
+            "links": [
+              {
+                "label": "Work",
+                "href": "/work"
+              },
+              {
+                "label": "About us",
+                "href": "/about"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/two26_studio/"
+          },
+          {
+            "label": "Behance",
+            "href": "#"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/two26-studio/"
+          }
+        ],
+        "tagline": "Handmade by humans. Well, digitally",
+        "address": "Bucharest, Romania",
+        "legal": "© Copyright 2026 - Two26 Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "brand.wordmark-source",
+          "brief": "inline SVG .footer-svg-logo"
+        },
+        {
+          "slot": "texture",
+          "assetRole": "decor.texture-source",
+          "src": "/assets/media/6aaad679fdb9d914f7f52067_footer-texture.svg"
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

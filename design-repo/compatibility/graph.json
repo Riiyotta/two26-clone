@@ -1,0 +1,95 @@
+{
+  "$description": "Rhythm / position rules. Each rule id is implemented in schema/semantic_validate.py (verify_all.py checks both directions).",
+  "categories": [
+    "SHELL",
+    "RUNTIME",
+    "HERO",
+    "STATEMENT",
+    "MEDIA",
+    "PORTFOLIO",
+    "CTA",
+    "FEATURES",
+    "SOCIAL_PROOF",
+    "FAQ",
+    "STORY",
+    "TEAM",
+    "VALUES",
+    "CONTENT",
+    "META"
+  ],
+  "nonFlowCategories": [
+    "RUNTIME"
+  ],
+  "rules": [
+    {
+      "id": "ONE_HERO",
+      "severity": "error",
+      "rule": "Exactly one HERO-category node per page.",
+      "exceptions": []
+    },
+    {
+      "id": "HERO_FIRST_IN_FLOW",
+      "severity": "error",
+      "rule": "The first in-flow non-SHELL node is the HERO."
+    },
+    {
+      "id": "HEADER_FIRST_SHELL",
+      "severity": "error",
+      "rule": "shell.header is the first SHELL node and precedes all in-flow content."
+    },
+    {
+      "id": "FOOTER_LAST",
+      "severity": "error",
+      "rule": "shell.footer is the last node."
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "error",
+      "rule": "Two adjacent in-flow nodes may not share a category.",
+      "exceptions": [
+        {
+          "pair": [
+            "story.split-illustrated",
+            "story.split-illustrated"
+          ],
+          "why": "about page has two consecutive story blocks (AboutHero.html about-story-section x2)"
+        },
+        {
+          "pair": [
+            "project.narrative",
+            "project.narrative"
+          ],
+          "why": "every case study has Context + Solution back to back"
+        },
+        {
+          "pair": [
+            "project.media-single",
+            "project.media-pair",
+            "project.video-embed"
+          ],
+          "why": "case-study media run: any order, any adjacency (measured item sequences in extraction/measured-values.json)"
+        }
+      ]
+    },
+    {
+      "id": "RUNTIME_ATTACH",
+      "severity": "error",
+      "rule": "A RUNTIME node with constraints.attachTo must appear on a page that contains its host section."
+    },
+    {
+      "id": "MAX_ONE_PIN_STAGE",
+      "severity": "warn",
+      "rule": "At most one pinned scroll stage (pattern pinned-char-wave) per page."
+    },
+    {
+      "id": "MOTION_SCRUB_BUDGET",
+      "severity": "warn",
+      "rule": "At most 3 distinct scroll-scrub / pin-scrub motion patterns per page (home: pinned-char-wave, scrubbed-path-draw, footer-logo-stretch; about: story-path-scrub, stacked-card-scrub, footer-logo-stretch)."
+    },
+    {
+      "id": "CTA_BEFORE_FOOTER_ONLY_ONCE",
+      "severity": "warn",
+      "rule": "At most one CTA-category node per page."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "runtime.team-popup",
+  "title": "Team member popup",
+  "category": "RUNTIME",
+  "source": {
+    "id": "about/AboutHero#team-popup",
+    "file": "pages:about/sections/AboutHero.html",
+    "tag": "div.team-popup-overlay",
+    "lines": "139",
+    "contains": ".team-popup-overlay {",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "AboutHero",
+    "decomposedFrom": "section.section-about-hero"
+  },
+  "semantic": {
+    "id": "runtime.team-popup",
+    "category": "RUNTIME"
+  },
+  "retrievalEligible": false,
+  "retrievalReason": "Floating dialog opened by clicking a team card; its bio content is injected by script at click time, so it is runtime UI, not page content.",
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "portrait": {
+      "roles": [
+        "person.team-photo-source",
+        "generated.person-portrait"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.person-portrait"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "popup-spring",
+      "none"
+    ],
+    "default": "popup-spring",
+    "cite": "pages:about/scripts/12.js:262",
+    "contains": "ease: \"back.out(1.4)\""
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "position": "overlay",
+    "attachTo": "team.member-cards"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "floating card, image column + text column"
+    },
+    "mobile": {
+      "layout": "single column, scrollable"
+    },
+    "cite": "pages:about/sections/AboutHero.html:358",
+    "contains": "@media (max-width: 768px)"
+  },
+  "measured": {
+    "inFlow": false
+  },
+  "notes": "Bios live in the popup script (about/scripts/12.js), surfaced to PageSpecs through team.member-cards.members[].bio."
+}

@@ -1,0 +1,95 @@
+{
+  "id": "runtime.mobile-menu",
+  "title": "Mobile hamburger menu",
+  "category": "RUNTIME",
+  "source": {
+    "id": "home/Header#ham-navbar",
+    "file": "pages:home/sections/Header.html",
+    "tag": "div.ham-navbar",
+    "lines": "101",
+    "contains": "class=\"ham-navbar",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Header",
+    "decomposedFrom": "header.header"
+  },
+  "semantic": {
+    "id": "runtime.mobile-menu",
+    "category": "RUNTIME"
+  },
+  "retrievalEligible": false,
+  "retrievalReason": "Hamburger menu overlay shown only below 992px after tapping the toggle; it duplicates the header navigation.",
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "navLinks": {
+        "type": "items",
+        "minItems": 2,
+        "maxItems": 3,
+        "fields": {
+          "label": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "sourceClass": "navlink-text",
+              "files": [
+                "pages:home/sections/Header.html"
+              ],
+              "realSamples": 4,
+              "realMaxWords": 2
+            },
+            "required": true
+          },
+          "href": {
+            "type": "url",
+            "required": true
+          }
+        },
+        "countEvidence": "Work, About us",
+        "required": true
+      },
+      "ctaLabel": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "cta-text",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 2
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "menu-spring-in",
+      "none"
+    ],
+    "default": "menu-spring-in",
+    "cite": "pages:home/scripts/05.js:196",
+    "contains": "ease: \"back.out(2.2)\""
+  },
+  "constraints": {
+    "onePerPage": true,
+    "position": "overlay"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "hidden (>= 992px)"
+    },
+    "mobile": {
+      "layout": "full-screen panel, links right-aligned"
+    },
+    "cite": "src/styles/webflow.css:5319",
+    "contains": ".ham-navbar {"
+  },
+  "measured": {
+    "inFlow": false
+  }
+}

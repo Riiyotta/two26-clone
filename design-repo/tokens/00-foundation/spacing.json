@@ -1,0 +1,83 @@
+{
+  "$description": "Spacing in em of the fluid body size (1em = 16px at 1440). section.lg = the 160px section padding measured in CLONE_SPEC.md section 1.",
+  "tokens": {
+    "space.gap.3xs": {
+      "value": ".25em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2621",
+      "contains": "grid-column-gap: .25em;"
+    },
+    "space.gap.2xs": {
+      "value": ".5em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2157",
+      "contains": "grid-column-gap: .5em;"
+    },
+    "space.gap.xs": {
+      "value": ".75em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:3580",
+      "contains": "grid-column-gap: .75em;"
+    },
+    "space.gap.sm": {
+      "value": "1em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:3157",
+      "contains": "grid-column-gap: 1em;"
+    },
+    "space.gap.md": {
+      "value": "1.25em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:4201",
+      "contains": "grid-column-gap: 1.25em;"
+    },
+    "space.gap.lg": {
+      "value": "2em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2537",
+      "contains": "grid-column-gap: 2em;"
+    },
+    "space.gap.xl": {
+      "value": "2.5em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2629",
+      "contains": "grid-column-gap: 2.5em;"
+    },
+    "space.gap.2xl": {
+      "value": "3em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2817",
+      "contains": "grid-column-gap: 3em;"
+    },
+    "space.gap.3xl": {
+      "value": "4em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2166",
+      "contains": "grid-column-gap: 4em;"
+    },
+    "space.gap.4xl": {
+      "value": "6em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2902",
+      "contains": "grid-column-gap: 6em;"
+    },
+    "space.section.sm": {
+      "value": "5em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:4664",
+      "contains": "padding-top: 5em;"
+    },
+    "space.section.md": {
+      "value": "6em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2233",
+      "contains": "padding-top: 6em;"
+    },
+    "space.section.lg": {
+      "value": "10em",
+      "type": "spacing",
+      "cite": "src/styles/webflow.css:2591",
+      "contains": "padding-top: 10em;"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "hero.home",
+  "title": "Home hero",
+  "category": "HERO",
+  "source": {
+    "id": "home/Hero",
+    "file": "pages:home/sections/Hero.html",
+    "tag": "section.section-hero",
+    "lines": "1-193",
+    "contains": "section-hero-wrapper",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Hero"
+  },
+  "semantic": {
+    "id": "hero.home",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "headline": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "heading",
+          "files": [
+            "pages:home/sections/Hero.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "pills": {
+        "type": "text-list",
+        "minItems": 3,
+        "maxItems": 3,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "hero-pill-text",
+          "files": [
+            "pages:home/sections/Hero.html"
+          ],
+          "realSamples": 3,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "marqueeText": {
+        "type": "text",
+        "maxWords": 11,
+        "evidence": {
+          "source": {
+            "cite": "pages:home/sections/Hero.html:163",
+            "contains": "LET’S MAKE IT MAKE SENSE"
+          },
+          "realMaxWords": 9
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "heroVideo": {
+      "roles": [
+        "media.hero-reel-source",
+        "generated.motion-loop"
+      ],
+      "required": true,
+      "multiple": false
+    },
+    "strokePaths": {
+      "roles": [
+        "decor.stroke-path-source",
+        "generated.stroke-path"
+      ],
+      "required": false,
+      "multiple": true,
+      "maxItems": 2
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.motion-loop",
+    "generated.stroke-path"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "line-reveal-mask",
+      "pill-spring-in",
+      "stroke-path-draw",
+      "textpath-marquee",
+      "none"
+    ],
+    "default": "line-reveal-mask",
+    "cite": "pages:home/scripts/10.js:142",
+    "contains": "stagger: 0.12"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "centred 2-line headline with 3 tilted pills, full-width video, curved text marquee",
+      "heightPx": 1343
+    },
+    "mobile": {
+      "layout": "3-line headline, cropped video",
+      "heightPx": 724
+    },
+    "cite": "src/styles/webflow.css:2224",
+    "contains": ".section-hero-wrapper {"
+  },
+  "measured": {
+    "heightPx1440": 1343,
+    "route": "/"
+  }
+}

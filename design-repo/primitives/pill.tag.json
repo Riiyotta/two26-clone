@@ -1,0 +1,13 @@
+{
+  "id": "pill.tag",
+  "kind": "primitive",
+  "description": "Rounded tag pill (black with accent text in heroes, orange in the pinned statement), usually tilted a few degrees.",
+  "props": [
+    "label",
+    "tone"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2439",
+    "contains": ".hero-pill {"
+  }
+}

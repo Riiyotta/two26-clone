@@ -1,0 +1,13 @@
+{
+  "id": "card.testimonial",
+  "kind": "component",
+  "description": "Stacked testimonial card: headline quote, avatar, name/role, body.",
+  "composes": [
+    "avatar.round",
+    "text.body"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:3094",
+    "contains": ".testimonial-card {"
+  }
+}

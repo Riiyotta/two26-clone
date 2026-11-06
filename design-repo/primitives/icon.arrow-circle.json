@@ -1,0 +1,10 @@
+{
+  "id": "icon.arrow-circle",
+  "kind": "primitive",
+  "description": "Orange circle holding a diagonal arrow (CTA / project arrow).",
+  "props": [],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2313",
+    "contains": ".cta-btn-arrow {"
+  }
+}

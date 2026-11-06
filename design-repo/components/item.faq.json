@@ -1,0 +1,12 @@
+{
+  "id": "item.faq",
+  "kind": "component",
+  "description": "Question pill + answer bubble + round brand badge.",
+  "composes": [
+    "text.body"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:3356",
+    "contains": ".question-block {"
+  }
+}

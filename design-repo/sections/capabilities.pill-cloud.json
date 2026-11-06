@@ -1,0 +1,111 @@
+{
+  "id": "capabilities.pill-cloud",
+  "title": "Capabilities pill cloud",
+  "category": "FEATURES",
+  "source": {
+    "id": "about/WhatWeDo",
+    "file": "pages:about/sections/WhatWeDo.html",
+    "tag": "section.section-what-we-do",
+    "lines": "1-1287",
+    "contains": "do-cms-list",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "WhatWeDo"
+  },
+  "semantic": {
+    "id": "capabilities.pill-cloud",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 3,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:about/sections/WhatWeDo.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 1
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:about/sections/WhatWeDo.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "capabilities": {
+        "type": "text-list",
+        "minItems": 4,
+        "maxItems": 30,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "do-pill-text",
+          "files": [
+            "pages:about/sections/WhatWeDo.html"
+          ],
+          "realSamples": 25,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "ctaLabel": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "cta-text",
+          "files": [
+            "pages:about/sections/WhatWeDo.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 2
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "pill-fill-hover",
+      "magnetic-cta",
+      "none"
+    ],
+    "default": "pill-fill-hover",
+    "cite": "pages:about/scripts/15.js:73",
+    "contains": "ease: \"power2.inOut\""
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "wrapped outline pills + CTA",
+      "heightPx": 686
+    },
+    "mobile": {
+      "layout": "wrapped, narrower",
+      "heightPx": 827
+    },
+    "cite": "src/styles/webflow.css:4822",
+    "contains": ".do-cms--pill {"
+  },
+  "measured": {
+    "heightPx1440": 686,
+    "route": "/about"
+  }
+}

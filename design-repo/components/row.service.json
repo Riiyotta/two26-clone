@@ -1,0 +1,13 @@
+{
+  "id": "row.service",
+  "kind": "component",
+  "description": "Service row: two-word label, icon animation, tilted description bubble.",
+  "composes": [
+    "media.icon-animation",
+    "text.body"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2944",
+    "contains": ".service-block {"
+  }
+}

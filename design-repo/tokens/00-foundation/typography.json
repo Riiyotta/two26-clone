@@ -1,0 +1,153 @@
+{
+  "$description": "Type tokens. Sizes are em of the fluid body size (16px at 1440; see breakpoint.json scaling). pxAt1440 cross-checked against CLONE_SPEC.md section 2.",
+  "licensing": {
+    "display": "MDNichromeTest Bold/Dark ship as files named '*Test*' (trial/test cuts). Licence status unverified: do not ship them in a generated production page without a confirmed licence; substitute a licensed display face of similar condensed character.",
+    "body": "Neue Montreal licence status unverified."
+  },
+  "tokens": {
+    "font.family.display": {
+      "value": "Mdnichrometest, Arial, sans-serif",
+      "type": "fontFamily",
+      "cite": "src/styles/webflow.css:2116",
+      "contains": "--font-primary: Mdnichrometest",
+      "weight": 700,
+      "license": "trial-file-unverified"
+    },
+    "font.family.display-dark": {
+      "value": "\"Mdnichrometest Dark\", Arial, sans-serif",
+      "type": "fontFamily",
+      "cite": "src/styles/webflow.css:2118",
+      "contains": "--font-primary-dark: \"Mdnichrometest Dark\"",
+      "weight": 400,
+      "license": "trial-file-unverified"
+    },
+    "font.family.body": {
+      "value": "Neuemontreal, Arial, sans-serif",
+      "type": "fontFamily",
+      "cite": "src/styles/webflow.css:2114",
+      "contains": "--font-secondary: Neuemontreal",
+      "weights": [
+        400,
+        500
+      ],
+      "license": "unverified"
+    },
+    "font.size.xs": {
+      "value": ".75em",
+      "pxAt1440": 12,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2288",
+      "contains": "font-size: .75em;"
+    },
+    "font.size.sm": {
+      "value": ".875em",
+      "pxAt1440": 14,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2208",
+      "contains": "font-size: .875em;"
+    },
+    "font.size.base": {
+      "value": "1em",
+      "pxAt1440": 16,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:97",
+      "contains": "font-size: 1em;"
+    },
+    "font.size.md": {
+      "value": "1.125em",
+      "pxAt1440": 18,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2525",
+      "contains": "font-size: 1.125em;"
+    },
+    "font.size.lg": {
+      "value": "1.5em",
+      "pxAt1440": 24,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:3116",
+      "contains": "font-size: 1.5em;"
+    },
+    "font.size.xl": {
+      "value": "3.375em",
+      "pxAt1440": 54,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:3089",
+      "contains": "font-size: 3.375em;"
+    },
+    "font.size.3xl": {
+      "value": "5em",
+      "pxAt1440": 80,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2515",
+      "contains": "font-size: 5em;"
+    },
+    "font.size.4xl": {
+      "value": "6.25em",
+      "pxAt1440": 100,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2675",
+      "contains": "font-size: 6.25em;"
+    },
+    "font.size.5xl": {
+      "value": "8em",
+      "pxAt1440": 128,
+      "type": "fontSize",
+      "cite": "src/styles/webflow.css:2364",
+      "contains": "font-size: 8em;"
+    },
+    "font.weight.regular": {
+      "value": 400,
+      "type": "fontWeight",
+      "cite": "src/styles/webflow.css:2089",
+      "contains": "font-weight: 400;"
+    },
+    "font.weight.medium": {
+      "value": 500,
+      "type": "fontWeight",
+      "cite": "src/styles/webflow.css:2097",
+      "contains": "font-weight: 500;"
+    },
+    "font.weight.bold": {
+      "value": 700,
+      "type": "fontWeight",
+      "cite": "src/styles/webflow.css:2081",
+      "contains": "font-weight: 700;"
+    },
+    "font.line-height.tight": {
+      "value": "80%",
+      "type": "lineHeight",
+      "cite": "src/styles/webflow.css:2366",
+      "contains": "line-height: 80%;"
+    },
+    "font.line-height.snug": {
+      "value": "85%",
+      "type": "lineHeight",
+      "cite": "src/styles/webflow.css:2677",
+      "contains": "line-height: 85%;"
+    },
+    "font.line-height.solid": {
+      "value": "100%",
+      "type": "lineHeight",
+      "cite": "src/styles/webflow.css:2527",
+      "contains": "line-height: 100%;"
+    },
+    "font.line-height.normal": {
+      "value": "120%",
+      "type": "lineHeight",
+      "cite": "src/styles/webflow.css:2248",
+      "contains": "line-height: 120%;"
+    },
+    "font.line-height.relaxed": {
+      "value": "140%",
+      "type": "lineHeight",
+      "cite": "src/styles/webflow.css:3524",
+      "contains": "line-height: 140%;"
+    },
+    "font.letter-spacing.display": {
+      "value": "-1px",
+      "type": "letterSpacing",
+      "cite": "src/styles/webflow.css:2513",
+      "contains": "letter-spacing: -1px;"
+    }
+  }
+}

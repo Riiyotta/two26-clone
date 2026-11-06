@@ -1,0 +1,61 @@
+{
+  "$description": "Every route the clone serves (pages:routes.json), mapped exactly once.",
+  "sourceRoutesFile": "pages:routes.json",
+  "routes": [
+    {
+      "route": "/",
+      "template": "home",
+      "sourcePage": "home"
+    },
+    {
+      "route": "/about",
+      "template": "about",
+      "sourcePage": "about"
+    },
+    {
+      "route": "/work",
+      "template": "work-index",
+      "sourcePage": "work"
+    },
+    {
+      "route": "/work/bagel-bar",
+      "template": "project-detail",
+      "sourcePage": "work_bagel-bar"
+    },
+    {
+      "route": "/work/heygluco",
+      "template": "project-detail",
+      "sourcePage": "work_heygluco"
+    },
+    {
+      "route": "/work/lpi",
+      "template": "project-detail",
+      "sourcePage": "work_lpi"
+    },
+    {
+      "route": "/work/merci",
+      "template": "project-detail",
+      "sourcePage": "work_merci"
+    },
+    {
+      "route": "/work/munchies-and-cream",
+      "template": "project-detail",
+      "sourcePage": "work_munchies-and-cream"
+    },
+    {
+      "route": "/work/mvp",
+      "template": "project-detail",
+      "sourcePage": "work_mvp"
+    },
+    {
+      "route": "/work/tanti-maria",
+      "template": "project-detail",
+      "sourcePage": "work_tanti-maria"
+    },
+    {
+      "route": "/work/yum-yum",
+      "template": "project-detail",
+      "sourcePage": "work_yum-yum"
+    }
+  ]
+}

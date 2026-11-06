@@ -1,0 +1,233 @@
+{
+  "wfPage": "6aaad679fdb9d914f7f52031",
+  "title": "About Us - Two26 Studio | Boutique Design Studio",
+  "description": "Two26 is a boutique design studio in Bucharest creating brands with strategy, personality and a healthy obsession for the details.",
+  "sections": [
+    {
+      "name": "Loader",
+      "tag": "div",
+      "attrs": {
+        "class": "loader"
+      },
+      "role": "loader"
+    },
+    {
+      "name": "Header",
+      "tag": "header",
+      "attrs": {
+        "class": "header"
+      },
+      "role": "header"
+    },
+    {
+      "name": "AboutHero",
+      "tag": "section",
+      "attrs": {
+        "class": "section-about-hero"
+      },
+      "role": "main"
+    },
+    {
+      "name": "Moodboard",
+      "tag": "section",
+      "attrs": {
+        "class": "section-moodboard"
+      },
+      "role": "main"
+    },
+    {
+      "name": "Values",
+      "tag": "section",
+      "attrs": {
+        "class": "section-values"
+      },
+      "role": "main"
+    },
+    {
+      "name": "WhatWeDo",
+      "tag": "section",
+      "attrs": {
+        "class": "section-what-we-do"
+      },
+      "role": "main"
+    },
+    {
+      "name": "Footer",
+      "tag": "footer",
+      "attrs": {
+        "class": "footer"
+      },
+      "role": "footer"
+    }
+  ],
+  "scripts": [
+    {
+      "inline": "00.js"
+    },
+    {
+      "inline": "01.js"
+    },
+    {
+      "inline": "02.js"
+    },
+    {
+      "inline": "03.js"
+    },
+    {
+      "inline": "04.js"
+    },
+    {
+      "inline": "05.js"
+    },
+    {
+      "inline": "06.js"
+    },
+    {
+      "inline": "07.js"
+    },
+    {
+      "inline": "08.js"
+    },
+    {
+      "inline": "09.js"
+    },
+    {
+      "inline": "10.js"
+    },
+    {
+      "inline": "11.js"
+    },
+    {
+      "inline": "12.js"
+    },
+    {
+      "inline": "13.js"
+    },
+    {
+      "inline": "14.js"
+    },
+    {
+      "inline": "15.js"
+    },
+    {
+      "inline": "16.js"
+    },
+    {
+      "inline": "17.js"
+    },
+    {
+      "inline": "18.js"
+    },
+    {
+      "inline": "19.js"
+    },
+    {
+      "inline": "20.js"
+    },
+    {
+      "inline": "21.js"
+    },
+    {
+      "inline": "22.js"
+    },
+    {
+      "inline": "23.js"
+    },
+    {
+      "inline": "24.js"
+    },
+    {
+      "inline": "25.js"
+    },
+    {
+      "inline": "26.js"
+    },
+    {
+      "inline": "27.js"
+    },
+    {
+      "inline": "28.js"
+    },
+    {
+      "inline": "29.js"
+    },
+    {
+      "inline": "30.js"
+    },
+    {
+      "inline": "31.js"
+    },
+    {
+      "inline": "32.js"
+    },
+    {
+      "inline": "33.js"
+    },
+    {
+      "inline": "34.js"
+    },
+    {
+      "inline": "35.js"
+    },
+    {
+      "inline": "36.js"
+    },
+    {
+      "inline": "37.js"
+    },
+    {
+      "inline": "38.js"
+    },
+    {
+      "inline": "39.js"
+    },
+    {
+      "inline": "40.js"
+    },
+    {
+      "inline": "41.js"
+    },
+    {
+      "inline": "42.js"
+    },
+    {
+      "src": "/assets/vendor/jquery-3.5.1.min.dc5e7f18c8.js"
+    },
+    {
+      "src": "/assets/vendor/webflow.schunk.7321a5097fb66f41.js"
+    },
+    {
+      "src": "/assets/vendor/webflow.751e0867.148dc658e77a3916.js"
+    },
+    {
+      "src": "/assets/vendor/gsap.min.js"
+    },
+    {
+      "src": "/assets/vendor/SplitText.min.js"
+    },
+    {
+      "src": "/assets/vendor/ScrollTrigger.min.js"
+    },
+    {
+      "src": "/assets/vendor/DrawSVGPlugin.min.js"
+    },
+    {
+      "src": "/assets/vendor/MotionPathPlugin.min.js"
+    },
+    {
+      "src": "/assets/vendor/CustomEase.min.js"
+    },
+    {
+      "src": "/assets/vendor/CustomBounce.min.js"
+    },
+    {
+      "inline": "53.js"
+    },
+    {
+      "src": "/assets/vendor/lenis.min.js"
+    },
+    {
+      "inline": "55.js"
+    }
+  ]
+}

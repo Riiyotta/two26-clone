@@ -1,0 +1,516 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "theme": "light",
+  "site": {
+    "brandName": "Fernhollow Studio",
+    "baseUrl": "https://fernhollow.example"
+  },
+  "template": "home",
+  "route": "/",
+  "meta": {
+    "title": "Fernhollow Studio | Independent branding studio",
+    "description": "Fernhollow is a fictional two-person branding studio used to exercise the design-repo in generated mode."
+  },
+  "nodes": [
+    {
+      "section": "runtime.preloader",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder monoline wordmark for Fernhollow Studio, drawn as a single stroke."
+        }
+      ],
+      "motion": {
+        "pattern": "loader-logo-draw",
+        "trigger": "load",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "shell.header",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "hours": "Tue–Sat 9:00 – 16:00",
+        "ctaLabel": "Start a project"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Placeholder Fernhollow wordmark."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.ink",
+        "bodyFont": "font.family.body"
+      },
+      "motion": {
+        "pattern": "stroke-fill-hover",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.mobile-menu",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "navLinks": [
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "Studio",
+            "href": "/studio"
+          }
+        ],
+        "ctaLabel": "Start a project"
+      },
+      "motion": {
+        "pattern": "menu-spring-in",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.contact-modal",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {
+        "headingLines": [
+          "got an",
+          "idea",
+          "worth",
+          "chasing?"
+        ],
+        "subheading": "or simply wave hello",
+        "contacts": [
+          {
+            "label": "New work",
+            "email": "studio@fernhollow.example"
+          },
+          {
+            "label": "Careers",
+            "email": "jobs@fernhollow.example"
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "closeLabel": "Close"
+      },
+      "assets": [
+        {
+          "slot": "illustration",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration: a paper plane mid-loop, flat brand orange."
+        }
+      ],
+      "motion": {
+        "pattern": "contact-path-wipe",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "hero.home",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "headline": "QUIETLY BOLD BRANDS",
+        "pills": [
+          "Small and focused",
+          "Identity & web",
+          "Zero fluff"
+        ],
+        "marqueeText": "MAKE IT CLEAR • MAKE IT LAST"
+      },
+      "assets": [
+        {
+          "slot": "heroVideo",
+          "assetRole": "generated.motion-loop",
+          "brief": "Generated 10s loop: hands arranging printed brand swatches on a table."
+        },
+        {
+          "slot": "strokePaths",
+          "assetRole": "generated.stroke-path",
+          "brief": "Two loose hand-drawn loops."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.hero-blush",
+        "text": "color.text.brand",
+        "displayFont": "font.family.display"
+      },
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "statement.pinned-manifesto",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "WHO WE ARE",
+        "statement": "Two designers, one long table and a habit of asking why. We shape identities that stay useful long after launch day, and we keep every project close.",
+        "pills": [
+          "Curious by default",
+          "Detail people",
+          "No templates"
+        ]
+      },
+      "tokens": {
+        "surface": "color.surface.page",
+        "text": "color.text.ink",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "pinned-char-wave",
+        "trigger": "pin-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "media.showcase-marquee",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {},
+      "assets": [
+        {
+          "slot": "slides",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated square studio shot #1."
+        },
+        {
+          "slot": "slides",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated square studio shot #2."
+        },
+        {
+          "slot": "slides",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated square studio shot #3."
+        },
+        {
+          "slot": "slides",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated square studio shot #4."
+        }
+      ],
+      "motion": {
+        "pattern": "velocity-marquee",
+        "trigger": "continuous",
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "section": "work.featured-grid",
+      "variant": "featured",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Recent work",
+        "heading": "Chosen projects",
+        "cards": [
+          {
+            "name": "Harbor Loaf",
+            "category": "Food & Drink",
+            "href": "/projects/harbor-loaf"
+          },
+          {
+            "name": "Kiln House",
+            "category": "Ceramics & Retail",
+            "href": "/projects/kiln-house"
+          },
+          {
+            "name": "Northlight Tea",
+            "category": "Food & Drink",
+            "href": "/projects/northlight-tea"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Harbor Loaf."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Harbor Loaf."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Kiln House."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Kiln House."
+        },
+        {
+          "slot": "cardImage",
+          "assetRole": "generated.product-visual",
+          "brief": "Generated packshot for the fictional brand Northlight Tea."
+        },
+        {
+          "slot": "cardMark",
+          "assetRole": "generated.client-mark",
+          "brief": "Placeholder mark for Northlight Tea."
+        }
+      ],
+      "motion": {
+        "pattern": "clip-mask-card-reveal",
+        "trigger": "scroll-enter",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "cta.projects-end",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "statement": "THERE IS MORE WHERE THAT CAME FROM",
+        "pills": [
+          "Keep scrolling",
+          "Plenty more"
+        ],
+        "ctaLabel": "Browse every project",
+        "ctaHref": "/projects"
+      },
+      "motion": {
+        "pattern": "line-reveal-mask",
+        "trigger": "loader-complete",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "features.services-path",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "What we do",
+        "heading": "OUR TOOLKIT",
+        "services": [
+          {
+            "name": "Naming",
+            "description": "Names that are easy to say, hard to forget and free to register."
+          },
+          {
+            "name": "Identity systems",
+            "description": "Logos, type and colour that hold together from a sticker to a storefront."
+          },
+          {
+            "name": "Packaging",
+            "description": "Boxes, labels and bags designed to earn a second look on a crowded shelf."
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "serviceIcon",
+          "assetRole": "generated.icon-animation",
+          "brief": "Original looping line icon #1."
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "generated.icon-animation",
+          "brief": "Original looping line icon #2."
+        },
+        {
+          "slot": "serviceIcon",
+          "assetRole": "generated.icon-animation",
+          "brief": "Original looping line icon #3."
+        }
+      ],
+      "motion": {
+        "pattern": "scrubbed-path-draw",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "section": "social-proof.testimonial-stack",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Kind words",
+        "heading": "CLIENTS SAY NICE THINGS",
+        "testimonials": [
+          {
+            "headline": "They listened first and designed second",
+            "quote": "Our launch moved faster than planned because every decision came with a clear reason attached.",
+            "name": "Ines Varga",
+            "role": "Founder, Harbor Loaf"
+          },
+          {
+            "headline": "Calm, quick and very thorough",
+            "quote": "We came in with a rough idea and left with a system our small team can actually maintain.",
+            "name": "Tomas Reyes",
+            "role": "Owner, Kiln House"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "avatar",
+          "assetRole": "generated.person-avatar",
+          "brief": "Fictional person avatar, warm light."
+        },
+        {
+          "slot": "avatar",
+          "assetRole": "generated.person-avatar",
+          "brief": "Fictional person avatar, studio light."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.card",
+        "text": "color.text.brand"
+      },
+      "motion": {
+        "pattern": "card-stack-shuffle",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "runtime.cursor-follower",
+      "variant": "default",
+      "retrievalEligible": false,
+      "content": {},
+      "motion": {
+        "pattern": "cursor-follow",
+        "trigger": "pointer",
+        "reducedMotionFallback": "skip"
+      }
+    },
+    {
+      "section": "faq.accordion",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "eyebrow": "Questions",
+        "heading": "GOOD TO KNOW",
+        "items": [
+          {
+            "question": "How long does an identity take?",
+            "answer": "Most identity projects run six to ten weeks, depending on how many touchpoints are in scope."
+          },
+          {
+            "question": "Can we start small?",
+            "answer": "Yes. A focused naming or logo sprint is a good first step, and we can grow from there."
+          },
+          {
+            "question": "Who will we talk to?",
+            "answer": "The two people designing your project, from the first call to the final files."
+          }
+        ]
+      },
+      "assets": [
+        {
+          "slot": "mascot",
+          "assetRole": "generated.illustration",
+          "brief": "Original illustration of a sleepy fox curled on a stack of books."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.page",
+        "text": "color.text.body"
+      },
+      "motion": {
+        "pattern": "accordion-spring",
+        "trigger": "click",
+        "reducedMotionFallback": "instant-toggle"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "retrievalEligible": true,
+      "content": {
+        "heading": "That is the whole tour",
+        "ctaLabel": "Say hello",
+        "email": "studio@fernhollow.example",
+        "linkGroups": [
+          {
+            "label": "Write to us",
+            "links": [
+              {
+                "label": "studio@fernhollow.example",
+                "href": "mailto:studio@fernhollow.example"
+              }
+            ]
+          },
+          {
+            "label": "Pages",
+            "links": [
+              {
+                "label": "Projects",
+                "href": "/projects"
+              },
+              {
+                "label": "Studio",
+                "href": "/studio"
+              }
+            ]
+          }
+        ],
+        "socialLinks": [
+          {
+            "label": "Social",
+            "href": "https://social.fernhollow.example"
+          }
+        ],
+        "tagline": "Made with care in Porto",
+        "address": "Porto, Portugal",
+        "legal": "© 2026 Fernhollow Studio"
+      },
+      "assets": [
+        {
+          "slot": "brandMark",
+          "assetRole": "generated.brand-mark",
+          "brief": "Oversized placeholder wordmark that stretches vertically."
+        },
+        {
+          "slot": "texture",
+          "assetRole": "generated.texture",
+          "brief": "Original paper-grain texture."
+        }
+      ],
+      "tokens": {
+        "surface": "color.surface.brand",
+        "text": "color.text.on-brand",
+        "displayFont": "font.family.display-dark"
+      },
+      "motion": {
+        "pattern": "footer-logo-stretch",
+        "trigger": "scroll-scrub",
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

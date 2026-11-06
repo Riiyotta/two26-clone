@@ -1,0 +1,70 @@
+{
+  "id": "media.showcase-marquee",
+  "title": "Showcase velocity marquee",
+  "category": "MEDIA",
+  "source": {
+    "id": "home/SliderShowcase",
+    "file": "pages:home/sections/SliderShowcase.html",
+    "tag": "section.section-slider-showcase",
+    "lines": "1-42",
+    "contains": "showcase-slider",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "SliderShowcase"
+  },
+  "semantic": {
+    "id": "media.showcase-marquee",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "slides": {
+      "roles": [
+        "media.showcase-shot-source",
+        "generated.product-visual",
+        "generated.motion-loop"
+      ],
+      "required": true,
+      "multiple": true,
+      "maxItems": 8
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.motion-loop",
+    "generated.product-visual"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "velocity-marquee",
+      "none"
+    ],
+    "default": "velocity-marquee",
+    "cite": "pages:home/scripts/13.js:82",
+    "contains": "const BASE_SPEED = 1.5 * speedMultiplier"
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "500px square slides",
+      "heightPx": 820
+    },
+    "mobile": {
+      "layout": "246px slides",
+      "heightPx": 400
+    },
+    "cite": "src/styles/webflow.css:2605",
+    "contains": ".showcase-slide {"
+  },
+  "measured": {
+    "heightPx1440": 820,
+    "route": "/",
+    "slideCount": 6
+  }
+}

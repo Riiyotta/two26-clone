@@ -1,0 +1,105 @@
+{
+  "id": "values.stacked-cards",
+  "title": "Stacked office-rule cards",
+  "category": "VALUES",
+  "source": {
+    "id": "about/Values",
+    "file": "pages:about/sections/Values.html",
+    "tag": "section.section-values",
+    "lines": "1-77",
+    "contains": "value-card",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "Values"
+  },
+  "semantic": {
+    "id": "values.stacked-cards",
+    "category": "VALUES"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "cards": {
+        "type": "items",
+        "minItems": 2,
+        "maxItems": 6,
+        "fields": {
+          "label": {
+            "type": "text",
+            "maxWords": 6,
+            "evidence": {
+              "sourceClass": "value-text",
+              "files": [
+                "pages:about/sections/Values.html"
+              ],
+              "realSamples": 4,
+              "realMaxWords": 4
+            },
+            "required": true
+          },
+          "heading": {
+            "type": "text",
+            "maxWords": 9,
+            "evidence": {
+              "sourceClass": "value-heading",
+              "files": [
+                "pages:about/sections/Values.html"
+              ],
+              "realSamples": 4,
+              "realMaxWords": 7
+            },
+            "required": true
+          },
+          "body": {
+            "type": "text",
+            "maxWords": 38,
+            "evidence": {
+              "sourceClass": "value-para",
+              "files": [
+                "pages:about/sections/Values.html"
+              ],
+              "realSamples": 4,
+              "realMaxWords": 30
+            },
+            "required": true
+          }
+        },
+        "countEvidence": "4 cards",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {},
+  "generatedAssetRoles": [],
+  "motion": {
+    "allowedPatterns": [
+      "stacked-card-scrub",
+      "none"
+    ],
+    "default": "stacked-card-scrub",
+    "cite": "pages:about/scripts/14.js:121",
+    "contains": "scrub: true"
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "scrollStage": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "cards stack while scrolling",
+      "heightPx": 1740
+    },
+    "mobile": {
+      "layout": "same",
+      "heightPx": 1648
+    },
+    "cite": "src/styles/webflow.css:4883",
+    "contains": ".value-card {"
+  },
+  "measured": {
+    "heightPx1440": 1740,
+    "route": "/about"
+  }
+}

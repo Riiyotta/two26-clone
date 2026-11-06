@@ -1,0 +1,13 @@
+{
+  "id": "text.display-heading",
+  "kind": "primitive",
+  "description": "Condensed uppercase display heading (H1/H2).",
+  "props": [
+    "text",
+    "level"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2666",
+    "contains": ".section-heading {"
+  }
+}

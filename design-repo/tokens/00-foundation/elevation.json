@@ -1,0 +1,29 @@
+{
+  "$description": "Stacking layers. The site uses no box-shadow tokens in its stylesheet; elevation is z-index only.",
+  "tokens": {
+    "z.header": {
+      "value": "999",
+      "type": "zIndex",
+      "cite": "src/styles/webflow.css:2135",
+      "contains": "z-index: 999;"
+    },
+    "z.loader": {
+      "value": "99999",
+      "type": "zIndex",
+      "cite": "src/styles/webflow.css:5216",
+      "contains": "z-index: 99999;"
+    },
+    "z.contact-modal": {
+      "value": "99999999",
+      "type": "zIndex",
+      "cite": "src/styles/webflow.css:4982",
+      "contains": "z-index: 99999999;"
+    },
+    "z.overlay": {
+      "value": "9999",
+      "type": "zIndex",
+      "cite": "src/styles/webflow.css:3824",
+      "contains": "z-index: 9999;"
+    }
+  }
+}

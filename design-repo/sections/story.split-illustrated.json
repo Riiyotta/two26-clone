@@ -1,0 +1,118 @@
+{
+  "id": "story.split-illustrated",
+  "title": "Illustrated story block",
+  "category": "STORY",
+  "source": {
+    "id": "about/AboutHero#about-story-section",
+    "file": "pages:about/sections/AboutHero.html",
+    "tag": "section.section-about-hero",
+    "lines": "123",
+    "contains": "class=\"about-story-section\"",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "AboutHero",
+    "decomposedFrom": "section.section-about-hero"
+  },
+  "semantic": {
+    "id": "story.split-illustrated",
+    "category": "STORY"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "image-left",
+    "image-right"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "about-story-text",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 13,
+        "evidence": {
+          "sourceClass": "about-story-heading",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 10
+        },
+        "required": true
+      },
+      "body": {
+        "type": "text",
+        "maxWords": 88,
+        "evidence": {
+          "sourceClass": "about-story-para",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 70
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "illustration": {
+      "roles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.illustration"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "story-path-scrub",
+      "none"
+    ],
+    "default": "story-path-scrub",
+    "cite": "pages:about/scripts/11.js:113",
+    "contains": "scrub: 0.8"
+  },
+  "constraints": {
+    "maxPerPage": 4,
+    "repeatable": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "illustration and text side by side; alternates sides",
+      "heightPx": [
+        592,
+        552
+      ]
+    },
+    "mobile": {
+      "layout": "stacked",
+      "heightPx": [
+        177,
+        177
+      ]
+    },
+    "cite": "src/styles/webflow.css:4573",
+    "contains": ".about-story-section {"
+  },
+  "measured": {
+    "heightPx1440": [
+      592,
+      552
+    ],
+    "route": "/about"
+  }
+}

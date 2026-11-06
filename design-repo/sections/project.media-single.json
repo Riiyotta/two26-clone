@@ -1,0 +1,73 @@
+{
+  "id": "project.media-single",
+  "title": "Full-width case-study image",
+  "category": "MEDIA",
+  "source": {
+    "id": "work_heygluco/ProjectContent#media-single",
+    "file": "pages:work_heygluco/sections/ProjectContent.html",
+    "tag": "div.project-single-img",
+    "lines": "4",
+    "contains": "class=\"project-single-img\"",
+    "manifest": "pages:work_heygluco/manifest.json",
+    "manifestSection": "ProjectContent",
+    "decomposedFrom": "section.section-project-content"
+  },
+  "semantic": {
+    "id": "project.media-single",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {}
+  },
+  "assetSlots": {
+    "image": {
+      "roles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "required": true,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.product-visual"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "none"
+    ],
+    "default": "none",
+    "cite": "pages:work_heygluco/sections/ProjectContent.html:4",
+    "contains": "project-single-img"
+  },
+  "constraints": {
+    "repeatable": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "full-width rounded image",
+      "heightPx": {
+        "min": 361,
+        "max": 934,
+        "count": 39
+      }
+    },
+    "mobile": {
+      "layout": "full-width"
+    },
+    "cite": "src/styles/webflow.css:4346",
+    "contains": ".project-single-img {"
+  },
+  "measured": {
+    "heightPx1440": {
+      "min": 361,
+      "max": 934,
+      "count": 39
+    },
+    "route": "all 8 /work/*"
+  }
+}

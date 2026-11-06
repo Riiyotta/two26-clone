@@ -1,0 +1,129 @@
+{
+  "id": "faq.accordion",
+  "title": "FAQ accordion",
+  "category": "FAQ",
+  "source": {
+    "id": "home/Faq",
+    "file": "pages:home/sections/Faq.html",
+    "tag": "section.section-faq",
+    "lines": "1-103",
+    "contains": "faq-list",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Faq"
+  },
+  "semantic": {
+    "id": "faq.accordion",
+    "category": "FAQ"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "about-text",
+          "files": [
+            "pages:home/sections/Faq.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:home/sections/Faq.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "items": {
+        "type": "items",
+        "minItems": 3,
+        "maxItems": 12,
+        "fields": {
+          "question": {
+            "type": "text",
+            "maxWords": 12,
+            "evidence": {
+              "sourceClass": "faq-ques",
+              "files": [
+                "pages:home/sections/Faq.html"
+              ],
+              "realSamples": 10,
+              "realMaxWords": 9
+            },
+            "required": true
+          },
+          "answer": {
+            "type": "text",
+            "maxWords": 52,
+            "evidence": {
+              "sourceClass": "faq-answer",
+              "files": [
+                "pages:home/sections/Faq.html"
+              ],
+              "realSamples": 10,
+              "realMaxWords": 41
+            },
+            "required": true
+          }
+        },
+        "countEvidence": "10 items",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "mascot": {
+      "roles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.illustration"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "accordion-spring",
+      "none"
+    ],
+    "default": "accordion-spring",
+    "cite": "pages:home/scripts/19.js:132",
+    "contains": "ease: \"back.out(1.6)\""
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "mustPrecedeFooter": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "heading + mascot left, list right (812px)",
+      "heightPx": 1227
+    },
+    "mobile": {
+      "layout": "single column",
+      "heightPx": 1111
+    },
+    "cite": "src/styles/webflow.css:3356",
+    "contains": ".question-block {"
+  },
+  "measured": {
+    "heightPx1440": 1227,
+    "route": "/"
+  }
+}

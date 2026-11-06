@@ -1,0 +1,436 @@
+{
+  "version": "1.0.0",
+  "$description": "Closed list of what a generator may place and set. verify_all.py checks parity with primitives/, components/, sections/ and with the PageSpec node schema.",
+  "nodeSettableProps": [
+    "section",
+    "variant",
+    "retrievalEligible",
+    "content",
+    "assets",
+    "tokens",
+    "motion"
+  ],
+  "primitives": [
+    "avatar.round",
+    "button.cta-pill",
+    "icon.arrow-circle",
+    "link.nav-pill",
+    "logo.mark",
+    "media.icon-animation",
+    "media.image",
+    "media.video-embed",
+    "media.video-loop",
+    "pill.tag",
+    "text.body",
+    "text.display-heading",
+    "text.eyebrow"
+  ],
+  "components": [
+    "block.story",
+    "card.project",
+    "card.team-member",
+    "card.testimonial",
+    "card.value",
+    "group.footer-links",
+    "item.faq",
+    "pill.capability",
+    "row.service",
+    "slide.showcase"
+  ],
+  "sections": {
+    "capabilities.pill-cloud": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "pill-fill-hover",
+        "magnetic-cta",
+        "none"
+      ]
+    },
+    "cta.projects-end": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "line-reveal-mask",
+        "pill-spring-in",
+        "magnetic-cta",
+        "none"
+      ]
+    },
+    "faq.accordion": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "motionPatterns": [
+        "accordion-spring",
+        "none"
+      ]
+    },
+    "features.services-path": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "decor.stroke-path-source",
+        "generated.icon-animation",
+        "generated.stroke-path",
+        "icon.service-animation-source"
+      ],
+      "motionPatterns": [
+        "scrubbed-path-draw",
+        "none"
+      ]
+    },
+    "gallery.moodboard-marquee": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "generated.lifestyle-photo",
+        "media.moodboard-photo-source"
+      ],
+      "motionPatterns": [
+        "drag-marquee",
+        "none"
+      ]
+    },
+    "hero.about": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.illustration-source",
+        "decor.stroke-path-source",
+        "generated.illustration",
+        "generated.stroke-path"
+      ],
+      "motionPatterns": [
+        "line-reveal-mask",
+        "pill-spring-in",
+        "stroke-path-draw",
+        "none"
+      ]
+    },
+    "hero.home": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "decor.stroke-path-source",
+        "generated.motion-loop",
+        "generated.stroke-path",
+        "media.hero-reel-source"
+      ],
+      "motionPatterns": [
+        "line-reveal-mask",
+        "pill-spring-in",
+        "stroke-path-draw",
+        "textpath-marquee",
+        "none"
+      ]
+    },
+    "hero.project": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "motionPatterns": [
+        "none"
+      ]
+    },
+    "hero.work-index": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.illustration-source",
+        "decor.stroke-path-source",
+        "generated.illustration",
+        "generated.stroke-path"
+      ],
+      "motionPatterns": [
+        "line-reveal-mask",
+        "pill-spring-in",
+        "stroke-path-draw",
+        "none"
+      ]
+    },
+    "media.showcase-marquee": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "generated.motion-loop",
+        "generated.product-visual",
+        "media.showcase-shot-source"
+      ],
+      "motionPatterns": [
+        "velocity-marquee",
+        "none"
+      ]
+    },
+    "project.media-pair": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "motionPatterns": [
+        "none"
+      ]
+    },
+    "project.media-single": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "client.project-imagery-source",
+        "generated.product-visual"
+      ],
+      "motionPatterns": [
+        "none"
+      ]
+    },
+    "project.meta-tags": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "none"
+      ]
+    },
+    "project.narrative": {
+      "variants": [
+        "context",
+        "solution"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "none"
+      ]
+    },
+    "project.video-embed": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "client.project-video-source",
+        "generated.video-embed"
+      ],
+      "motionPatterns": [
+        "background-video-autoplay",
+        "none"
+      ]
+    },
+    "runtime.contact-modal": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": false,
+      "assetRoles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "motionPatterns": [
+        "contact-path-wipe",
+        "none"
+      ]
+    },
+    "runtime.cursor-follower": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": false,
+      "assetRoles": [],
+      "motionPatterns": [
+        "cursor-follow",
+        "none"
+      ]
+    },
+    "runtime.mobile-menu": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": false,
+      "assetRoles": [],
+      "motionPatterns": [
+        "menu-spring-in",
+        "none"
+      ]
+    },
+    "runtime.preloader": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": false,
+      "assetRoles": [
+        "brand.wordmark-source",
+        "generated.brand-mark"
+      ],
+      "motionPatterns": [
+        "loader-logo-draw",
+        "none"
+      ]
+    },
+    "runtime.team-popup": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": false,
+      "assetRoles": [
+        "generated.person-portrait",
+        "person.team-photo-source"
+      ],
+      "motionPatterns": [
+        "popup-spring",
+        "none"
+      ]
+    },
+    "shell.footer": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.wordmark-source",
+        "decor.texture-source",
+        "generated.brand-mark",
+        "generated.texture"
+      ],
+      "motionPatterns": [
+        "footer-logo-stretch",
+        "line-reveal-mask",
+        "char-hover-wave",
+        "none"
+      ]
+    },
+    "shell.header": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.wordmark-source",
+        "generated.brand-mark"
+      ],
+      "motionPatterns": [
+        "stroke-fill-hover",
+        "magnetic-cta",
+        "none"
+      ]
+    },
+    "social-proof.testimonial-stack": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "generated.person-avatar",
+        "person.testimonial-avatar-source"
+      ],
+      "motionPatterns": [
+        "card-stack-shuffle",
+        "none"
+      ]
+    },
+    "statement.pinned-manifesto": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "pinned-char-wave",
+        "none"
+      ]
+    },
+    "story.split-illustrated": {
+      "variants": [
+        "image-left",
+        "image-right"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "motionPatterns": [
+        "story-path-scrub",
+        "none"
+      ]
+    },
+    "team.member-cards": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "generated.person-portrait",
+        "person.team-photo-source"
+      ],
+      "motionPatterns": [
+        "story-path-scrub",
+        "none"
+      ]
+    },
+    "values.stacked-cards": {
+      "variants": [
+        "default"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [],
+      "motionPatterns": [
+        "stacked-card-scrub",
+        "none"
+      ]
+    },
+    "work.featured-grid": {
+      "variants": [
+        "featured",
+        "all",
+        "more"
+      ],
+      "retrievalEligible": true,
+      "assetRoles": [
+        "client.logo-source",
+        "client.project-imagery-source",
+        "generated.client-mark",
+        "generated.product-visual"
+      ],
+      "motionPatterns": [
+        "clip-mask-card-reveal",
+        "brush-hover-swap",
+        "none"
+      ]
+    }
+  }
+}

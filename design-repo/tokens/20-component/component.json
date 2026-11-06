@@ -1,0 +1,32 @@
+{
+  "$description": "Component-scoped tokens (refs only).",
+  "tokens": {
+    "component.pill.radius": {
+      "ref": "radius.pill"
+    },
+    "component.pill.padding-x": {
+      "ref": "space.gap.lg"
+    },
+    "component.card.radius": {
+      "ref": "radius.card"
+    },
+    "component.cta.surface": {
+      "ref": "color.surface.ink"
+    },
+    "component.cta.text": {
+      "ref": "color.text.on-ink-light"
+    },
+    "component.cta.arrow-surface": {
+      "ref": "color.surface.brand"
+    },
+    "component.faq.question-surface": {
+      "ref": "color.surface.question"
+    },
+    "component.testimonial.surface": {
+      "ref": "color.surface.card"
+    },
+    "component.testimonial.border": {
+      "ref": "color.border.brand"
+    }
+  }
+}

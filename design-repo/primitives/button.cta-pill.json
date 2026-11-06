@@ -1,0 +1,13 @@
+{
+  "id": "button.cta-pill",
+  "kind": "primitive",
+  "description": "Black pill button with label and an orange circular arrow; magnetic hover.",
+  "props": [
+    "label",
+    "href"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2260",
+    "contains": ".cta-btn {"
+  }
+}

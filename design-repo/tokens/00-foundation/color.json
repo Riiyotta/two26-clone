@@ -1,0 +1,65 @@
+{
+  "$description": "Foundation colours. Every value is a real declaration in the original stylesheet (cite = path:line, contains = text that must be on that line).",
+  "tokens": {
+    "color.brand.primary": {
+      "value": "#ff5400",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2115",
+      "contains": "--brand-primary: #ff5400"
+    },
+    "color.brand.secondary": {
+      "value": "#f8eee8",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2111",
+      "contains": "--brand-secondary: #f8eee8"
+    },
+    "color.brand.white": {
+      "value": "#fdf8f5",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2113",
+      "contains": "--brand-white: #fdf8f5"
+    },
+    "color.brand.accent": {
+      "value": "#f9e2e1",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2117",
+      "contains": "--brand-accent: #f9e2e1"
+    },
+    "color.brand.black": {
+      "value": "#000000",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2112",
+      "contains": "--brand-black: #000"
+    },
+    "color.neutral.body-text": {
+      "value": "#333333",
+      "type": "color",
+      "cite": "src/styles/webflow.css:223",
+      "contains": "color: #333;"
+    },
+    "color.surface.hero-blush-raw": {
+      "value": "#fae3e2",
+      "type": "color",
+      "cite": "src/styles/webflow.css:2225",
+      "contains": "background-color: #fae3e2;"
+    },
+    "color.surface.question-raw": {
+      "value": "#f2e3da",
+      "type": "color",
+      "cite": "src/styles/webflow.css:3358",
+      "contains": "background-color: #f2e3da;"
+    },
+    "color.overlay.menu-raw": {
+      "value": "#f9e2e1f2",
+      "type": "color",
+      "cite": "src/styles/webflow.css:6472",
+      "contains": "background-color: #f9e2e1f2;"
+    },
+    "color.border.hairline-raw": {
+      "value": "#00000033",
+      "type": "color",
+      "cite": "src/styles/webflow.css:3373",
+      "contains": "border: 1px solid #0003;"
+    }
+  }
+}

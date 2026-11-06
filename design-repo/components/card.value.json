@@ -1,0 +1,13 @@
+{
+  "id": "card.value",
+  "kind": "component",
+  "description": "Office-rule card: label, number, heading, paragraph, progress bar.",
+  "composes": [
+    "text.display-heading",
+    "text.body"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:4883",
+    "contains": ".value-card {"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "media.video-embed",
+  "kind": "primitive",
+  "description": "Third-party background video embed (16:9 or oEmbed aspect).",
+  "props": [
+    "assetRole",
+    "url"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:5392",
+    "contains": ".project-video {"
+  }
+}

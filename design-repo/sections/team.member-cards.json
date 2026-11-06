@@ -1,0 +1,144 @@
+{
+  "id": "team.member-cards",
+  "title": "Team cards",
+  "category": "TEAM",
+  "source": {
+    "id": "about/AboutHero#about-team",
+    "file": "pages:about/sections/AboutHero.html",
+    "tag": "section.section-about-hero",
+    "lines": "408",
+    "contains": "class=\"about-team-btm\"",
+    "manifest": "pages:about/manifest.json",
+    "manifestSection": "AboutHero",
+    "decomposedFrom": "section.section-about-hero"
+  },
+  "semantic": {
+    "id": "team.member-cards",
+    "category": "TEAM"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 7,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:about/sections/AboutHero.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 5
+        },
+        "required": true
+      },
+      "members": {
+        "type": "items",
+        "minItems": 1,
+        "maxItems": 6,
+        "fields": {
+          "name": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "sourceClass": "team-name",
+              "files": [
+                "pages:about/sections/AboutHero.html"
+              ],
+              "realSamples": 3,
+              "realMaxWords": 2
+            },
+            "required": true
+          },
+          "role": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "sourceClass": "team-sub",
+              "files": [
+                "pages:about/sections/AboutHero.html"
+              ],
+              "realSamples": 3,
+              "realMaxWords": 2
+            },
+            "required": true
+          },
+          "bio": {
+            "type": "text-list",
+            "minItems": 0,
+            "maxItems": 2,
+            "maxWords": 56,
+            "evidence": {
+              "source": {
+                "cite": "pages:about/scripts/12.js:5",
+                "contains": "paragraphs: ["
+              },
+              "realMaxWords": 48
+            },
+            "required": false
+          }
+        },
+        "countEvidence": "3 members",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "portrait": {
+      "roles": [
+        "person.team-photo-source",
+        "generated.person-portrait"
+      ],
+      "required": true,
+      "multiple": true,
+      "maxItems": 6
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.person-portrait"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "story-path-scrub",
+      "none"
+    ],
+    "default": "story-path-scrub",
+    "cite": "pages:about/scripts/11.js:113",
+    "contains": "scrub: 0.8"
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "3 portrait cards in a row on a dark band",
+      "heightPx": 1280
+    },
+    "mobile": {
+      "layout": "stacked cards",
+      "heightPx": 1876
+    },
+    "cite": "src/styles/webflow.css:4671",
+    "contains": ".about-team-btm {"
+  },
+  "measured": {
+    "heightPx1440": 1280,
+    "route": "/about"
+  }
+}

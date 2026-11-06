@@ -1,0 +1,93 @@
+{
+  "$description": "How a PageSpec node may reference tokens. Enforced by schema/semantic_validate.py (TOKEN_* rules).",
+  "slots": {
+    "surface": {
+      "category": "color",
+      "prefix": "color.surface."
+    },
+    "text": {
+      "category": "color",
+      "prefix": "color.text."
+    },
+    "accent": {
+      "category": "color",
+      "prefix": "color.brand."
+    },
+    "displayFont": {
+      "category": "fontFamily",
+      "prefix": "font.family."
+    },
+    "bodyFont": {
+      "category": "fontFamily",
+      "prefix": "font.family.body"
+    },
+    "sectionPadding": {
+      "category": "spacing",
+      "prefix": "space.section."
+    },
+    "gap": {
+      "category": "spacing",
+      "prefix": "space.gap."
+    }
+  },
+  "rawValueRestrictions": {
+    "color": "No raw hex / rgb() / rgba() / hsl() anywhere in a PageSpec; use a color.* token.",
+    "spacing": "No raw px / rem / em / % lengths in token slots; use a space.* token.",
+    "fontFamily": "Only font.family.* tokens; a font name string is rejected."
+  },
+  "allowedSurfaceTextPairs": [
+    [
+      "color.surface.page",
+      "color.text.ink"
+    ],
+    [
+      "color.surface.page",
+      "color.text.brand"
+    ],
+    [
+      "color.surface.page",
+      "color.text.body"
+    ],
+    [
+      "color.surface.card",
+      "color.text.brand"
+    ],
+    [
+      "color.surface.card",
+      "color.text.ink"
+    ],
+    [
+      "color.surface.brand",
+      "color.text.on-brand"
+    ],
+    [
+      "color.surface.brand",
+      "color.text.on-ink"
+    ],
+    [
+      "color.surface.ink",
+      "color.text.on-ink"
+    ],
+    [
+      "color.surface.ink",
+      "color.text.on-ink-light"
+    ],
+    [
+      "color.surface.hero-blush",
+      "color.text.brand"
+    ],
+    [
+      "color.surface.question",
+      "color.text.body"
+    ],
+    [
+      "color.surface.menu-overlay",
+      "color.text.ink"
+    ]
+  ],
+  "pairEvidence": "Pairs observed in CLONE_SPEC.md sections 2-3 (measured computed colours): headline #FF5400 on #FAE3E2, footer #FDF8F5 on #FF5400, pill text #F9E2E1 on #000 and on #FF5400, CTA #FDF8F5 on #000, testimonial #FF5400 on #FDF8F5, FAQ #333 on #F2E3DA, menu links on rgba(249,226,225,.95).",
+  "themes": [
+    "light"
+  ],
+  "overrides": "PageSpec nodes may only select tokens through the slots above; there is no free-form style field."
+}

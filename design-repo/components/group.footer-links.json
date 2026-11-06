@@ -1,0 +1,12 @@
+{
+  "id": "group.footer-links",
+  "kind": "component",
+  "description": "Footer link column with a small header.",
+  "composes": [
+    "text.eyebrow"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:3539",
+    "contains": ".footer-links-block {"
+  }
+}

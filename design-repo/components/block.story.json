@@ -1,0 +1,15 @@
+{
+  "id": "block.story",
+  "kind": "component",
+  "description": "Illustration + eyebrow + heading + paragraph pair.",
+  "composes": [
+    "media.image",
+    "text.eyebrow",
+    "text.display-heading",
+    "text.body"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:4573",
+    "contains": ".about-story-section {"
+  }
+}

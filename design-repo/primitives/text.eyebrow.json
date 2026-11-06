@@ -1,0 +1,12 @@
+{
+  "id": "text.eyebrow",
+  "kind": "primitive",
+  "description": "Uppercase small label above section headings.",
+  "props": [
+    "text"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:2520",
+    "contains": ".section-about-text {"
+  }
+}

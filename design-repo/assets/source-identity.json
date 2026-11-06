@@ -1,0 +1,256 @@
+{
+  "$description": "Registry of the source's identity and content (R2). Every entry was grepped from the real source (pages:**). semantic_validate.py rejects any of it in mode=generated. Reference mode may contain it.",
+  "sourceBrand": {
+    "name": "Two26 Studio",
+    "patterns": [
+      "two\\s*[-_ ]?\\s*26",
+      "twentysix\\s*studio"
+    ],
+    "patternEvidence": [
+      {
+        "cite": "pages:home/sections/Footer.html:81",
+        "contains": "Two26 Studio"
+      },
+      {
+        "cite": "pages:about/sections/AboutHero.html:2",
+        "contains": "TWO 26"
+      }
+    ],
+    "note": "The pattern two\\s*[-_ ]?\\s*26 covers Two26, two26, TWO 26, Two 26 Studio, two-26, two_26 (all variants found by grep: 'TWO 26' in embed comments, 'Two26'/'two26' in copy, class names and handles). 'twentysix studio' is a defensive spelled-out variant, not found in source."
+  },
+  "domains": [
+    "two26.studio",
+    "two-26.webflow.io",
+    "website-files.com"
+  ],
+  "domainEvidence": [
+    {
+      "cite": "pages:home/sections/Header.html:189",
+      "contains": "two26.studio"
+    }
+  ],
+  "emails": [
+    "bogdan@two26.studio",
+    "diana@two26.studio"
+  ],
+  "socialHandles": [
+    "two26_studio",
+    "two26-studio",
+    "bogdan.apalaghiei",
+    "diana_apalaghiei08",
+    "bogdan-apalaghiei",
+    "diana-apalaghiei",
+    "andreea-liche"
+  ],
+  "socialEvidence": [
+    {
+      "cite": "pages:home/sections/Footer.html:72",
+      "contains": "instagram.com/two26_studio"
+    },
+    {
+      "cite": "pages:home/sections/Footer.html:78",
+      "contains": "linkedin.com/company/two26-studio"
+    },
+    {
+      "cite": "pages:about/scripts/12.js:9",
+      "contains": "instagram.com/bogdan.apalaghiei"
+    }
+  ],
+  "blockedHostsInGenerated": [
+    "instagram.com",
+    "linkedin.com",
+    "behance.net",
+    "vimeo.com",
+    "player.vimeo.com",
+    "website-files.com",
+    "webflow.io",
+    "two26.studio"
+  ],
+  "people": [
+    "Bogdan Apalaghiei",
+    "Diana Apalaghiei",
+    "Andreea Liche",
+    "Ruxandra Florescu",
+    "Luiza Zamfirescu",
+    "Vlad Belcin",
+    "Ionut Belet",
+    "Monica Tantu",
+    "Ecaterina",
+    "Oreo",
+    "Oliver"
+  ],
+  "peopleEvidence": [
+    {
+      "cite": "pages:about/sections/AboutHero.html:408",
+      "contains": "Bogdan Apalaghiei"
+    },
+    {
+      "cite": "pages:home/sections/Testimonials.html:1",
+      "contains": "Ruxandra Florescu"
+    },
+    {
+      "cite": "pages:home/sections/Faq.html:100",
+      "contains": "Oreo and Oliver"
+    },
+    {
+      "cite": "pages:work_heygluco/sections/ProjectContent.html:1",
+      "contains": "Ecaterina"
+    }
+  ],
+  "clients": {
+    "HeyGluco": "hey\\s*gluco",
+    "The Bagel Bar": "bagel\\s*bar",
+    "Tanti Maria": "tanti\\s*maria",
+    "Munchies and Cream": "munchies\\s*(and|&|&amp;)\\s*cream",
+    "MVP": "\\bmvp\\b",
+    "YUM YUM": "yum\\s*-?\\s*yum",
+    "LP ONE / LPI": "\\blp\\s*one\\b|\\blpi\\b",
+    "Merci": "\\bmerci\\b",
+    "Dare Digital": "dare\\s*digital"
+  },
+  "clientEvidence": [
+    {
+      "cite": "pages:home/sections/Projects.html:111",
+      "contains": "HeyGluco"
+    },
+    {
+      "cite": "pages:work/sections/ProjectsWork.html:156",
+      "contains": "LP ONE"
+    }
+  ],
+  "clientNote": "MVP and Merci are matched as whole words (case-insensitive). This is deliberately conservative: a generated page may not use them even as ordinary words. Vitabun / bioeel were checked and do NOT occur anywhere in the clone source, so they are not listed.",
+  "ctaStrings": [
+    "Let's Talk",
+    "Let’s Talk",
+    "See all projects",
+    "There’s more",
+    "There's more",
+    "Very convenient",
+    "The plot thickens",
+    "Hey Two26"
+  ],
+  "ctaEvidence": [
+    {
+      "cite": "pages:home/sections/Header.html:14",
+      "contains": "Let&#x27;s Talk"
+    },
+    {
+      "cite": "pages:home/sections/Projects.html:139",
+      "contains": "See all projects"
+    },
+    {
+      "cite": "pages:home/sections/Footer.html:72",
+      "contains": "Hey%20Two26!"
+    }
+  ],
+  "sourceAssetIdPattern": "\\b6a[0-9a-f]{22}_",
+  "sourceAssetPathPrefixes": [
+    "/assets/media/",
+    "/assets/lottie/",
+    "/assets/fonts/",
+    "/assets/vendor/"
+  ],
+  "copyCorpus": [
+    "A brief is a starting point, not a set of commandments. We’ll challenge it if we think there’s a better way to get where we need to go.",
+    "A few projects",
+    "A selection of brands, identities, websites and other things we’ve helped bring to life. Different challenges, various approaches, same focus on getting everything right.",
+    "APPARENTLY, THEY LIKE US",
+    "About us",
+    "Absolutely. We’re based in Bucharest, but our Wi-Fi travels remarkably well. We’re happy to work with people pretty much anywhere.",
+    "After years working for others, we changed course in early 2024 and decided to put all that experience into a dream of our own. What started with some recommendations and a few familiar faces quickly grew into something of its own. A studio where we could question the brief, really look into the details and make the kind of work that makes us smile.",
+    "Allergic to generic",
+    "Always fun, always insightful, always constructive. It hardly feels like working, cause the whole process is always so smooth. That's what you get for getting the job done with cool creatives, I guess.",
+    "Behind the work",
+    "Better than we imagined",
+    "Bogdan and Diana truly brought HeyGluco to life",
+    "Both of them are truly amazing humans, with an incredible amount of creativity and talent. They took our vision, understood it completely, and brought it to life in ways that went beyond anything we could have imagined. We absolutely loved working with them and feel incredibly lucky that, along the way, we got to call them friends. We cannot brag about them or recommend them highly enough. They are the kind of people you feel lucky to have found, and luckier to have worked with! ❤️",
+    "Branding & design",
+    "Branding is our main thing, from strategy and identity to packaging, illustration, motion and web design. We like projects where there’s room to think, question things and build something with a bit of character.",
+    "Can you start yesterday?",
+    "Can you work with a brand that already exists?",
+    "Complexity for complexity’s sake is not cool, actually. And people’s attention span is at an ATL. If your brand can say more with less, we’ll make it happen.",
+    "Do you also develop websites?",
+    "Do you work with clients outside Romania?",
+    "Do you work with small businesses?",
+    "Founded in Bucharest by Bogdan and Diana Apalaghiei, Two26 brings together years of experience across advertising, branding and digital.",
+    "Four projects and counting",
+    "GOOD IDEAS NEED SPACE",
+    "Handmade by humans. Well, digitally",
+    "HeyGluco was born from a family’s own experience with type 1 diabetes. After their daughter Ecaterina was diagnosed at seven, they found themselves navigating a new reality filled with medical information, calculations, uncertainty and a lot of fear. What they needed most in those first months wasn’t more information, but a clearer, more human way to make sense of it.They decided to create the resource they wished they had from day one: a place where families could learn, find practical tools and feel supported by people who had already been through the same experience. Our challenge was to turn that deeply personal idea into a brand that could talk about a serious subject with clarity and empathy, without feeling clinical or intimidating.",
+    "How involved do we need to be?",
+    "How much does a branding project cost?",
+    "IF IT CAN BE SIMPLe, SIMPLIFY",
+    "Independent studio",
+    "Involved enough. We’ll need your knowledge, feedback and decisions along the way. Don’t worry, we won’t make you sit next to us while we move things two pixels to the left.",
+    "It depends on what we’re making. Every project is a little diﬀerent, so we price based on scope rather than pulling a mysterious number out of a hat. Tell us what you have in mind and we’ll take it from there.",
+    "Just a few",
+    "Kind of proud",
+    "LET’S MAKE IT MAKE SENSE • GOOD LOOKS INCLUDED",
+    "LOOKING SUSPICIOUSLY GOOD",
+    "LP:One Motor was born from the ambition to build high-performance cars in Romania, bringing the raw experience of motorsport closer to the road. Its first models were conceived around lightweight construction, performance and a more direct connection between driver and machine.The challenge was to create a brand capable of standing alongside established names in performance automotive, while expressing the precision and engineering behind a company equally at home on the racetrack and on the road.",
+    "Less size, more scope",
+    "MVP Agency was created to connect top sports talent with brands through long-term partnerships, campaigns and sponsorships. The ambition goes beyond traditional athlete representation, positioning its talent as ambassadors, creators and personalities with a presence beyond competition.The challenge was to build a brand that could carry the energy and confidence of sport without looking like a traditional sports identity, while giving a growing and diverse roster of talent the space to stand out.",
+    "Merci is an éclair brand from Barcelona built around a quieter take on indulgence. With a focus on craftsmanship, high-quality ingredients and refined flavours, the idea was to create a premium experience that feels considered and approachable rather than extravagant.The challenge was to translate that philosophy into a brand that could feel distinctly connected to Barcelona while keeping the calm, minimal character at the heart of Merci.",
+    "Monday–Friday 10:00 – 17:00",
+    "More Works",
+    "Munchies & Cream was created as an ice cream brand for people looking for something a little less predictable. With bold flavours, limited drops and a strong connection to food culture, the ambition was to build something people could follow, collect and talk about, not just pick from a freezer.The challenge was to give the brand a recognizable personality from day one, while leaving enough room for it to constantly change with new flavours, products and ideas.",
+    "Nerding out on design",
+    "No funny business",
+    "Of course. Not everything needs to be burned to the ground and rebuilt. Sometimes a brand just needs a fresh pair of eyes and a few very intentional changes.",
+    "Okay, that's enough website",
+    "One detail gave us the starting point for the entire identity: every YumYum recipe uses grape juice as its base, no matter the flavour. We turned that constant into the brand’s most recognizable element, creating a Y-shaped mark that also reads as a simplified grape.The rest of the identity was designed around the same idea of simplicity. A restrained visual system, distinctive typography and a refined colour palette give YumYum a contemporary feel while keeping the ingredients and product at the centre. The result is a brand that feels fresh and considered, with enough flexibility to live across packaging, digital and everything in between.",
+    "PRETTY IS NOT A STRATEGY",
+    "Professional overthinkers",
+    "Selected Works",
+    "Small studio,",
+    "THE BRIEF IS NOT SET IN STONE",
+    "THINGS YOU MIGHT ASK",
+    "THIS IS OUR THING",
+    "THIS IS PRETTY MUCH EVERYONE",
+    "Tanti Maria is a delicatessen in Bucharest’s iconic Obor Market, built around carefully selected cured meats, cheeses and specialty products. The idea was to offer better quality without making the experience feel exclusive or out of place in a market known for its energy, familiarity and tradition.The challenge was to create a contemporary brand that still felt like it belonged in Obor, drawing on the nostalgia and familiarity behind the name Tanti Maria.",
+    "The Bagel Bar started with a simple idea: bring proper bagels to Bucharest and build a place with its own culture around them. More than a quick bite, it was meant to become a neighbourhood spot people could return to for the food, the atmosphere and everything happening around it.The challenge was to give a relatively unfamiliar product a strong, recognizable presence while building a brand that could feel just as natural on a bagel wrapper as it did on the storefront, a T-shirt or a Friday night poster.",
+    "The plot thickens",
+    "There’s more",
+    "They're sharp, always responsive, and have a real talent for turning briefs into compelling visuals. No matter the challenge: tight deadlines, shifting requirements, tricky creative constraints, they always show up with solutions. Highly recommend working with them!",
+    "Those are Oreo and Oliver. They’re not technically employed by Two26, but they’ve somehow made it into the brand anyway. They mostly sleep through meetings and contribute very little creatively. We keep them around.",
+    "Two ’90s kids, one shared itch to make better brands.",
+    "Very convenient",
+    "WE COULD KEEP GOING, BUT THERE’S A WHOLE PAGE FOR THAT.",
+    "WE’VE GOT RANGE",
+    "We believe creative work needs focus. That’s why we keep our team tight and our involvement high, so every project gets our full attention. We build brands from scratch or make them better.",
+    "We brought Tanti Maria to life as the face of the brand, inspired by that familiar aunt we somehow all know: warm, welcoming and always associated with good food. The illustrated character became the centre of an identity designed to feel instantly recognizable and personal.Bold, retro-inspired typography and a vibrant graphic system bring that nostalgia into the present without making the brand feel old-fashioned. The result is an identity rooted in the character of Obor, but built to work naturally across the store, packaging, merchandise and communication.",
+    "We built HeyGluco around the idea of making diabetes easier to understand and less frightening, especially for children. At the centre of the identity is Gluco, a small dragon designed as a familiar companion through a world of sensors, insulin, glucose levels and new routines.Every detail has a purpose. His three coloured spikes reference glucose levels, while the scarf is inspired by the international symbol of diabetes. Around him, we created a cast of characters based on everyday diabetes tools, turning unfamiliar medical objects into something children can recognise and relate to. A second, more narrative illustration style helps tell the family’s real story with more emotion and nuance.A warm, colourful palette moves away from the cold visual codes of healthcare, while typography and a clear editorial system make complex information easier to navigate. Together, they give HeyGluco a visual language that can educate without overwhelming and support without talking down.",
+    "We built LP:One around a visual language that feels engineered rather than decorated. Sharp typography, strong contrasts and a restrained graphic system reflect the precision and performance behind the cars, while giving the brand the confidence expected from the super sports category.The identity was designed to move between two sides of LP:One: motorsport and road-going performance. From the cars and racing applications to digital, communication and brand materials, the system creates one consistent world around the idea that performance should still feel visceral.",
+    "We built the identity around a symbol that brings together three parts of the Merci story. The letter M forms the foundation of the mark, a star at its centre represents craftsmanship, while the surrounding geometry takes inspiration from Barcelona’s stained glass windows.That idea extends into a restrained visual system where typography, warm tones and generous space let the product take the lead. The result is an identity that feels refined without becoming pretentious.",
+    "We built the identity around the product itself. The logomark combines the initials of Bagel Bar with the circular shape of a bagel hidden in the negative space, creating a compact symbol that can live almost anywhere.From there, we developed a bold visual and verbal language built around oversized typography, electric blue and playful graphics, paired with photography that keeps the food and the people around it feeling real. Lines like “Known by few, loved by you” gave the brand a voice of its own, while a flexible set of graphics allowed it to move beyond the menu into packaging, merchandise, social content and events.The result is a brand that feels less like a conventional food spot and more like the world built around The Bagel Bar.",
+    "We checked. Unfortunately, yesterday is fully booked. But send us a message and we’ll tell you when we can realistically get started.",
+    "We create distinctive illustrations that add character to your brand.",
+    "We create packaging that catches the eye and works better for your brand.",
+    "We created a bold and direct visual identity that takes cues from the energy of sport without relying on its usual visual clichés. Strong typography, sharp contrasts and a flexible graphic system give MVP a recognizable voice while keeping the athletes and their stories at the centre.We carried the same system into the website, creating a platform where athletes, projects and content can constantly change while the brand stays unmistakably MVP. The result is an identity designed around the people it represents, with enough flexibility to grow alongside them.",
+    "We design them. For development, we work with people we trust and can bring them into the project when needed. So yes, your website can actually become a website.",
+    "We don’t believe in rushing to the first solution that kind of works. Give an idea enough room to breathe, and it might just be the one.",
+    "We find the idea, the angle and the reasons people should care.",
+    "We give your brand a distinctive look, feel and personality that feel unmistakably yours.",
+    "We have grown, but not into a maze of departments. Instead, Two26 is a three-person core team, supported by top notch collaborators whenever a project demands it. It means we can stay involved, move quickly and build the right team around each situation. We do not chase work for the sake of filling a portfolio. We like projects with a real challenge and people who care about getting it right.",
+    "We keep all the moving parts moving in the same direction, from the big idea down to the smallest detail.",
+    "We love beautiful things. But looking good is only part of the job. First, we search for meaning. Everything we put out there needs to have a reason to be.",
+    "We make your brand move, cause standing still just isn’t enough.",
+    "We talk about why. Feedback is part of the process, and nothing is presented just because “we thought it looked cool.” Although we do like when things look cool.",
+    "We took the name literally and turned Munchies and Cream into two characters at the heart of the brand. Rather than keeping them fixed, we created a modular illustration system that lets their expressions and personalities change depending on the flavour, campaign or message.Paired with bold typography and a vibrant colour palette, the characters became the foundation for a visual world that can keep evolving without losing its identity. From packaging and social content to merchandise and limited drops, every new application becomes another opportunity to expand the Munchies & Cream universe.",
+    "We turn your brand into a digital experience that looks great, feels right and is easy to navigate.",
+    "We’ve worked together on two websites and two visual identities so far, and it’s been a pleasure every time. Great ideas, really well executed, and just lovely people to work with. Pretty sure we’re not done yet.",
+    "What if we don’t like the first concepts?",
+    "What kind of projects do you take on?",
+    "What’s with all the cats?",
+    "Working with Bogdan and Diana has been one of the smoothest collaborations I've had",
+    "Working with Two26 is a bit like brainstorming ideas with your best friends",
+    "Working with Two26 on our brand identity was a great experience from start to finish. They’re incredibly creative and thoughtful, but also easy to work with and genuinely invested in getting things right. They brought ideas we wouldn’t have thought of ourselves and gave the brand a personality that really feels like us. You can tell they care about the work, but also about the people behind it.",
+    "Yep. Company size matters less to us than the project, the people behind it and what we can actually do together.",
+    "YumYum grew from the founders’ childhood memories of homemade juices, made with fruit picked straight from their family gardens. Years later, they wanted to bring that same simplicity and honest approach to a new generation of natural juices.Our challenge was to translate those roots into a contemporary brand, one that could feel natural and approachable without looking rustic or predictable.",
+    "big brand energy",
+    "design studio",
+    "or just say hello!",
+    "to brag about"
+  ],
+  "copyRule": "A generated text field is rejected if any 5-word normalised shingle of it occurs in copyCorpus, or if it equals a corpus entry (case/punctuation-insensitive)."
+}

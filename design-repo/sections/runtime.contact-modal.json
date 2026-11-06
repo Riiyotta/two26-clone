@@ -1,0 +1,152 @@
+{
+  "id": "runtime.contact-modal",
+  "title": "Contact overlay",
+  "category": "RUNTIME",
+  "source": {
+    "id": "home/Header#contact-page",
+    "file": "pages:home/sections/Header.html",
+    "tag": "div.contact-page",
+    "lines": "179",
+    "contains": "class=\"contact-page",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Header",
+    "decomposedFrom": "header.header"
+  },
+  "semantic": {
+    "id": "runtime.contact-modal",
+    "category": "RUNTIME"
+  },
+  "retrievalEligible": false,
+  "retrievalReason": "Modal dialog opened by every 'Let's Talk' button; it is hidden until clicked, so it must not be retrieved as page content.",
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "headingLines": {
+        "type": "text-list",
+        "minItems": 1,
+        "maxItems": 6,
+        "maxWords": 4,
+        "evidence": {
+          "sourceClass": "contact-heading",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 4,
+          "realMaxWords": 2
+        },
+        "required": true
+      },
+      "subheading": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "contact-para",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "contacts": {
+        "type": "items",
+        "minItems": 1,
+        "maxItems": 3,
+        "fields": {
+          "label": {
+            "type": "text",
+            "maxWords": 5,
+            "evidence": {
+              "sourceClass": "email-heading",
+              "files": [
+                "pages:home/sections/Header.html"
+              ],
+              "realSamples": 2,
+              "realMaxWords": 3
+            },
+            "required": true
+          },
+          "email": {
+            "type": "email",
+            "required": true
+          }
+        },
+        "countEvidence": "2 email blocks",
+        "required": true
+      },
+      "socialLinks": {
+        "type": "items",
+        "minItems": 0,
+        "maxItems": 3,
+        "fields": {
+          "label": {
+            "type": "text",
+            "maxWords": 2,
+            "required": true
+          },
+          "href": {
+            "type": "url",
+            "required": true
+          }
+        },
+        "countEvidence": "Instagram + LinkedIn pills",
+        "required": false
+      },
+      "closeLabel": {
+        "type": "text",
+        "maxWords": 3,
+        "evidence": {
+          "sourceClass": "back-btn-txt",
+          "files": [
+            "pages:home/sections/Header.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 1
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "illustration": {
+      "roles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.illustration"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "contact-path-wipe",
+      "none"
+    ],
+    "default": "contact-path-wipe",
+    "cite": "pages:home/scripts/09.js:382",
+    "contains": "duration: 0.9"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "position": "overlay"
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "two columns: stacked heading left, emails right, illustration bottom"
+    },
+    "mobile": {
+      "layout": "single column"
+    },
+    "cite": "src/styles/webflow.css:4981",
+    "contains": ".contact-page {"
+  },
+  "measured": {
+    "inFlow": false
+  }
+}

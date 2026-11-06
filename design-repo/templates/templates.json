@@ -1,0 +1,277 @@
+{
+  "$description": "One template per page purpose (R6). nodes[] is an ordered sequence; anyOf = interchangeable media run. Every route maps to exactly one template (templates/routes.json).",
+  "templates": {
+    "home": {
+      "purpose": "Studio landing page: hero, manifesto, showcase, featured work, services, testimonials, FAQ.",
+      "evidence": {
+        "composition": "pages:home/index.jsx",
+        "manifest": "pages:home/manifest.json"
+      },
+      "nodes": [
+        {
+          "section": "runtime.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.contact-modal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.home",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "statement.pinned-manifesto",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.showcase-marquee",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "work.featured-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "featured"
+          ]
+        },
+        {
+          "section": "cta.projects-end",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.services-path",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.testimonial-stack",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.cursor-follower",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ]
+    },
+    "about": {
+      "purpose": "Studio story page: hero, origin story blocks, team, moodboard, office rules, capabilities.",
+      "evidence": {
+        "composition": "pages:about/index.jsx",
+        "manifest": "pages:about/manifest.json"
+      },
+      "nodes": [
+        {
+          "section": "runtime.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.contact-modal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.about",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "story.split-illustrated",
+          "required": true,
+          "repeatable": true,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "section": "team.member-cards",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.team-popup",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "gallery.moodboard-marquee",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "values.stacked-cards",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "capabilities.pill-cloud",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ]
+    },
+    "work-index": {
+      "purpose": "Portfolio index: hero plus a grid of every project card.",
+      "evidence": {
+        "composition": "pages:work/index.jsx",
+        "manifest": "pages:work/manifest.json"
+      },
+      "nodes": [
+        {
+          "section": "runtime.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.contact-modal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.work-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "work.featured-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "all"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "notes": "The source also ships a ProjectsWork stack (section.section-projects-work.none) that is display:none at every breakpoint (src/styles/webflow.css .section-projects-work.none). It never renders, so it is recorded in extraction/measured-values.json (hiddenInSource) and has no contract."
+    },
+    "project-detail": {
+      "purpose": "Case study: cover hero, two narrative blocks (context, solution), optional discipline tags, a long run of media rows, more-projects grid.",
+      "evidence": {
+        "composition": "pages:work_heygluco/index.jsx",
+        "manifest": "pages:work_heygluco/manifest.json"
+      },
+      "nodes": [
+        {
+          "section": "runtime.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "runtime.contact-modal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.project",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "project.narrative",
+          "required": true,
+          "repeatable": true,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "section": "project.meta-tags",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "anyOf": [
+            "project.media-single",
+            "project.media-pair",
+            "project.video-embed"
+          ],
+          "required": true,
+          "repeatable": true,
+          "min": 1,
+          "max": 40
+        },
+        {
+          "section": "work.featured-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "more"
+          ]
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "notes": "The source wraps the whole case-study body in one CMS list (section.section-project-content, 9.6k-17.7k px). It is decomposed here into its real list items: narrative blocks, discipline tags, single images, image pairs and video embeds."
+    }
+  }
+}

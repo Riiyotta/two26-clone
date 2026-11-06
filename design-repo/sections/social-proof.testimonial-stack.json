@@ -1,0 +1,155 @@
+{
+  "id": "social-proof.testimonial-stack",
+  "title": "Testimonial card stack",
+  "category": "SOCIAL_PROOF",
+  "source": {
+    "id": "home/Testimonials",
+    "file": "pages:home/sections/Testimonials.html",
+    "tag": "section.section-testimonials",
+    "lines": "1-75",
+    "contains": "testimonial-list",
+    "manifest": "pages:home/manifest.json",
+    "manifestSection": "Testimonials"
+  },
+  "semantic": {
+    "id": "social-proof.testimonial-stack",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "eyebrow": {
+        "type": "text",
+        "maxWords": 3,
+        "evidence": {
+          "sourceClass": "section-about-text",
+          "files": [
+            "pages:home/sections/Testimonials.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 1
+        },
+        "required": true
+      },
+      "heading": {
+        "type": "text",
+        "maxWords": 6,
+        "evidence": {
+          "sourceClass": "section-heading",
+          "files": [
+            "pages:home/sections/Testimonials.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 4
+        },
+        "required": true
+      },
+      "testimonials": {
+        "type": "items",
+        "minItems": 2,
+        "maxItems": 6,
+        "fields": {
+          "headline": {
+            "type": "text",
+            "maxWords": 18,
+            "evidence": {
+              "sourceClass": "testimonial-heading",
+              "files": [
+                "pages:home/sections/Testimonials.html"
+              ],
+              "realSamples": 5,
+              "realMaxWords": 14
+            },
+            "required": true
+          },
+          "quote": {
+            "type": "text",
+            "maxWords": 108,
+            "evidence": {
+              "sourceClass": "testimonial-card-para",
+              "files": [
+                "pages:home/sections/Testimonials.html"
+              ],
+              "realSamples": 5,
+              "realMaxWords": 86
+            },
+            "required": true
+          },
+          "name": {
+            "type": "text",
+            "maxWords": 4,
+            "evidence": {
+              "sourceClass": "testimonial-pfp-name",
+              "files": [
+                "pages:home/sections/Testimonials.html"
+              ],
+              "realSamples": 5,
+              "realMaxWords": 2
+            },
+            "required": true
+          },
+          "role": {
+            "type": "text",
+            "maxWords": 6,
+            "evidence": {
+              "sourceClass": "testimonial-pfp-designation",
+              "files": [
+                "pages:home/sections/Testimonials.html"
+              ],
+              "realSamples": 5,
+              "realMaxWords": 4
+            },
+            "required": true
+          }
+        },
+        "countEvidence": "5 cards",
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "avatar": {
+      "roles": [
+        "person.testimonial-avatar-source",
+        "generated.person-avatar"
+      ],
+      "required": false,
+      "multiple": true,
+      "maxItems": 6
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.person-avatar"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "card-stack-shuffle",
+      "none"
+    ],
+    "default": "card-stack-shuffle",
+    "cite": "pages:home/scripts/18.js:268",
+    "contains": "ease: \"power2.inOut\""
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "832px stacked cards, click to cycle",
+      "heightPx": 1270
+    },
+    "mobile": {
+      "layout": "288px cards",
+      "heightPx": 1006
+    },
+    "cite": "src/styles/webflow.css:3094",
+    "contains": ".testimonial-card {"
+  },
+  "measured": {
+    "heightPx1440": 1270,
+    "route": "/"
+  }
+}

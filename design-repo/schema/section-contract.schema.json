@@ -1,0 +1,295 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "section-contract.schema.json",
+  "title": "Section contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "category",
+    "source",
+    "semantic",
+    "retrievalEligible",
+    "variants",
+    "content",
+    "assetSlots",
+    "generatedAssetRoles",
+    "motion",
+    "constraints",
+    "responsive",
+    "measured"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z-]+\\.[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "SHELL",
+        "RUNTIME",
+        "HERO",
+        "STATEMENT",
+        "MEDIA",
+        "PORTFOLIO",
+        "CTA",
+        "FEATURES",
+        "SOCIAL_PROOF",
+        "FAQ",
+        "STORY",
+        "TEAM",
+        "VALUES",
+        "CONTENT",
+        "META"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "file",
+        "tag",
+        "lines",
+        "contains",
+        "manifest",
+        "manifestSection"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string",
+          "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+        },
+        "lines": {
+          "type": "string",
+          "pattern": "^[0-9]+(-[0-9]+)?$"
+        },
+        "contains": {
+          "type": "string",
+          "minLength": 3
+        },
+        "manifest": {
+          "type": "string"
+        },
+        "manifestSection": {
+          "type": "string"
+        },
+        "decomposedFrom": {
+          "type": "string"
+        }
+      }
+    },
+    "semantic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "SHELL",
+            "RUNTIME",
+            "HERO",
+            "STATEMENT",
+            "MEDIA",
+            "PORTFOLIO",
+            "CTA",
+            "FEATURES",
+            "SOCIAL_PROOF",
+            "FAQ",
+            "STORY",
+            "TEAM",
+            "VALUES",
+            "CONTENT",
+            "META"
+          ]
+        }
+      }
+    },
+    "retrievalEligible": {
+      "type": "boolean"
+    },
+    "retrievalReason": {
+      "type": "string",
+      "minLength": 30
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "object"
+        }
+      }
+    },
+    "assetSlots": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "roles",
+          "required",
+          "multiple"
+        ],
+        "properties": {
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "multiple": {
+            "type": "boolean"
+          },
+          "maxItems": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "generatedAssetRoles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowedPatterns",
+        "default",
+        "cite",
+        "contains"
+      ],
+      "properties": {
+        "allowedPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "default": {
+          "type": "string"
+        },
+        "cite": {
+          "type": "string"
+        },
+        "contains": {
+          "type": "string"
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "onePerPage": {
+          "type": "boolean"
+        },
+        "maxPerPage": {
+          "type": "integer"
+        },
+        "mustBeFirst": {
+          "type": "boolean"
+        },
+        "mustBeLast": {
+          "type": "boolean"
+        },
+        "mustFollowNav": {
+          "type": "boolean"
+        },
+        "mustPrecedeFooter": {
+          "type": "boolean"
+        },
+        "repeatable": {
+          "type": "boolean"
+        },
+        "scrollStage": {
+          "type": "boolean"
+        },
+        "position": {
+          "type": "string"
+        },
+        "attachTo": {
+          "type": "string"
+        },
+        "mustFollow": {
+          "type": "string"
+        }
+      }
+    },
+    "responsive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "desktop",
+        "mobile",
+        "cite",
+        "contains"
+      ],
+      "properties": {
+        "desktop": {
+          "type": "object"
+        },
+        "mobile": {
+          "type": "object"
+        },
+        "cite": {
+          "type": "string"
+        },
+        "contains": {
+          "type": "string"
+        }
+      }
+    },
+    "measured": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "if": {
+    "properties": {
+      "retrievalEligible": {
+        "const": false
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "retrievalReason"
+    ]
+  }
+}

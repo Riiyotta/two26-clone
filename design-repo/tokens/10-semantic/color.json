@@ -1,0 +1,80 @@
+{
+  "$description": "Semantic colour roles -> foundation refs. Usage notes from CLONE_SPEC.md section 3 (measured).",
+  "tokens": {
+    "color.surface.page": {
+      "ref": "color.brand.secondary",
+      "type": "color",
+      "usage": "body background (CLONE_SPEC.md 3)"
+    },
+    "color.surface.card": {
+      "ref": "color.brand.white",
+      "type": "color",
+      "usage": "testimonial card, nav pills"
+    },
+    "color.surface.brand": {
+      "ref": "color.brand.primary",
+      "type": "color",
+      "usage": "footer, about pills, FAQ logo"
+    },
+    "color.surface.ink": {
+      "ref": "color.brand.black",
+      "type": "color",
+      "usage": "hero pills, CTA buttons"
+    },
+    "color.surface.hero-blush": {
+      "ref": "color.surface.hero-blush-raw",
+      "type": "color",
+      "usage": "home hero wrapper (hard-coded, not a :root var)"
+    },
+    "color.surface.question": {
+      "ref": "color.surface.question-raw",
+      "type": "color",
+      "usage": "FAQ question pill"
+    },
+    "color.surface.menu-overlay": {
+      "ref": "color.overlay.menu-raw",
+      "type": "color",
+      "usage": "mobile menu panel"
+    },
+    "color.text.ink": {
+      "ref": "color.brand.black",
+      "type": "color",
+      "usage": "section headings"
+    },
+    "color.text.brand": {
+      "ref": "color.brand.primary",
+      "type": "color",
+      "usage": "hero headline, services, testimonials"
+    },
+    "color.text.on-brand": {
+      "ref": "color.brand.white",
+      "type": "color",
+      "usage": "footer text"
+    },
+    "color.text.on-ink": {
+      "ref": "color.brand.accent",
+      "type": "color",
+      "usage": "pill text"
+    },
+    "color.text.on-ink-light": {
+      "ref": "color.brand.white",
+      "type": "color",
+      "usage": "CTA text on black"
+    },
+    "color.text.body": {
+      "ref": "color.neutral.body-text",
+      "type": "color",
+      "usage": "FAQ copy, default body"
+    },
+    "color.border.brand": {
+      "ref": "color.brand.primary",
+      "type": "color",
+      "usage": "testimonial card / open question border"
+    },
+    "color.border.hairline": {
+      "ref": "color.border.hairline-raw",
+      "type": "color",
+      "usage": "answer bubble border"
+    }
+  }
+}

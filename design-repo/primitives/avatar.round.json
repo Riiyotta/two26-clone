@@ -1,0 +1,13 @@
+{
+  "id": "avatar.round",
+  "kind": "primitive",
+  "description": "Round portrait thumbnail.",
+  "props": [
+    "assetRole",
+    "alt"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:3148",
+    "contains": ".testimonial-img-wrap {"
+  }
+}

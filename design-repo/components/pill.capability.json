@@ -1,0 +1,12 @@
+{
+  "id": "pill.capability",
+  "kind": "component",
+  "description": "Outline capability pill with stroke-fill hover.",
+  "composes": [
+    "pill.tag"
+  ],
+  "evidence": {
+    "cite": "src/styles/webflow.css:4822",
+    "contains": ".do-cms--pill {"
+  }
+}

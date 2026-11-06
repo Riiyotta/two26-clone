@@ -1,0 +1,122 @@
+{
+  "id": "hero.work-index",
+  "title": "Work index hero",
+  "category": "HERO",
+  "source": {
+    "id": "work/WorkHero",
+    "file": "pages:work/sections/WorkHero.html",
+    "tag": "section.section-work-hero",
+    "lines": "1-79",
+    "contains": "work-hero-text",
+    "manifest": "pages:work/manifest.json",
+    "manifestSection": "WorkHero"
+  },
+  "semantic": {
+    "id": "hero.work-index",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "variants": [
+    "default"
+  ],
+  "content": {
+    "fields": {
+      "headlineLines": {
+        "type": "text-list",
+        "minItems": 2,
+        "maxItems": 2,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "heading",
+          "files": [
+            "pages:work/sections/WorkHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "pills": {
+        "type": "text-list",
+        "minItems": 2,
+        "maxItems": 2,
+        "maxWords": 5,
+        "evidence": {
+          "sourceClass": "hero-pill-text",
+          "files": [
+            "pages:work/sections/WorkHero.html"
+          ],
+          "realSamples": 2,
+          "realMaxWords": 3
+        },
+        "required": true
+      },
+      "paragraph": {
+        "type": "text",
+        "maxWords": 30,
+        "evidence": {
+          "sourceClass": "work-hero-para",
+          "files": [
+            "pages:work/sections/WorkHero.html"
+          ],
+          "realSamples": 1,
+          "realMaxWords": 24
+        },
+        "required": true
+      }
+    }
+  },
+  "assetSlots": {
+    "illustration": {
+      "roles": [
+        "brand.illustration-source",
+        "generated.illustration"
+      ],
+      "required": true,
+      "multiple": false
+    },
+    "strokePath": {
+      "roles": [
+        "decor.stroke-path-source",
+        "generated.stroke-path"
+      ],
+      "required": false,
+      "multiple": false
+    }
+  },
+  "generatedAssetRoles": [
+    "generated.illustration",
+    "generated.stroke-path"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "line-reveal-mask",
+      "pill-spring-in",
+      "stroke-path-draw",
+      "none"
+    ],
+    "default": "line-reveal-mask",
+    "cite": "pages:work/scripts/10.js:219",
+    "contains": "stagger: 0.12"
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "split headline with pills, path, illustration + paragraph",
+      "heightPx": 769
+    },
+    "mobile": {
+      "layout": "stacked",
+      "heightPx": 509
+    },
+    "cite": "src/styles/webflow.css:3886",
+    "contains": ".section-work-hero-wrapper {"
+  },
+  "measured": {
+    "heightPx1440": 769,
+    "route": "/work"
+  }
+}
